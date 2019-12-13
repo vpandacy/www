@@ -5,6 +5,6 @@ return [
     'enableStrictParsing' => false,
     'rules' => [
         '/<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-        '/' => 'default/index'
+        '<controller:(page)>/<media_id:\d+>/info/<project_id:\d+>' => '<controller>/index',
     ],
 ];
