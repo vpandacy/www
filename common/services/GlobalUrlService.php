@@ -186,4 +186,19 @@ class GlobalUrlService
         return $domain . $path;
     }
 
+    /**
+     * api接口应用url构造器
+     * @param $uri
+     * @param array $params
+     */
+    public static function buildApiUrl($uri, $params = [])
+    {
+        $path   = Url::toRoute(array_merge([$uri], $params));
+        $domain = \Yii::$app->params['domains']['api']['domain'];
+        if (UtilHelper::is_SSL()) {
+            $domain = str_replace("http://", "https://", $domain);
+        }
+        return $domain . $path;
+    }
+
 }
