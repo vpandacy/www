@@ -10,7 +10,7 @@ return [
             "domain" => "http://static.dev.hsh568.cn"
         ],
         "www" => [
-            "domain" => "http://www.dev.hsh123.cn"
+            "domain" => "http://www.page.dev.hsh568.cn"
         ],
         "api" => [
             "domain" => "http://api.dev.hsh568.cn"
