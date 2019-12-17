@@ -7,9 +7,9 @@ use \common\services\GlobalUrlService;
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title><?=$title;?></title>
-    <meta name="description" content="<?=$title;?>"/>
-    <meta name="keywords" content="<?=$title;?>">
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content="">
     <meta name="HandheldFriendly" content="True"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="<?=GlobalUrlService::buildStaticUrl("/images/icon.png");?>">
