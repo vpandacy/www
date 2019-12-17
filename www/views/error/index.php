@@ -49,17 +49,17 @@ use \common\services\GlobalUrlService;
     </div>
 </section>
 <script type='text/javascript'>
-    var time_count = 5;
-    var intervalid = setInterval(pload, 1000);
-    function pload(){
-        time_count--;
-        if(time_count <= 0 ){
-            clearInterval(intervalid);
-            window.location.href = $("#redirect_url").attr("href");
-            return;
-        }
-        $("#tips").html(time_count + "秒后跳转");
-    }
+    // var time_count = 5;
+    // var intervalid = setInterval(pload, 1000);
+    // function pload(){
+    //     time_count--;
+    //     if(time_count <= 0 ){
+    //         clearInterval(intervalid);
+    //         window.location.href = $("#redirect_url").attr("href");
+    //         return;
+    //     }
+    //     $("#tips").html(time_count + "秒后跳转");
+    // }
 </script>
 </body>
 </html>
