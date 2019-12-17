@@ -1,10 +1,10 @@
 document.writeln("<style>");
 document.writeln("#footerfixed { width: 100%; height: 49px; background: #5dc2d0; position: fixed; left: 0; bottom: 0; z-index: 999;}");
-document.writeln("#footerfixed .footerfixedBox { width: 1200px; height: 49px; margin: 0 auto; background: url(/Public/zsbcc06/images/bg/footerfixedBg.jpg) no-repeat center; position: relative; }");
+document.writeln("#footerfixed .footerfixedBox { width: 1200px; height: 49px; margin: 0 auto; background: url(/images/footerfixedBg.jpg) no-repeat center; position: relative; }");
 document.writeln("#footerfixed .footerfixedBox .footerfixedBtn { width: 310px; height: 39px; padding: 5px 0 0 0; }");
 document.writeln("#footerfixed .footerfixedBox .footerfixedBtn a { display: block; width: 143px; height: 39px; margin: 0 6px; float: left; }");
-document.writeln("#footerfixed .footerfixedBox .footerfixedBtn a.footerfixedBtnzuxun { background: url(/Public/zsbcc06/images/bg/footerfixedBtn1.png) no-repeat center; }");
-document.writeln("#footerfixed .footerfixedBox .footerfixedBtn a.footerfixedBtnliuyan { background: url(/Public/zsbcc06/images/bg/footerfixedBtn2.png) no-repeat center; }");
+document.writeln("#footerfixed .footerfixedBox .footerfixedBtn a.footerfixedBtnzuxun { background: url(/images/footerfixedBtn1.png) no-repeat center; }");
+document.writeln("#footerfixed .footerfixedBox .footerfixedBtn a.footerfixedBtnliuyan { background: url(/images/footerfixedBtn2.png) no-repeat center; }");
 document.writeln("#footerfixed .footerfixedBox .footerfixedBtn a:hover, #footerfixed .footerfixedBox .footerfixedBtn a:focus { -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8); transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8); -webkit-animation: gelatine 0.5s 1; animation: gelatine 0.5s 1; }");
 document.writeln("@keyframes gelatine {");
 document.writeln("	from, to {");

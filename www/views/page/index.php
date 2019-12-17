@@ -143,8 +143,9 @@
 <!-- 底部固定跳转留言板开始 -->
 <div>
     <script type="text/javascript">
-        var zxUrl = "https://tb.53kf.com/code/client/10157652/9";
+        var zxUrl = "https://tb.53kf.com/code/client/10157676/9";
         var lyUrl = "#lyb";
+        (function() {var _53code = document.createElement("script");_53code.src = "https://tb.53kf.com/code/code/10157676/9";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(_53code, s);})();
     </script>
     <script src="/js/zsb_cc_fixed.js"></script>
 </div>
