@@ -7,9 +7,9 @@ use \common\services\GlobalUrlService;
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title></title>
-    <meta name="description" content=""/>
-    <meta name="keywords" content="">
+    <title><?=$title??'';?></title>
+    <meta name="description" content="<?=$title??'';?>"/>
+    <meta name="keywords" content="<?=$title??'';?>">
     <meta name="HandheldFriendly" content="True"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="<?=GlobalUrlService::buildStaticUrl("/images/icon.png");?>">
@@ -30,17 +30,17 @@ use \common\services\GlobalUrlService;
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <img src="<?=GlobalUrlService::buildStaticUrl("/images/error/error.png");?>" class="img-responsive center-block" alt="<?=$msg;?>">
+                        <img src="<?=GlobalUrlService::buildStaticUrl("/images/error/error.png");?>" class="img-responsive center-block" alt="<?=$msg??'';?>">
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="text-center">
-                            <label><?=$msg;?></label>
+                            <label><?=$msg??'';?></label>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="text-center">
                             <label id="tips">5秒后跳转</label>
-                            <a id="redirect_url" href="<?=$reback_url;?>" class="btn btn-link">返回首页</a>
+                            <a id="redirect_url" href="<?=$reback_url??'';?>" class="btn btn-link">返回首页</a>
                         </div>
                     </div>
                 </div>
