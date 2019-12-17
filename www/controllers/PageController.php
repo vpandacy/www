@@ -21,6 +21,9 @@ class PageController extends BaseWebController
             "project_id" => $project_id,
             'token' => $token
         ]);
+        if ($info){
+            return $this->render('/error/index',['返回信息为空']);
+        }
         $info_tmp = json_decode($info , true);
         if (!$info_tmp['data']){
             return $this->render('/error/index', ['msg' => $info_tmp['msg']]);
