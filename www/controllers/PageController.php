@@ -7,8 +7,7 @@ use common\components\BaseWebController;
 use common\components\helper\DateHelper;
 use common\components\HttpClient;
 use common\services\GlobalUrlService;
-use http\Encoding\Stream\Debrotli;
-use Yii;
+
 
 class PageController extends BaseWebController
 {
@@ -41,9 +40,11 @@ class PageController extends BaseWebController
         $content = HttpClient::get($cdn);
 
 
+
+
         return $this->render('index', [
             'content' => $content,
-            'page_script' => $page_script
+            'page_script' => $page_script,
         ]);
     }
 }
