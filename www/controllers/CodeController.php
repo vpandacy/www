@@ -43,19 +43,11 @@ class CodeController extends BaseWebController
         $cdn = $host . "/shophtml/" . $data['project_pinyin'] . "/item.html";
         $content = HttpClient::get($cdn);
         //$data['head_type'] = '2';
-        $head_type = $data['head_type'] ?? 0;
-        switch ($head_type){
-            case 1:
-                $view = 'index1';
-                break;
-            case 2:
-                $view = 'index2';
-                break;
-            default :
-                $view = 'index';
-        }
+        $title = $data['title'] ?? '';
 
-        return $this->render($view, [
+
+        return $this->render('index', [
+            'title' => $title,
             'content' => $content,
             'page_script' => $page_script,
         ]);
