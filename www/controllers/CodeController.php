@@ -38,6 +38,7 @@ class CodeController extends BaseWebController
         $cdn = $host . "/shophtml/" . $data['project_pinyin'] . "/item.html";
         $content = HttpClient::get($cdn);
 
+        $view_type = '';
 
         return $this->render('index', [
             'content' => $content,
