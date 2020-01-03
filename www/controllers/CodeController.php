@@ -40,14 +40,18 @@ class CodeController extends BaseWebController
             return $this->render('/error/index', ['msg' => '返回信息有误']);
         }
         $page_script = $data['page_script'];
+        $page = $data['page'];
+
         $cdn = $host . "/shophtml/" . $data['project_pinyin'] . "/item.html";
         $content = HttpClient::get($cdn);
-        //$data['head_type'] = '2';
         $title = $data['title'] ?? '';
 
+        $head_id = $page['board_id'] ?? 0;
+        $head = file_get_contents("/head/head$head_id.php");
 
         return $this->render('index', [
             'title' => $title,
+            'head' => $head,
             'content' => $content,
             'page_script' => $page_script,
         ]);

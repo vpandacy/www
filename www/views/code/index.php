@@ -20,6 +20,9 @@
 
 <body>
 <!-- 头部开始 -->
+<?php if ($head):?>
+<?=$head;?>
+<?php else:?>
 <div id="zsbHeader">
     <div class="zsbmain">
         <div class="logo">
@@ -123,6 +126,7 @@
         </div>
     </div>
 </div>
+<?php endif;?>
 <!-- 头部结束 -->
 <?= $content; ?>
 <!-- 留言板开始 -->
