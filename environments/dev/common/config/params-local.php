@@ -25,4 +25,5 @@ return [
             "domain" => ".dev.hsh568.cn"
         ],
     ],
+    'navigation' => '/data/www/private_page/navigation/',
 ];

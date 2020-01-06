@@ -45,13 +45,17 @@ class CodeController extends BaseWebController
         $cdn = $host . "/shophtml/" . $data['project_pinyin'] . "/item.html";
         $content = HttpClient::get($cdn);
         $title = $data['title'] ?? '';
+        $description = $data['proj_adv'] ?? '';
 
-        $head_id = $page['board_id'] ?? 0;
-        $head = file_get_contents("/head/head$head_id.php");
+        $nav_id = $page['board_id'] ?? 0;
+        $nav_path = \Yii::$app->params['navigation'];
+        $nav = file_get_contents($nav_path."nav_$nav_id.php");
 
         return $this->render('index', [
             'title' => $title,
-            'head' => $head,
+            'description' => $description,
+            'nav' => $nav,
+            'khid' => $page['project_id'],
             'content' => $content,
             'page_script' => $page_script,
         ]);

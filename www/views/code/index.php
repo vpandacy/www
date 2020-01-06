@@ -3,6 +3,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title><?= $title?></title>
+    <meta name="keywords" content=<?= $title?> >
+    <meta name="description" content=<?= $description?> >
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="x-ua-compatible" content="ie=7" />
     <link rel="stylesheet" href="/css/style.css" />
@@ -10,6 +12,9 @@
     <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
     <script src="/js/show.js" type="text/javascript"></script>
 
+    <link rel='canonical' href='http://hsh.cn' />
+    <script type="text/javascript" src="/static/head/1/js/uaredirect.js"></script>
+    <link rel="stylesheet" href="/static/head/1/css/style.css" />
     <style>
         .zsbmain{
             width:1200px;
@@ -20,8 +25,8 @@
 
 <body>
 <!-- 头部开始 -->
-<?php if ($head):?>
-<?=$head;?>
+<?php if ($nav):?>
+<?=$nav;?>
 <?php else:?>
 <div id="zsbHeader">
     <div class="zsbmain">
@@ -133,7 +138,7 @@
 <div style="background:url(/images/lybbj.jpg) no-repeat center; width:1200px; height:550px; margin:0 auto;">
     <script type="text/javascript" src="/js/fingerprint.js"></script>
     <script type="text/javascript">
-        var khid = "2001284";
+        var khid = <?=$khid;?>;
         var sjid = "91";
         var comid = "1001";
         var kw = "_";
@@ -143,30 +148,28 @@
     <script src="/js/zsb_cc_lyb.js"></script>
 </div>
 <!-- 留言板结束 -->
+ <!--页脚开始-->
+    <div id="footer" style="background-color:#FFF;margin:auto;width: 1200px;">
+        <div style="text-align: center; line-height:23px; padding:10px 0; background:#fff;">
+            技术支持：好商汇传媒（广州）有限公司<br/>
+            公司地址：广州市白云区白云大道北337号B栋306<br/>
+            <a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备19013542号-22</a>
+            创业有风险 投资需谨慎
+        </div>
+        <div style="height:50px;"></div>
 
+        <style type="text/css">
+            #footer p a{display:inline-block; width:20px; height:20px;}
+            #footer p a img{width:20px; height:20px;}
+        </style>
+    </div>
+<!--页脚结束-->
 <!-- 底部固定跳转留言板开始 -->
 <div>
     <?= $page_script?>
     <script src="/js/zsb_cc_fixed.js"></script>
 </div>
 <!-- 底部固定跳转留言板结束 -->
-
-<!--页脚开始-->
-<div id="footer" style="background-color:#FFF;margin:auto;">
-    <div style="text-align: center; line-height:23px; padding:10px 0; background:#fff;">
-        技术支持：好商汇传媒（广州）有限公司<br/>
-        公司地址：广州市白云区白云大道北337号B栋306<br/>
-        <a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备19013542号-22</a>
-        创业有风险 投资需谨慎
-    </div>
-    <div style="height:50px;"></div>
-
-    <style type="text/css">
-        #footer p a{display:inline-block; width:20px; height:20px;}
-        #footer p a img{width:20px; height:20px;}
-    </style>
-</div>
-<!--页脚结束-->
 
 <script>
     $("#headlogo").attr('src','http://cdn.hsh568.cn/zsbcc/images/logo-hsh-563x108.png');

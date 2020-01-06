@@ -19,4 +19,5 @@ return [
             "domain" => "http://cdn.hsh568.cn"
         ],
     ],
+    'navigation' => '/data/www/private_page/navigation/',
 ];
