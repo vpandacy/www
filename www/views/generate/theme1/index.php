@@ -18,7 +18,7 @@ use \common\services\GlobalUrlService;
     <!-- EDIT弹框样式 -->
     <link rel="stylesheet" href="<?=GlobalUrlService::buildWWWUrl("/css/theme1/edit.css");?>"/>
     <!-- tabs -->
-    <link rel="stylesheet" href="<?=GlobalUrlService::buildWWWUrl("/css/otheme1/tabs.css");?>"/>
+    <link rel="stylesheet" href="<?=GlobalUrlService::buildWWWUrl("/css/theme1/tabs.css");?>"/>
 
     <!-- jq 弹框 -->
     <script src="<?=GlobalUrlService::buildWWWUrl("/js/theme1/jquery-1.js");?>"></script>
