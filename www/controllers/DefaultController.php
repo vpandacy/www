@@ -18,7 +18,7 @@ class DefaultController extends BaseWebController
         $theme = \Yii::$app->params['Generate']['path']."/theme".$web['theme_id'].".html";
         $cookies = "switch_version=dev_20191113001_page_manager;";
         HttpClient::setCookie($cookies);
-        $value = HttpClient::get($theme);
+        $value = file_get_contents($theme);
         $this->layout = true;
         return $this->render('index', [
             'data' => $value,
