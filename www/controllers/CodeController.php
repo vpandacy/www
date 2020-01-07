@@ -5,7 +5,6 @@ namespace www\controllers;
 
 use common\components\BaseWebController;
 use common\components\HttpClient;
-use common\services\GlobalUrlService;
 use www\services\ApiRequestService;
 
 class CodeController extends BaseWebController
@@ -15,9 +14,6 @@ class CodeController extends BaseWebController
 
 
         $this->layout = false;
-        $cookies = "switch_version=dev_20191210_web_template;";
-        //HttpClient::setCookie($cookies);
-        //ApiRequestService::setCookies($cookies);
         $code = $this->get('code');
 
         $info = ApiRequestService::sendPostRequest('/lianzhan/code/index',[
@@ -49,7 +45,7 @@ class CodeController extends BaseWebController
 
         $nav_id = $page['board_id'] ?? 0;
         $nav_path = \Yii::$app->params['navigation'];
-        $nav = file_get_contents($nav_path."nav_$nav_id.php");
+        $nav = @file_get_contents($nav_path."nav_$nav_id.php");
 
         return $this->render('index', [
             'title' => $title,
