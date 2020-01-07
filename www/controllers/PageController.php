@@ -13,7 +13,6 @@ class PageController extends BaseWebController
 {
     public function actionIndex()
     {
-        $this->layout = false;
         $cookies = "switch_version=server;";
         $media_id = $this->get('media_id');
         $project_id = $this->get('project_id');
