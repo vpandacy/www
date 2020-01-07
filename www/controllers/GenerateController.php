@@ -17,6 +17,9 @@ class GenerateController extends BaseWebController{
         if(empty($id)){
             exit;
         }
+        $cookies = "switch_version=dev_20191113001_page_manager;";
+        HttpClient::setCookie($cookies);
+
         $generate_url = \Yii::$app->params['Generate']['url'];
         $data = json_decode($content = HttpClient::post($generate_url.'result/index',['type'=>ConstantService::WEBPAGE_EHEME,'p_id'=>$id]),true);
         if($data['code'] != 200 || !$data['data']){
@@ -51,6 +54,8 @@ class GenerateController extends BaseWebController{
         if(empty($id)){
             exit;
         }
+        $cookies = "switch_version=dev_20191113001_page_manager;";
+        HttpClient::setCookie($cookies);
         $generate_url = \Yii::$app->params['Generate']['url'];
         $data = json_decode($content = HttpClient::post($generate_url.'result/index',['type'=>ConstantService::WEBPAGE_HEAD,'p_id'=>$id]),true);
         if($data['code'] != 200 || !$data['data']){
