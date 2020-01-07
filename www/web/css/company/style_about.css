@@ -1,0 +1,182 @@
+﻿/* CSS Document */
+body{margin: 0px; padding:0; font-size:12px; list-style:none; color:#000000; background:url(/images/company/bg.jpg) repeat-x #f5f6f7;}
+h1,h2,h3,h4,ul,ol,li,p,form,input,select,label,div,dl,dd{margin: 0px; padding:0; font-size:12px; list-style:none;  }
+img{ border:none}
+a:link,a:visited {color: #000000;text-decoration: none;}
+a:hover,a:active {text-decoration: none;color: #CC0000;}
+.red a:link,.red a:visited {color: #c71701;}
+.red a:hover,.red a:active {color: #000000;}
+.bai a:link,.bai a:visited {color: #ffffff;}
+.bai a:hover,.bai a:active {color: #fff600;}
+.lan a:link,.lan a:visited {color: #0a0d89;}
+.lan a:hover,.lan a:active {color: #cc0000;}
+.lan1 a:link,.lan1 a:visited {color: #4691b9;}
+.lan1 a:hover,.lan1 a:active {color: #cc0000;}
+.hui a:link,.hui a:visited {color: #999;}
+.hui a:hover,.hui a:active {color: #ff0000;}
+.cuti{ font-weight:bold;}
+.hong{ color:#ae0001; font-family:΢���ź�; font-size:13px;}
+.hong4{ color:#ae0001;}
+.hong1 a:link,.hong1 a:visited {color: #c71701;font-family:΢���ź�;}
+.hong1 a:hover,.hong1 a:active {color: #000000;}
+
+.dh_bg{ height:110px; width:990px; background:url(/images/company/about_1.png); margin:0 auto 13px auto; position:relative; z-index:2}
+.dh_bg .logo{ width:125px; height:55px; position:absolute; left:0; bottom:0; text-indent:-9999px;}
+.dh_bg p{ display:block; height:40px; line-height:40px; text-align:right; padding-right:5px; color:#b2b2b3;}
+.dh_bg .cont_l{ width:650px; float:left; padding:30px 0 0 190px; font:14px/32px '΢���ź�' ;}
+.dh_bg .cont_r{ width:121px; float:right; padding:34px 20px 0 9px;}
+.dh_bg .cont_r ul{ margin:0; padding:0;}
+.dh_bg .cont_r ul li {float: left; width:121px;}
+.dh_bg .cont_r ul li a {display: block;width:110px;line-height:28px; padding-left:11px;}
+.dh_bg .cont_r ul li a:hover {}
+.dh_bg .cont_r div {position: absolute;visibility: hidden;margin:0;padding:0;color:#ffffff; width:121px; height:151px;}
+.dh_bg .cont_r div p{height:11px; display:block; line-height:11px;}
+.dh_bg .cont_r div a {position: relative;display: block;margin: 0;white-space: nowrap;text-align: left;color:#ffffff;background:#f35b00;width:110px;}
+.dh_bg .cont_r div a:hover {color:#ffff00;background:#cc4c00;}
+
+/*����ͼ���*/
+.ad_pic{ height:316px; width:990px; margin:0 auto 10px auto;}
+#focus {width:990px; height:316px; overflow:hidden; position:relative; z-index:1}
+#focus ul {height:316px; position:absolute;}
+#focus ul li {float:left; width:990px; height:316px; overflow:hidden; position:relative;}
+#focus ul li div {position:absolute; overflow:hidden;}
+#focus .btnBg {position:absolute; width:990px; height:30px; left:0; bottom:0; background:#ffffff;}
+#focus .btn {position:absolute; width:990px; height:18px; padding:5px 0 2px 0; right:0; bottom:0; text-align:center;}
+#focus .btn span {display:inline-block; _display:inline; _zoom:1; width:10px; height:10px; _font-size:0; margin-left:10px; cursor:pointer; background:url(/images/company/ad_ico1.png); border:none;}
+#focus .btn span.on { background:url(/images/company/ad_ico.png);}
+#focus .preNext {width:45px; height:100px; position:absolute; top:120px; background:url(/images/company/sprite.png) no-repeat 0 0; cursor:pointer;}
+#focus .pre {left:0;}
+#focus .next {right:0; background-position:right top;}
+
+.cont_1{ width:990px; height:270px; position:relative; margin:0 auto;}
+.cont_1 h1{ background:url(/images/company/about_2.png); display:block; height:31px;}
+.cont_1 .about{ display:block; position:absolute; width:60px; height:18px; left:25px; top:8px; text-indent:-9999px;}
+.cont_1 .news{ display:block; position:absolute; width:60px; height:18px; left:437px; top:8px; text-indent:-9999px;}
+.cont_1 .media{ display:block; position:absolute; width:60px; height:18px; left:676px; top:8px; text-indent:-9999px;}
+.cont_1 .more{ display:block; position:absolute; width:43px; height:12px; left:932px; top:8px; text-indent:-9999px;}
+.cont_1 .txt_nr{ border-right:#dfdfdf solid 1px; border-left:#dfdfdf solid 1px; height:230px; background:#f8f9fb;}
+.cont_1 .txt_nr .txt1{ width:409px; border-right:#c8d4d4 dotted 1px; height:220px; float:left; padding-top:10px;}
+.cont_1 .txt_nr .txt1 p{ line-height:24px; height:170px; padding:15px 10px 0 15px; display:block;}
+.cont_1 .txt_nr .txt1 span{ line-height:24px; padding:5px 0 0 15px; display:block;}
+.cont_1 .txt_nr .txt2{ width:212px; border-right:#c8d4d4 dotted 1px; height:202px; float:left; padding:28px 10px 0 18px;}
+.cont_1 .txt_nr .txt2 dl{ margin:0; padding:0;}
+.cont_1 .txt_nr .txt2 dl dd{ height:45px;background:url(/images/company/about_3.png) no-repeat 0 0; padding-left:8px;}
+.cont_1 .txt_nr .txt2 dl dd span{ display:block; height:18px; font:11px '΢���ź�'; color:#efa6a6 }
+.cont_1 .txt_nr .txt3{ width:315px; height:202px; float:right; padding:28px 0 0 20px;}
+.cont_1 .txt_nr .txt3 dl{ margin:0; padding:0;}
+.cont_1 .txt_nr .txt3 dl dt{ height:95px; display:block}
+.cont_1 .txt_nr .txt3 dl dt img{display:block; float:left; height:80px; width:130px;}
+.cont_1 .txt_nr .txt3 dl dt p{display:block; float:left;width:160px; padding-left:12px; line-height:20px;}
+.cont_1 .txt_nr .txt3 dl dd{ height:22px;background:url(/images/company/about_3.png) no-repeat 0 -61px; padding-left:23px; line-height:22px;}
+.cont_1 .txt_nr .txt3 dl dd span{ display:block; height:16px; font:11px '΢���ź�'; color:#efa6a6 }
+.cont_1 .line{background:url(/images/company/about_2.png) no-repeat 0 -35px;; height:15px; position:absolute; left:0; bottom:0; width:990px; text-indent:-9999px;}
+
+.links{ width:990px; margin:0 auto;}
+.links h1{ display:block; height:30px;padding-left:10px;}
+.links h1 span{ display:block; padding:6px 0 0 2px; border-bottom:#bdcad2 dotted 1px;font-weight:normal; line-height:24px; color:#c1d0d7; }
+.links .pic{position:relative; color:#1c1c1c; font-family:΢���ź�}
+.links .pic .about1{ position:absolute; width:410px; height:60px; top:10px; left:10px; line-height:20px;}
+.links .pic .about2{ position:absolute; width:126px; height:41px; top:17px; left:495px; text-indent:-9999px;}
+.links .pic .about3{ position:absolute; width:112px; height:41px; top:17px; left:741px; text-indent:-9999px;}
+.links .pic .about4{ position:absolute; width:124px; height:41px; top:17px; left:859px; text-indent:-9999px;}
+
+/*��վ��̬*/
+.com_dt{ width:990px;margin:0 auto; overflow:auto;}
+
+/*��չ����*/
+.com_top_pic{ width:990px; margin:0 auto; height:209px; background:url(/images/company/com_lc_01.jpg); margin-bottom:10px; text-indent:-9999px;}
+.com_lc_top{ width:770px;margin:0 auto; height:31px; line-height:31px; padding:0 0 0 220px;background:url(/images/company/com_lc_02.jpg) repeat-y left bottom; color:#999; position:relative;}
+.com_lc_top h1{ font-family:΢���ź�; font-size:14px; font-weight:bold; color:#a60800; width:200px; height:22px; position:absolute; left:29px; top:2px;}
+.com_lc_top h1 span{ color:#b8b8ba;}
+.com_lc{ width:990px;margin:0 auto; overflow:auto; background:url(/images/company/com_lc_04.jpg) repeat-y left bottom; padding-top:30px;}
+.com_lc_bottom{ width:990px;margin:0 auto;}
+.com_lc_l{ width:198px; height:400px; padding:0 0 0 2px; float:left;}
+.com_lc_l ul{ margin:0; padding:0;}
+.com_lc_l ul li{ /*height:26px;*/}
+.com_lc_l ul li a{ display:block; height:26px; line-height:26px; text-align:center; width:196px; float:left;}
+.com_lc_l ul li span{ display:block; height:26px; line-height:26px; text-align:center; width:196px; clear:both;}
+.com_lc_l ul li span a:hover{ background:none; color:red;}
+.com_lc_l ul li a.hover{ background:url(/images/company/com_lc_03.jpg); color:#FFF;}
+.com_lc_l ul li a:hover{ background:url(/images/company/com_lc_03.jpg); color:#FFF;}
+.com_lc_r{ width:790px; overflow:auto; float:right; }
+.com_lc_r p{ padding:0 0 0 30px; line-height:24px;font-family:Arial;}
+.com_lc_r .font1{ padding:0 30px 0 30px; line-height:24px;font-family:Arial;}
+.com_lc_r .font1 .font_top{ height:50px; background:url(/images/company/com_mt_18.jpg) no-repeat left top; border-bottom:#cccccc dotted 1px; font-size:20px; font-weight:bold; font-family:΢���ź�,����; padding:0 0 0 135px; color:#F60; line-height:40px;}
+.com_lc_r .font2{ height:40px; padding-top:20px;}
+.com_lc_r .font2 span{ display:block; float:left; width:60px; height:40px; text-align:center; background:#c6c6c6; color:#666; font-size:20px; line-height:40px; font-family:΢���ź�,����; font-weight:bold;}
+.com_lc_r .font2 em{ display:block; float:right; width:650px; height:40px; line-height:20px; font-style:normal;}
+
+.com_lc_r ul{ margin:0; padding:0;}
+.com_lc_r ul li{ line-height:20px;overflow:auto}
+.com_lc_r ul li span{ float:left; width:70px; display:block; padding:5px 0 0 30px;}
+.com_lc_r ul li div{padding:5px 30px 0 0; float:right; width:650px}
+.com_lc_r img{ display:block; text-align:center; padding:20px 0 40px 0; margin:0 auto;}
+.com_lc_r1{ width:790px; overflow:auto; float:right; }
+.com_lc_r1 img{ padding:15px 0 0 0;}
+.com_lc_r1 .font1{ height:26px; line-height:26px; font-weight:bold; padding-left:15px;background:#efefef;}
+.com_lc_r2{ width:760px; overflow:auto; float:right; padding-left:30px;}
+.com_lc_r2 ul { margin:0; padding:0}
+.com_lc_r2 ul li{ display:block; float:left; height:32px; padding-top:10px; width:160px;}
+.com_lc_r2 ul li a{ display:block; width:100px; height:30px; line-height:30px; border: #E3E3E3 dotted 1px; float:left; text-align:center;}
+.com_lc_r2 ul li a:hover{ background:#efefef; border:#cccccc dotted 1px;}
+
+/*��ϵ����*/
+.com_top_pic1{ width:990px; margin:0 auto; height:209px; background:url(/images/company/com_lc_01.jpg); margin-bottom:10px; text-indent:-9999px;}
+.com_top_pic2{ width:990px; margin:0 auto; height:209px; background:url(/images/company/pic_1.jpg); margin-bottom:10px; text-indent:-9999px;}
+.com_top_pic3{ width:990px; margin:0 auto; height:209px; background:url(/images/company/pic_2.jpg); margin-bottom:10px; text-indent:-9999px;}
+.com_top_pic4{ width:990px; margin:0 auto; height:209px; background:url(/images/company/pic_3.jpg); margin-bottom:10px; text-indent:-9999px;}
+.com_top_pic5{ width:990px; margin:0 auto; height:209px; background:url(/images/company/pic_4.jpg); margin-bottom:10px; text-indent:-9999px;}
+.com_top_pic6{ width:990px; margin:0 auto; height:209px; background:url(/images/company/pic_5.jpg); margin-bottom:10px; text-indent:-9999px;}
+.font_y{ font-family:Arial;}
+.hong2{ font-family:΢���ź�; font-size:15px; font-weight:bold; color:#a60800;}
+.bai1{ font-size:14px; color:#FFF; font-weight:bold}
+
+/*������־*/
+.zz_2012_pic{ width:990px; overflow:auto; margin:0 auto;}
+.zz_2012_pic .pic{ position:relative; background:url(/images/company/zz_05.jpg); height:109px;}
+.zz_2012_pic .pic .link1{position:absolute;left:391px;bottom:55px;width:185px;height:50px;display:block;text-indent:-9999px;}
+.zz_2012_bq{background:url(/images/company/zz_06.jpg) no-repeat left top; height:180px; line-height:22px; color:#FFF; margin-right:auto; margin-left:auto; width:705px; margin-top:10px;padding:26px 25px 15px 260px; font-family:΢���ź�}
+
+.myy_2013{ height:438px; background:url(/images/company/myy_04.jpg) no-repeat left;}
+.myy_font{ width:425px; height:220px; float:right; padding:105px 20px 20px 20px;}
+
+.myy_2014{ overflow:auto}
+.myy_2014 p{ padding-right:45px; line-height:25px; text-indent:2em; font-family:"\5B8B\4F53"}
+.myy_2014 ul{ margin-top:20px; padding-left:10px}
+.myy_2014 ul li{ float:left; width:231px; margin:0 0 40px 18px}
+.myy_2014 ul li h2{ color:#cb0202; text-align:center; font-weight:normal; font-size:15px; font-family:"\5FAE\8F6F\96C5\9ED1"}
+.myy_2014 ul li span{ display:block; width:100%; padding:0; text-align:center; line-height:30px; margin-bottom:7px; font-family:"\5FAE\8F6F\96C5\9ED1"}
+.myy_2014 ul li img{ display:block; margin:0px auto 0 auto; width:202px; height:237px; background:#FFF; padding:8px;box-shadow:0px 0px 4px #888888}
+.myy_2014 ul li p{ padding:0 5px; line-height:23px; text-indent:0; margin-top:13px;}
+
+.myy_2015{ padding:0 40px 40px 50px}
+.myy_2015 .ts{ text-indent:2em}
+.myy_2015 .mb15{ margin-bottom:20px;}
+.myy_2015 h1{ color:#cb0202; font-size:15px; line-height:60px;}
+.myy_2015 h2{ font-weight:normal; color:#cb0202; text-indent:2em; line-height:25px;}
+.myy_2015 p{ text-indent:2em; padding:0}
+.myy_2015 .b_img{clear: both;zoom:1;overflow: hidden;margin-left:-50px}
+.myy_2015 .b_img li{ float:left; width:236px; padding:0 10px; line-height:23px; height:665px; margin-left:94px;}
+.myy_2015 .b_img li span{ width:100%; font-size:15px; color:#1090ec; padding:0; font-weight:bold; line-height:30px;}
+.myy_2015 .b_img li p{ padding:0;text-indent:0; clear:both; height:96px;}
+.myy_2015 dl{clear: both;zoom:1;overflow: hidden;margin-left:-50px; margin-top:40px;}
+.myy_2015 dl dd{ float:left; width:295px; height:265px; padding-top:5px; margin-left:74px;}
+.myy_2015 dl dd img{ width:270px; height:245px;background:#FFF; padding:8px;box-shadow:0px 0px 4px #888888}
+
+
+/*2060517 �������� begin*/
+.yqlj_cont{width: 730px;overflow: auto;float: right; padding:0 30px; font-family:"\5B8B\4F53";}
+.yqlj_cont .cont_logo{ border-bottom:dotted 1px #cccccc}
+.yqlj_cont .cont_logo img{ display:block; margin:0 auto; margin-bottom:20px;}
+.yqlj_cont .p_top{ line-height:25px; color:#000000; font-size:14px; padding-top:10px;}
+.yqlj_cont .div_dl{ width:380px; margin:10px auto 0 auto; overflow:auto; clear:both}
+.yqlj_cont dl{ float:left; line-height:25px; margin:0 10px 0 10px;}
+.yqlj_cont dl dt{ color:#a60800; font-size:14px; font-weight:bold}
+
+.yqlj_cont .yqlj_bot{ border-top:dotted 1px #cccccc; line-height:25px; color:#7e7e7e; padding:5px 0 20px 0; margin-top:20px;}
+.yqlj_cont .yqlj_bot img{ vertical-align:middle}
+/*2060517 �������� end*/
+
+.max-300 {
+    max-width: 380px;
+}

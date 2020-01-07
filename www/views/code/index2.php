@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>集成墙板1</title>
+    <title>集成墙板2</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="x-ua-compatible" content="ie=7" />
     <link rel="stylesheet" href="/css/style.css" />
