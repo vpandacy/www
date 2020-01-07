@@ -13,8 +13,6 @@
     <script src="/js/show.js" type="text/javascript"></script>
 
     <link rel='canonical' href='http://hsh.cn' />
-    <script type="text/javascript" src="/static/head/1/js/uaredirect.js"></script>
-    <link rel="stylesheet" href="/static/head/1/css/style.css" />
     <style>
         .zsbmain{
             width:1200px;
