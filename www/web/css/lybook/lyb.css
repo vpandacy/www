@@ -1,0 +1,91 @@
+﻿@charset "utf-8";
+/* 
+ * Copyright(c) 2015 , 
+ * @Web Design：
+ * @Created Date：2015-06-00
+ * @Last Edit Date：2015-06-00
+ * ---------------------------------------------------------------------------------------------*/
+ body,div,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,textarea,select,table,tr,td,header,nav,section,article,footer{margin:0; padding:0;}
+ body{ background:#fff; font-size:12px; font-family:microsoft yahei,Verdana,Arial,"宋体"; }
+ h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;}
+ a{text-decoration:none;}
+ ul{list-style-type:none;}
+ input{outline:none;}
+ img{border:0; display:block;}
+ table{border-collapse:collapse;}
+ textarea{outline:none; resize:none; overflow:auto;}
+ .clear{clear:both;}
+/* ---------------------------------------------------------------------------------------------*/
+
+
+
+#lyb{width:700px; margin:0 auto;}
+
+#lyb h4{width:100%; height:60px; line-height:60px; margin:0 auto; font-size:16px; color:#333; font-weight:bold; text-align:center; border-bottom:1px solid #E3393C; overflow:hidden;}
+#lyb h4 img{margin:15px auto 0;}
+
+#lyb .lybLeft{width:200px; float:left; padding:10px; background:#f6f6f6; margin-top:10px;}
+#lyb .lybLeft h3{width:100%;}
+#lyb .lybLeft h3 img{width:100%;}
+
+#lyb .lybLeft .leftBox{width:100%; }
+#lyb .lybLeft .leftBox h3{ height:36px;  line-height:36px;  color:#fff; font-size:16px; background:#E42141 url(../images/icon_btn.png)  30px 10px no-repeat; text-indent:60px;} 
+
+
+
+
+#lyb .lybLeft .leftBox .leftB{width:198px; border:1px solid #ebebeb;  border-top:none; padding-top:15px; background:#fff;}
+#lyb .lybLeft .leftBox .leftB span{display:block; width:174px; height:45px; margin:0 auto; padding-bottom:15px; background:url(../images/gbook_left_pic.png) no-repeat;}
+#lyb .lybLeft .leftBox .leftB p{width:174px; margin:0 auto; }
+#lyb .lybLeft .leftBox .leftB input.text{display:block; width:158px; height:22px; line-height:22px; border:1px solid #E42141; margin:5px auto; padding:0 6px;}
+#lyb .lybLeft .leftBox .leftB input.btn{display:block; width:172px; height:35px; margin:0 auto 15px; background:url(../images/gbook_tel.png) no-repeat; border:0; cursor:pointer;}
+#lyb .lybLeft .tips{width:200px; padding-top:5px;}
+#lyb .lybLeft .tips p{ line-height:22px; color:#333;}
+#lyb .lybLeft .tips p span{ color:red; font-weight:bold;}
+
+
+#lyb .lybRight{width:460px; float:right; background:#fff; padding-top:3px;}
+
+#lyb .lybRight dl{width:465px; margin:0 auto; padding-top:5px;}
+#lyb .lybRight dl dd{width:100%; height:38px; margin-top:6px; }
+#lyb .lybRight dl dd .InputBox{width:271px; height:32px; line-height:36px; border:1px solid #ccc; float:left; position:relative;}
+#lyb .lybRight dl dd .InputBox i{display:inline-block; width:40px; height:32px;  border-right:1px solid #ccc;  float:left;}
+#lyb .lybRight dl dd .InputBox i.i1{background:#f8f8f8 url(../images/gbook_username_ico.png) center  no-repeat;}
+#lyb .lybRight dl dd .InputBox i.i2{background:#f8f8f8 url(../images/gbook_userphone_ico.png) center  no-repeat;}
+#lyb .lybRight dl dd .InputBox i.i3{background:#f8f8f8 url(../images/gbook_usermail_ico.png) center  no-repeat;}
+#lyb .lybRight dl dd .InputBox i.i4{background:#f8f8f8 url(../images/gbook_usercity_ico.png) center  no-repeat;}
+#lyb .lybRight dl dd .InputBox input{border:none; width:220px; height:32px;  float:left; padding:0 5px; background:none; color:#999;}
+#lyb .lybRight dl dd span{ display:block; width:180px; float:left; height:38px; line-height:38px; font-family:"宋体"; font-size:14px; color:#999; padding-left:5px;}
+
+
+#lyb .lybRight .error{width:151px; height:33px; position:absolute; right:-10px; top:-20px; background:url(../images/error.gif) no-repeat; display:none;}
+#lyb .lybRight .error em{display:block; font-style:normal;  height:26px; line-height:26px; color:#E42141; background:url(../images/no.png) left center no-repeat; margin-left:10px; padding-left:20px;}
+
+#lyb .lybRight dl dd .lyb_avtive{background:#FFE7E7; border:1px solid #E3393C;}
+
+
+#lyb .lybRight .textarea{width:272px; height:120px; border:1px solid #ccc;  margin:6px 0; position:relative;}
+#lyb .lybRight .lyb_avtive{background:#FFE7E7; border:1px solid #E3393C;}
+#lyb .lybRight .textarea i{display:inline-block; width:40px; height:36px;   float:left; background:url(../images/gbook_usertext_ico.png) center  no-repeat;}
+#lyb .lybRight .textarea textarea{width:232px; height:100%; background:none; border:none; line-height:22px; font-size:12px;}
+#lyb .lybRight .textarea span{ display:block; width:180px; height:38px; line-height:38px; font-family:"宋体"; font-size:14px; color:#999; position:absolute; right:-185px; top:-5px; }
+
+#lyb .lybRight .textarea .textBox{width:260px; background:#fff; border:1px solid #E3393C; position:absolute; right:-310px; bottom:-10px;  z-index:9999; padding-bottom:6px; box-shadow:2px 2px 4px #ccc;}
+#lyb .lybRight .textarea .textBox h2{width:240px; height:26px; line-height:26px; color:#E3393C; font-size:16px; margin:10px auto 0;}
+#lyb .lybRight .textarea .textBox h2 em{display:inline-block; width:26px; height:26px; background:url(../images/gbook_close_btn.png) no-repeat; float:right; cursor:pointer;}
+#lyb .lybRight .textarea .textBox ul li{width:240px; height:30px; line-height:30px; overflow:hidden; margin:0 auto; font-size:14px; border-bottom:1px dotted #ccc;  cursor:pointer;}
+#lyb .lybRight .textarea .textBox ul li:last-child{border-bottom:none;}
+#lyb .lybRight .textarea .textBox ul li:hover{color:#E3393C;}
+
+#lyb .lybRight .textarea .textBox span{display:block; width:14px; height:16px; background:#fff url(../images/gbook_sec_msg_arrow.png) center no-repeat; position:absolute; left:-14px; top:65%; }
+#lyb .lybRight .submit{width:300px; height:40px; padding:10px 0 20px;}
+#lyb .lybRight .submit input{display:block; width:120px; height:36px; text-align:center; background:#E42141; border:none; color:#fff; cursor:pointer; margin:0 auto; font-size:14px;}
+
+
+
+
+
+
+
+
+

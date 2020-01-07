@@ -1,0 +1,111 @@
+﻿@charset "utf-8";
+body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, textarea, select, table, tr, td, header, nav, section, article, footer { margin: 0; padding: 0; }
+body { font-size: 12px; color: #444; font-family: microsoft yahei,Verdana,Arial,"微软雅黑"; background: #f2f2f2;}
+input, textarea {outline: none;}
+textarea { box-sizing: inherit !important;}
+img { border: none; }
+ul, ol { list-style-type: none; }
+a { font-size: 12px; text-decoration: none; color: #444; }
+.clearfix:after { content: '.'; height: 0; visibility: hidden; display: block; clear: both;}
+
+/*zsb头部*/
+
+#zsbHeader { width: 100%; height: 69px; background: #fff; border-bottom: 1px solid #5dc2d0; position: fixed; top: 0; left: 0; z-index: 1000; }
+#zsbHeader .zsbmain .logo { width: 268px; height: 59px;  float: left; padding-top: 8px; }
+#zsbHeader .zsbmain .logo img { display: block; max-height: 55px;}
+#zsbHeader .zsbmain .zsbNav {width: 70%; float: right;}
+#zsbHeader .zsbmain .zsbNav .topNav { width: 95%; padding: 0 18px; height: 28px; line-height: 28px;/* overflow: hidden;*/ }
+#zsbHeader .zsbmain .zsbNav .topNav a { color: #717171; }
+#zsbHeader .zsbmain .zsbNav .topNav a:hover { color: #e50110; text-decoration: underline; }
+#zsbHeader .zsbmain .zsbNav .topNav p { display: inline-block; }
+#zsbHeader .zsbmain .zsbNav .topNav p a { margin: 0 5px; }
+#zsbHeader .zsbmain .zsbNav .topNav p a.register { color: #e50110; }
+#zsbHeader .zsbmain .zsbNav .topNav ul { float: right; }
+#zsbHeader .zsbmain .zsbNav .topNav ul li { float: left; line-height: 28px; position: relative; }
+#zsbHeader .zsbmain .zsbNav .topNav ul li s { display: inline-block; width: 20px; margin-left: 15px; height: 28px; vertical-align: top;}
+#zsbHeader .zsbmain .zsbNav .topNav ul li:nth-of-type(1) s{ background: url(/images/lybook/top_bg2.jpg) no-repeat 0 0; }
+#zsbHeader .zsbmain .zsbNav .topNav ul li:nth-of-type(2) s{ background: url(/images/lybook/top_bg2.jpg) no-repeat 0 -28px; }
+#zsbHeader .zsbmain .zsbNav .topNav ul li .weixinImg { position: absolute; right: -15px; top: 28px; overflow: hidden; width: 200px; height: 0px; z-index: 1000; border: 1px solid #f1f1f1; background: #f00; display: none; }
+#zsbHeader .zsbmain .zsbNav .topNav ul li .weixinImg img { display: block; width: 200px; height: 180px; }
+#zsbHeader .zsbmain .zsbNav .mainNav { width: 100%; height: 41px; line-height: 41px; overflow: hidden; }
+#zsbHeader .zsbmain .zsbNav .mainNav li { float: left; color: #eaeaea; }
+#zsbHeader .zsbmain .zsbNav .mainNav li a { font-size: 14px; color: #010101; display: inline-block; padding: 0 12px; transition: 0.2s; }
+#zsbHeader .zsbmain .zsbNav .mainNav li:first-child a { padding: 0 18px; }
+#zsbHeader .zsbmain .zsbNav .mainNav li a:hover, #zsbHeader .zsbmain .zsbNav .mainNav li a.active { background: #5dc2d0; color: #fff; }
+
+
+/*头部图片文字*/
+#zsbTxt { width: 100%; margin-top: 78px;}
+#zsbTxt .zsbmain {}
+#zsbTxt .zsbmain .zsbmainImg { width: 100%; height: 74px; background: #fff; overflow: hidden;}
+#zsbTxt .zsbmain .zsbmainImg ul { width: 100%; overflow: hidden; }
+#zsbTxt .zsbmain .zsbmainImg li { float: left; padding: 8px 0; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+#zsbTxt .zsbmain .zsbmainImg li img { width: 96px; margin: 0 auto; display: block; }
+#zsbTxt .zsbmain .zsbmainImg li:hover { border-top: 1px solid #5dc2d0; }
+
+#zsbTxt .zsbmain .zsbmainTxt { width: 100%; overflow: hidden; background: #fff; }
+#zsbTxt .zsbmain .zsbmainTxt ul { width: 100%; overflow: hidden; }
+#zsbTxt .zsbmain .zsbmainTxt li { float: left; height: 30px; padding: 0 2px; overflow: hidden; text-align: center; border-top: 1px solid #f2f2f2; border-right: 1px solid #f2f2f2; line-height: 30px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+#zsbTxt .zsbmain .zsbmainTxt li a {color: #707070;}
+#zsbTxt .zsbmain .zsbmainTxt li:hover a { color: #43c1f4; }
+
+/*项目信息*/
+#zsbTxt .zsbmain .zsbInfo { width: 100%; background: #fff; overflow: hidden; margin-top: 8px; border-top: 1px solid #5dc2d0;}
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom { width: 72%; height: 97px; background: #fff; float: left;}
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH { width: 320px; float: left; height: 97px; background: #fff; }
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH dl { width: 95%; margin: 0 auto; height: 58px; padding: 20px 0 0 0; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH dl dt { width: 96px; height: 58px; float: left; padding: 0 5% 0 0; border-right: 1px solid #e2e2e2; }
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH dl dd { margin: 0 0 0 8%; float: left; }
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH dl dd strong { font-size: 20px; font-weight: normal; color: #010101; line-height: 35px; }
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH dl dd p { line-height: 23px; font-size: 12px; color: #aaa; }
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH dl dd p span { color: #ffc200; font-size: 18px; vertical-align: top; font-family: "宋体"; }
+
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL { width: 52%; float: left; height: 97px; background: #fff; }
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL li { width: 15%; float: left; height: 42px; padding: 0px 12px; margin: 28px 0 0 10px; border-left: 1px dashed #e5e5e5; color: #aaa; line-height: 21px; }
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL li.gzd span { color: #fa691a; }
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL li.zxs span { color: #00b6f2; }
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL li.zsqy span { color: #707070; }
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL li.jmdl span { color: #707070; }
+#zsbTxt .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL li.jmms span { color: #707070; }
+
+#zsbTxt .zsbmain .zsbInfo .zsbBtn { width: 28%; height: 97px; background: #fff; float: left; box-sizing: border-box; text-align: center; padding: 28px 0 0 0; }
+#zsbTxt .zsbmain .zsbInfo .zsbBtn a { width: 38%; height: 36px; font-weight: bold; background: url(/images/lybook/showa.png) repeat-x 0 0; display: inline-block; margin: 0 4px; line-height: 36px; border-radius: 2px; color: #707070; }
+#zsbTxt .zsbmain .zsbInfo .zsbBtn a.active { background: url(/images/lybook/showa.png) repeat-x 0 -36px; color: #fff; }
+
+#zsbTxt .zsbmain .thisBtn { width: 100%; height: 42px; background: #5dc2d0; }
+#zsbTxt .zsbmain .thisBtn a { width: 230px; height: 38px; margin: 4px 0 0 4px; display: inline-block; text-align: center; line-height: 38px; color: #fff; font-size: 13px; }
+#zsbTxt .zsbmain .thisBtn a.active { background: #fff; color: #5dc2d0; font-weight: bold; }
+
+
+/*#lyb { width: 100%; }
+#lyb .lybmain {}
+#lyb h3 {width: 100%; height: 72px; line-height: 72px; text-align: center; text-indent: -9999px; font-size: 12px; background: url(/images/lybook/lybhtop.png) no-repeat center; }
+#lyb form { width: 100%; background: #fff; overflow: hidden; }
+
+#lyb .lybLeft { width: 30%; background: #fff; float: left;}
+#lyb .lybLeft .leftMain { padding: 15px; }
+#lyb .lybLeft .leftMain h4 { width: 100%; height: 52px; background: #ffc200 url(/images/lybook/dianhua.png) no-repeat center; margin: 0 auto; line-height: 52px; text-indent: -9999px; }
+#lyb .lybLeft .leftMain p { width: 100%; text-align: center; height: 68px; line-height: 68px; font-size: 20px; color: #00b6f3; margin-bottom: 10px; }
+#lyb .lybLeft .leftMain .leftBtn { width: 88%; height: 91px; border: 2px solid #00b6f3; margin: 0 auto; border-radius: 5px; background: url(/images/lybook/dianhuabtn.png) repeat-x bottom;  }
+#lyb .lybLeft .leftMain .leftBtn .txt { width: 100%; height: 44px; border: none; line-height: 44px; overflow: hidden; text-indent: 15px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+#lyb .lybLeft .leftMain .leftBtn .sub { width: 100%; height: 47px; border: none; line-height: 47px; text-align: center; cursor: pointer; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; background: url(/images/lybook/dianhuabtn1.png) no-repeat center; text-indent: -9999px; }
+#lyb .lybLeft .leftMain .leftInfo { width: 88%; margin: 0 auto; padding-top: 28px; }
+#lyb .lybLeft .leftMain .leftInfo strong { height: 20px; line-height: 20px; font-size: 12px; color: #00b6f3; }
+#lyb .lybLeft .leftMain .leftInfo span { line-height: 20px; font-size: 12px; color: #707070; }
+
+#lyb .lybRight { width: 70%; background: #00b6f3; float: left; }
+#lyb .lybRight .rightMain { padding: 15px 25px; }
+#lyb .lybRight .rightMain h4 { width: 100%; height: 30px; line-height: 30px; margin-bottom: 8px; font-size: 20px; color: #fff; text-indent: 34px; background: url(/images/lybook/righth.png) no-repeat left center; }
+#lyb .lybRight .rightMain label { width: 100%; display: block; margin-bottom: 12px; color: #fff; padding: 0 5px; font-weight: bold; font-size: 13px; }
+#lyb .lybRight .rightMain label .txt { width: 50%; height: 37px; line-height: 37px; background: #fff; border: 1px solid #bfecfb; margin-left: 5px; text-indent: 12px; }
+#lyb .lybRight .rightMain label span { float: left; overflow: hidden; }
+#lyb .lybRight .rightMain label .textarea { width: calc(50% - 20px); height: 107px; border: 1px solid #bfecfb; border-right: none; margin-left: 5px; vertical-align: top; padding: 10px; resize: none; float: left; background: #fff url(/images/lybook/txtbox.png) no-repeat center right; overflow-y: hidden }
+#lyb .lybRight .rightMain label .txtBox { width: calc(38% - 12px); height: 115px; float: left; background: #fff; padding: 6px; border: 1px solid #bfecfb; border-left: none; }
+#lyb .lybRight .rightMain label .txtBox dl { width: 100%; }
+#lyb .lybRight .rightMain label .txtBox dl dt { color: #00b6f3; padding-bottom: 5px; }
+#lyb .lybRight .rightMain label .txtBox dl dd { height: 18px; line-height: 18px; width: 100%; overflow: hidden; }
+#lyb .lybRight .rightMain label .txtBox dl dd a { color: #a9a9a9; font-size: 12px; font-weight: normal; }
+#lyb .lybRight .rightMain label .txtBox dl dd a:hover { color: #00b6f3; text-decoration: underline; }
+#lyb .lybRight .rightMain label .sub {width: 50%; height: 43px; border: none; margin-left: 44px; cursor: pointer; background: url(/images/lybook/btn.png) repeat-x; font-size: 16px; line-height: 43px; text-align: center; color: #fff; font-weight: bold;}*/
+
+

@@ -1,0 +1,98 @@
+﻿@charset "utf-8";
+/* 
+ * Copyright(c) 2015, 好商汇cc
+ * @Creator:赖明明
+ * @Created  Date:2015-10-20
+ * @Last Edit Date:2015-10-20
+ * ---------------------------------------------------------------------------------------------*/
+ body,div,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,textarea,select,table,tr,td,header,nav,section,article,footer{margin:0; padding:0;}
+ body{ background:#fff; font-size:12px; font-family:microsoft yahei,Verdana,Arial,"宋体"; }
+ h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;}
+ a{text-decoration:none;}
+ ul{list-style-type:none;}
+ input{outline:none;}
+ img{border:0; display:block;}
+ table{border-collapse:collapse;}
+ textarea{outline:none; resize:none; overflow:auto;}
+ .clear{clear:both;}
+/* ---------------------------------------------------------------------------------------------*/
+
+
+.content{width:1000px; margin:42px auto 0;}
+
+.content .left{width:25%;  float:left;}
+
+.content .left .info{border:1px solid #ddd; -border-bottom:5px solid #ddd; margin-bottom:8px;}
+.content .left .info h3{height:32px; line-height:32px; font-size:16px; text-indent:1em; background:#f9f9f9 url(/images/lybook/contleftbg.jpg) repeat-x; color:#E54042; font-weight:bold;}
+.content .left .info .infoBox{width:100%; font-family:"宋体";}
+.content .left .info .infoBox img{width:90%; margin:10px auto;}
+.content .left .info .infoBox ul{width:90%; margin:0 auto; font-size:13px;}
+.content .left .info .infoBox ul li{width:100%; height:24px; line-height:24px; border-bottom:1px dotted #ddd; overflow:hidden;}
+.content .left .info .infoBox ul li h2{font-size:14px;}
+.content .left .info .infoBox ul li span{color:#E54042;}
+.content .left .info .infoBox ul li b{color:#333;}
+.content .left .info .infoBox p{width:90%; margin:0 auto; line-height:20px; padding:5px 0; text-align:justify; color:#999; }
+.content .left .info .infoBox p b{color:#333;}
+
+.content .left .pro{border:1px solid #ddd; -border-bottom:5px solid #ddd; margin-bottom:8px;}
+.content .left .pro h3{height:32px; line-height:32px; font-size:16px; text-indent:1em; background:#f9f9f9 url(/images/lybook/contleftbg.jpg) repeat-x; color:#E54042; font-weight:bold;}
+
+.content .left .pro .proBox{width:100%; font-family:"宋体"; font-size:12px;}
+.content .left .pro .proBox ul{width:90%; margin:0 auto; font-size:13px; padding:8px 0;}
+.content .left .pro .proBox ul li{width:100%; height:25px; line-height:25px; border-bottom:1px dotted #ddd;}
+.content .left .pro .proBox ul li:last-child{border:none;}
+.content .left .pro .proBox ul li span{display:block; width:16px; height:16px; line-height:16px; text-align:center; background:#D1E3FC; color:#fff; margin-right:6px; float:left; margin-top:4px;}
+.content .left .pro .proBox ul li em{float:right; display:block; width:45px; height:25px; font-style:normal; color:#666; text-align:right; padding-right:15px;}   
+.content .left .pro .proBox ul li em.m1{background:url(/images/lybook/shang.png) right center no-repeat; }
+.content .left .pro .proBox ul li em.m2{background:url(/images/lybook/xia.png) right center no-repeat; }
+
+.content .left .pro .proBox ul li a{color:#444;  }
+.content .left .pro .proBox ul li a:hover{color:#E54042;}
+
+.content .left .pro .proBox ul li:nth-of-type(1) span{background:#F54545;}
+.content .left .pro .proBox ul li:nth-of-type(2) span{background:#FF8547;}
+.content .left .pro .proBox ul li:nth-of-type(3) span{background:#FFAC38;}
+
+
+.content .left .news{border:1px solid #ddd; -border-bottom:5px solid #ddd; margin-bottom:8px;}
+.content .left .news h3{height:32px; line-height:32px; font-size:16px; text-indent:1em; background:#f9f9f9 url(/images/lybook/contleftbg.jpg) repeat-x; color:#E54042; font-weight:bold;}
+.content .left .news .newsBox{width:100%; font-family:"宋体"; font-size:12px;}
+.content .left .news .newsBox ul{width:90%; margin:0 auto; font-size:13px; padding:8px 0;}
+.content .left .news .newsBox ul li{width:100%; height:25px; line-height:25px; border-bottom:1px dotted #ddd; overflow:hidden;}
+.content .left .news .newsBox ul li:last-child{border:none;}
+.content .left .news .newsBox ul li a{color:#444; background:url(/images/lybook/mark.gif) left center no-repeat; padding-left:10px;}
+.content .left .news .newsBox ul li a:hover{color:#E54042;}
+
+
+
+
+.content .right{width:74%; float:right; } 
+
+.content .right .rightBoxTop{width:100%; background:#f1f1f1; border:1px solid #e2e2e2; padding-bottom:20px;}
+.content .right .rightBoxTop h3{padding:0 20px; margin:0 auto; height:60px; line-height:60px; font-size:18px;font-weight:bold; }
+.content .right .rightBoxTop h3 span{ color:#C30A08; margin-left:5px;}
+
+.content .right .rightBoxTop .zsbBox{margin:0 20px;  border:1px solid #ccc; background:#fff; min-height:400px;}
+.content .right .rightBoxTop .zsbBox ul{background:url(/images/lybook/contleftbg.jpg) repeat-x; border-bottom:2px solid #444; width:100%; height:36px;}
+.content .right .rightBoxTop .zsbBox ul li{width:120px; height:36px; line-height:36px; text-align:center; float:left;border-right:1px solid #ddd; cursor:pointer; font-size:14px;}
+.content .right .rightBoxTop .zsbBox ul li.active{background:#fff; border-bottom:2px solid #C30A08; color:#C30A08;}
+
+.content .right .rightBoxTop .zsbBox dl{padding:20px;}
+.content .right .rightBoxTop .zsbBox dl dd{display:none; line-height:24px; color:#555; text-indent:2em;}
+.content .right .rightBoxTop .zsbBox dl dd p{margin:0 auto 20px;}
+
+.content .right .rightBoxTop .zsbBox dl dd img{max-width:90%; margin:0 auto;}
+
+
+
+
+.content .right .rightBoxBottom{width:100%; border:1px solid #ddd; margin:10px auto 0;}
+
+
+
+
+
+
+
+
+
