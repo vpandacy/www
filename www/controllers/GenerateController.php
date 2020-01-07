@@ -29,8 +29,20 @@ class GenerateController extends BaseWebController{
 
         $head = \Yii::$app->params['HeadNavigation']['theme'.$id];
         $this->layout = true;
-//        $value =  $this->render('head'.$id,['data'=>$info,'head'=>$head]);
-        return $this->render('theme'.$id.'/index',['data'=>$info,'head'=>$head]);
+
+        $value = $this->render('theme'.$id.'/index',['data'=>$info,'head'=>$head]);
+         $filename = \Yii::$app->params['Generate']['path']."/theme".$id.".html";
+        if( ($TxtRes=fopen ($filename,"w+")) === FALSE){
+            echo("文件操作失败");
+            exit();
+        }
+        if(!fwrite ($TxtRes,$value)){ //将信息写入文件
+            echo ("写入失败！");
+            fclose($TxtRes);
+            exit();
+        }
+        echo ("写入成功！");
+        fclose ($TxtRes); //关闭指针
 
     }
 

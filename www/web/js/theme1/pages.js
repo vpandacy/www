@@ -40,21 +40,19 @@ $(function (){
     });
 
     //热门项目推荐-tab切换
-    var ol = $('#hsh_iframe .paihang .left .min_type li');
-    ol.hover(function (){
+    var ol = $('#hsh_iframe .iframe .three-list .left .min_type li');
+    ol.mousemove(function (){
         var i = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active')
-        $('#hsh_iframe .paihang .left .typeBox ul').eq(i).show().siblings().hide();
+        $(this).addClass('active').siblings().removeClass('active');
+        $('#hsh_iframe .iframe .three-list .left .typeBox ul').eq(i).show().siblings().hide();
     });
 
-
-
     //tab切换
-    var ol = $('#hsh_iframe .paihang .right h3 ol li');
-    ol.hover(function (){
+    var ol = $('#hsh_iframe .iframe .three-list .right h3 ol li');
+    ol.mousemove(function (){
         var i = $(this).index();
         $(this).addClass('active').siblings().removeClass('active')
-        $('#hsh_iframe .paihang .right .rightBox ul').eq(i).show().siblings().hide();
+        $('#hsh_iframe .iframe .three-list .right .rightBox ul').eq(i).show().siblings().hide();
     });
 
 

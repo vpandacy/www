@@ -101,7 +101,7 @@ function box() {
 function addcss(obj,flag) {
     var _this = $(obj);
     flag ? _this.attr('style','display:block;position: relative;') : _this.attr('style','position: relative;');
-    _this.append('<button class="editdata" style="" title="添加位置">+</button>');
+
 }
 function recss(obj) {
     var _this = $(obj);
