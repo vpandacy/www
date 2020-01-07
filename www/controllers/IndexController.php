@@ -8,10 +8,8 @@
 
 namespace www\controllers;
 use common\components\BaseWebController;
-
+use common\components\HttpClient;
 
 class IndexController extends BaseWebController{
-    public function actionIndex(){
-        echo 11;
-    }
+
 }

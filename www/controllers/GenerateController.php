@@ -18,7 +18,7 @@ class GenerateController extends BaseWebController{
             exit;
         }
         $generate_url = \Yii::$app->params['Generate']['url'];
-        $data = json_decode($content = HttpClient::post($generate_url,['type'=>ConstantService::WEBPAGE_EHEME,'p_id'=>$id]),true);
+        $data = json_decode($content = HttpClient::post($generate_url.'result/index',['type'=>ConstantService::WEBPAGE_EHEME,'p_id'=>$id]),true);
         if($data['code'] != 200 || !$data['data']){
             exit;
         }
@@ -52,7 +52,7 @@ class GenerateController extends BaseWebController{
             exit;
         }
         $generate_url = \Yii::$app->params['Generate']['url'];
-        $data = json_decode($content = HttpClient::post($generate_url,['type'=>ConstantService::WEBPAGE_HEAD,'p_id'=>$id]),true);
+        $data = json_decode($content = HttpClient::post($generate_url.'result/index',['type'=>ConstantService::WEBPAGE_HEAD,'p_id'=>$id]),true);
         if($data['code'] != 200 || !$data['data']){
             exit;
         }
