@@ -201,4 +201,20 @@ class GlobalUrlService
         return $domain . $path;
     }
 
+
+    /**
+     * cdn的url构造器
+     * @param $uri
+     * @param array $params
+     */
+    public static function buildCdnUrl($uri, $params = [])
+    {
+        $path   = Url::toRoute(array_merge([$uri], $params));
+        $domain = \Yii::$app->params['domains']['cdn']['domain'];
+        if (UtilHelper::is_SSL()) {
+            $domain = str_replace("http://", "https://", $domain);
+        }
+        return $domain . $path;
+    }
+
 }
