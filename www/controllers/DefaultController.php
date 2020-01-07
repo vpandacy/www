@@ -8,7 +8,7 @@
 
 namespace www\controllers;
 use common\components\BaseWebController;
-
+use common\components\HttpClient;
 
 class DefaultController extends BaseWebController
 {
@@ -16,7 +16,9 @@ class DefaultController extends BaseWebController
 
         $web = $this->website_info;
         $theme = \Yii::$app->params['Generate']['path']."/theme".$web['theme_id'].".html";
-        $value = file_get_contents($theme);
+        $cookies = "switch_version=dev_20191113001_page_manager ;";
+        HttpClient::setCookie($cookies);
+        $value = HttpClient::get($theme);
         $this->layout = true;
         return $this->render('index', [
             'data' => $value,
