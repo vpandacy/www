@@ -108,7 +108,7 @@ class BaseWebController extends Controller
     {
         if(empty($this->website_info)){
             $generate_url = \Yii::$app->params['Generate']['url'];
-            $cookies = "switch_version=dev_20191113001_page_manager;";
+            $cookies = "switch_version=dev_20191113001_page_manager ;";
             HttpClient::setCookie($cookies);
             $data = json_decode($content = HttpClient::post($generate_url.'result/web',['web_url'=>$_SERVER['SERVER_NAME']]),true);
             if($data['data']){
