@@ -9,11 +9,29 @@ namespace www\controllers;
 use common\components\BaseWebController;
 use common\components\HttpClient;
 use www\services\ConstantService;
-
+use \common\services\GlobalUrlService;
 class GenerateController extends BaseWebController{
 
     public function actionIndex(){
-        echo 11;
+        $id = $this->get("id",'');
+        if(empty($id)){
+            exit;
+        }
+        $generate_url = \Yii::$app->params['Generate']['url'];
+        $data = json_decode($content = HttpClient::post($generate_url,['type'=>ConstantService::WEBPAGE_EHEME,'p_id'=>$id]),true);
+        if($data['code'] != 200 || !$data['data']){
+            exit;
+        }
+        $info = [];
+        foreach($data['data'] as $k=>$v){
+            $info[$v['position']][] = $v;
+        }
+
+        $head = \Yii::$app->params['HeadNavigation']['theme'.$id];
+        $this->layout = true;
+//        $value =  $this->render('head'.$id,['data'=>$info,'head'=>$head]);
+        return $this->render('theme'.$id.'/index',['data'=>$info,'head'=>$head]);
+
     }
 
     public function actionHead(){
