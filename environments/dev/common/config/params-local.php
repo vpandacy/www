@@ -26,4 +26,12 @@ return [
         ],
     ],
     'navigation' => '/data/www/private_page/navigation/',
+    'Generate' => [
+        'path' => 'F:/PHPTutorial/generate',
+        'url' => 'http://api.dev.hsh568.cn/lianzhan/'
+    ],
+    'HeadNavigation' => [
+        "head1" => ['10'=>'美容','11'=>'餐饮','13'=>'服务','14'=>'酒水','15'=>'环保','16'=>'建材'],
+        'theme1' => []
+    ]
 ];

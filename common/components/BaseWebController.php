@@ -4,11 +4,13 @@ namespace common\components;
 use Yii;
 use yii\web\Controller;
 use yii\web\Response;
-
+use common\components\HttpClient;
 class BaseWebController extends Controller
 
 {
     public $enableCsrfValidation = false;
+    public $website_info = [];
+
 
     public $page_size = 30;
 
@@ -100,5 +102,16 @@ class BaseWebController extends Controller
     protected function isGetMethod()
     {
         return Yii::$app->request->isGet;
+    }
+
+    public function init()
+    {
+        if(empty($this->website_info)){
+            $generate_url = \Yii::$app->params['Generate']['url'];
+            $data = json_decode($content = HttpClient::post($generate_url.'result/web',['web_url'=>$_SERVER['SERVER_NAME']]),true);
+            if($data['data']){
+                $this->website_info = $data['data'];
+            }
+        }
     }
 }
