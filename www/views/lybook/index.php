@@ -32,12 +32,12 @@
     var url = '/l51/';
 </script>
 <!-- 头部模板 -->
-<link rel="stylesheet" href="/css/lybook/show.css"/>        <!-- 首页样式 -->
-<script type="text/javascript" src="/js/lybook/jquery-1.7.2.min.js"></script>
+<link rel="stylesheet" href="/css/show.css"/>        <!-- 首页样式 -->
+<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
 <script>
 
 </script>
-<script src="/js/lybook/show.js" type="text/javascript"></script>
+<script src="/js/show.js" type="text/javascript"></script>
 
 
 <?=$header;?>
