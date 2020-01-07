@@ -20,10 +20,12 @@ class GenerateController extends BaseWebController{
             exit;
         }
         $cookies = "switch_version=dev_20191113001_page_manager;";
-        HttpClient::setCookie($cookies);
+        ApiRequestService::setCookies($cookies);
 
         $generate_url = \Yii::$app->params['Generate']['url'];
         $data = json_decode($content = ApiRequestService::sendPostRequest($generate_url.'result/index',['type'=>ConstantService::WEBPAGE_EHEME,'p_id'=>$id]),true);
+        
+
         if($data['code'] != 200 || !$data['data']){
             exit;
         }
@@ -57,7 +59,7 @@ class GenerateController extends BaseWebController{
             exit;
         }
         $cookies = "switch_version=dev_20191113001_page_manager;";
-        HttpClient::setCookie($cookies);
+        ApiRequestService::setCookies($cookies);
         $generate_url = \Yii::$app->params['Generate']['url'];
         $data = json_decode($content = ApiRequestService::sendPostRequest($generate_url.'result/index',['type'=>ConstantService::WEBPAGE_HEAD,'p_id'=>$id]),true);
         if($data['code'] != 200 || !$data['data']){
