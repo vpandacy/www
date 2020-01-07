@@ -8,13 +8,19 @@
 
 namespace www\controllers;
 use common\components\BaseWebController;
-use common\components\HttpClient;
+
 
 class DefaultController extends BaseWebController
 {
     public function actionIndex(){
-        $generate_url = \Yii::$app->params['Generate']['url'];
-        $data = json_decode($content = HttpClient::post($generate_url.'result/web-page',['web_url'=>$_SERVER['SERVER_NAME']]),true);
+
+        $web = $this->website_info;
+        $theme = \Yii::$app->params['Generate']['path']."/theme".$web['theme_id'].".html";
+        $value = file_get_contents($theme);
+        $this->layout = true;
+        return $this->render('index', [
+            'data' => $value,
+        ]);
 
     }
 }
