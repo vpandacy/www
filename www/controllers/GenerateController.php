@@ -8,6 +8,7 @@
 namespace www\controllers;
 use common\components\BaseWebController;
 use common\components\HttpClient;
+use www\services\ConstantService;
 
 class GenerateController extends BaseWebController{
 
@@ -21,7 +22,7 @@ class GenerateController extends BaseWebController{
             exit;
         }
         $generate_url = \Yii::$app->params['Generate']['url'];
-        $data = json_decode($content = HttpClient::post($generate_url,['type'=>2,'p_id'=>$id]),true);
+        $data = json_decode($content = HttpClient::post($generate_url,['type'=>ConstantService::WEBPAGE_HEAD,'p_id'=>$id]),true);
         if($data['code'] != 200 || !$data['data']){
             exit;
         }
