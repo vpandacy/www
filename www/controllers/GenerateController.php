@@ -12,10 +12,17 @@ use common\components\BaseWebController;
 class GenerateController extends BaseWebController{
 
     public function actionIndex(){
-
+        echo 11;
     }
 
     public function actionHead(){
+        $id = $this->get("id",'');
+        if(empty($id)){
+            return $this->redirect("/");
+        }
+        echo $id;
+
+
 
     }
 }
