@@ -270,8 +270,8 @@ use common\services\GlobalUrlService;
                                                     4000) ?></span>
                                         </p>
                                         <div class="listContentBoxMain">
-                                            <p>公司名称：<?= $project['company_name'] ?></p>
-                                            <p>项目简介：<?= $project['content'] ?></p>
+                                            <p>公司名称：<?= $project['com_name'] ?></p>
+                                            <p>项目简介：<?= $project['proj_adv'] ?></p>
                                             <div class="listContentBoxMainBtn">
                                                 <span><?= $project['abbr'] ?></span>
                                                 <div class="listContentBoxMainBtnA">
