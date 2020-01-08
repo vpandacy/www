@@ -52,7 +52,7 @@
                 <?php endif;?>
             </ul>
         </div>
-        <div>
+        <div class="zsbmainTxt">
             <ul>
                 <?php if (isset($data[112]) ): ?>
                     <?php foreach ($data[112] as $key=>$_item): ?>
