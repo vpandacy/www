@@ -24,6 +24,7 @@ return [
             "name" => "hsh_api",
             "domain" => ".dev.hsh568.cn"
         ],
+        "test"=>'',
     ],
     'navigation' => '/data/www/private_page/navigation/',
     'Generate' => [

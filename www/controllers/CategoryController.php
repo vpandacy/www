@@ -18,12 +18,9 @@ class CategoryController extends BaseController
     public function actionIndex()
     {
 
-//        $cookies = "switch_version=server;";
         $id = $this->get('id', 0);
         $sort = $this->get('sort', '最热');
-//        $token = md5($project_id . $media_id);
-
-//        ApiRequestService::setCookies($cookies);
+        
         $info = ApiRequestService::sendPostRequest('/lianzhan/type/index', [
             "id" => $id,
             'sort' => $sort

@@ -26,5 +26,12 @@ return [
     'HeadNavigation' => [
         "head1" => ['10'=>'美容','11'=>'餐饮','13'=>'服务','14'=>'酒水','15'=>'环保','16'=>'建材'],
         'theme1' => []
-    ]
+    ],
+    'cookie' => [
+        "api"=>[
+            "name" => "hsh_api",
+            "domain" => ".dev.hsh568.cn"
+        ],
+        "test"=>'switch_version=dev_20191210_web_template;',
+    ],
 ];
