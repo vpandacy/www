@@ -279,7 +279,7 @@ use common\services\GlobalUrlService;
                                                 <div class="listContentBoxMainBtnA">
                                                     <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
                                                        target="_blank" class="active">查看详情</a>
-                                                    <a href="https://tb.53kf.com/code/client/<?= $project['kf_id'] ?>/<?= $project['kf_type'] ?>"
+                                                    <a href="https://tb.53kf.com/code/client/<?= $project['kf_id'] ?>/<?= ($project['kf_type']??0) ?>"
                                                        target="_blank">立即咨询</a>
                                                 </div>
                                             </div>
