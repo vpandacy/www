@@ -327,7 +327,7 @@ use common\services\GlobalUrlService;
                             </div>
                             <div class="l_btn">
                                 <a href="<?= "/code/{$project['code']}" ?>" target="_blank">查看详情</a>
-                                <a href="<?= "https://tb.53kf.com/code/client/{$project['projid']}/{$project['kf_id']}" ?>"
+                                <a href="<?= GlobalUrlService::buildWWWUrl("/code/" . $project['code']) ?>"
                                    target="_blank" class="active">立即咨询</a>
                                 <div class="clearfix"></div>
                             </div>
