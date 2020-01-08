@@ -510,29 +510,17 @@ use common\services\GlobalUrlService;
     </div>
 </div>
 <!-- [投资推荐1-140*90] -->
-<div id="recom" class="bottom">
+
+<!-- [底部图片96*58] -->
+<div id="btnImg" class="bottom">
     <div class="main">
-        <div class="recomBox">
-            <?php foreach ($project_end as $item): ?>
-                <dl>
-                    <dt><a href="<?= GlobalUrlService::buildWWWUrl("/code/{$item['code']}") ?>" target="_blank"><img
-                                    src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
-                                    trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
-                                    alt=""/></a></dt>
-                    <dd>
-                        <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$item['code']}") ?>"
-                           target="_blank"><?= $item['projname'] ?></a>
-                        <span><?= rand(6000, 15000) ?>人关注</span>
-                        <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$item['code']}") ?>" target="_blank"
-                           class="zixun">咨询</a>
-                    </dd>
-                </dl>
-            <?php endforeach; ?>
-        </div>
+        <ul>
+            <ul>
+            </ul>
+            <div class="clearfix"></div>
+        </ul>
     </div>
 </div>
-<!-- [底部图片96*58] -->
-
 <!--页脚-->
 <div id="footer">
     <div class="top">

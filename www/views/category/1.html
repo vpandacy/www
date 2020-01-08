@@ -1,9 +1,21 @@
-﻿<div id="btnImg" class="bottom">
+﻿<div id="recom" class="bottom">
     <div class="main">
-        <ul>
-            <ul>
-            </ul>
-            <div class="clearfix"></div>
-        </ul>
+        <div class="recomBox">
+            <?php foreach ($project_end as $item): ?>
+            <dl>
+                <dt><a href="<?= GlobalUrlService::buildWWWUrl("/code/{$item['code']}") ?>" target="_blank"><img
+                        src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
+                    trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
+                    alt=""/></a></dt>
+                <dd>
+                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$item['code']}") ?>"
+                    target="_blank"><?= $item['projname'] ?></a>
+                    <span><?= rand(6000, 15000) ?>人关注</span>
+                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$item['code']}") ?>" target="_blank"
+                    class="zixun">咨询</a>
+                </dd>
+            </dl>
+            <?php endforeach; ?>
+        </div>
     </div>
 </div>
