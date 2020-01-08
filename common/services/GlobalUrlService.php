@@ -217,4 +217,12 @@ class GlobalUrlService
         return $domain . $path;
     }
 
+    /**
+     * Author: apanly
+     * 页面空链接
+     */
+    public static function buildNullUrl()
+    {
+        return "javascript:void(0);";
+    }
 }
