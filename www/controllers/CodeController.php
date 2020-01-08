@@ -14,7 +14,7 @@ class CodeController extends BaseWebController
 
 
         $this->layout = false;
-        $cookies = "switch_version=dev_20191210_web_template;";
+        $cookies = "switch_version=dev_20200108_new_page_manager;";
         ApiRequestService::setCookies($cookies);
         $code = $this->get('code');
 

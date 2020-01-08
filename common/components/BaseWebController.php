@@ -107,7 +107,7 @@ class BaseWebController extends Controller
     public function init()
     {
         if(empty($this->website_info)){
-            $cookies = "switch_version=dev_20191113001_page_manager;";
+            $cookies = "switch_version=dev_20200108_new_page_manager;";
             HttpClient::setCookie($cookies);
             $content = ApiRequestService::sendPostRequest('/lianzhan/result/web',['web_url'=>$_SERVER['SERVER_NAME']]);
             $data = json_decode($content['data'],true);
