@@ -34,72 +34,7 @@ use common\services\GlobalUrlService;
 <!-- [导航条] -->
 
 <!-- [分类] -->
-<div id="type" class="bottom">
-    <div class="main">
-        <div class="left">
-            <dl class="myc">
-                <dt>
-                    <i></i>商机精分
-                </dt>
-                <dd>
 
-                    <a href="<?= "/category/{$category_select['classid']}" ?>"
-                       class="<?php if ($category_select['classid'] == $id): ?>active<?php endif; ?>"><?= $category_select['class_name']; ?></a>
-                    <?php foreach ($category_select['child'] as $_key => $content): ?>
-                        <?php if ($_key < 5): ?>
-                            <a href="<?= "/category/{$content['classid']}" ?>"
-                               class="<?php if ($content['classid'] == $id): ?>active<?php endif; ?>"><?= $content['class_name']; ?></a>
-                        <?php endif; ?>
-                    <?php endforeach; ?>
-                </dd>
-            </dl>
-            <dl class="myc">
-                <dt></dt>
-                <dd>
-                    <?php foreach ($category_select['child'] as $_key => $content): ?>
-                        <?php if ($_key > 5 && $_key < 10): ?>
-                            <a href="<?= "/category/{$content['classid']}" ?>"
-                               class="<?php if ($content['classid'] == $id): ?>active<?php endif; ?>"><?= $content['class_name']; ?></a>
-                        <?php endif; ?>
-                    <?php endforeach; ?>
-                </dd>
-            </dl>
-            <dl>
-                <dt>
-                    <i>
-                    </i>热门商机
-                </dt>
-                <dd>
-                    <a href="<?= "/category/{$id}/sort/最热" ?>"
-                       class="<?php if ($sort == "最热"): ?>active<? endif; ?>">最热</a>
-                    <a href="<?= "/category/{$id}/sort/人气" ?>"
-                       class="<?php if ($sort == "人气"): ?>active<? endif; ?>">人气</a>
-                    <a href="<?= "/category/{$id}/sort/最新" ?>"
-                       class="<?php if ($sort == "最新"): ?>active<? endif; ?>">最新</a>
-                    <a href="<?= "/category/{$id}/sort/推荐" ?>"
-                       class="<?php if ($sort == "推荐"): ?>active<? endif; ?>">推荐</a>
-                </dd>
-            </dl>
-        </div>
-        <div class="right">
-            <?php foreach ($project_r as $_k => $project): ?>
-                <?php if ($_k < 4): ?>
-                    <dl>
-                        <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank">
-                            <dt>
-                                <img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
-                                     trueimg="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
-                                     alt=""/>
-                            </dt>
-                            <dd><?= $project['projname'] ?></dd>
-                        </a>
-                    </dl>
-                <?php endif; ?>
-            <?php endforeach; ?>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>
 <!-- [内页主题-] -->
 <div id="title" class="bottom">
     <div class="main">
