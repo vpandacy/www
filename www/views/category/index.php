@@ -238,9 +238,9 @@ use common\services\GlobalUrlService;
                 <dd>
 
                     <a href="<?= "/category/{$category_select['classid']}" ?>"
-                       class="<?= $category_select['active'] ?>"><?= $category_select['class_name']; ?></a>
+                       class="<?php if ($category_select['classid'] == $id): ?>active<?php endif; ?>"><?= $category_select['class_name']; ?></a>
                     <?php foreach ($category_select['child'] as $_key => $content): ?>
-                        <?php if ($_key <= 5): ?>
+                        <?php if ($_key < 5): ?>
                             <a href="<?= "/category/{$content['classid']}" ?>"
                                class="<?php if ($content['classid'] == $id): ?>active<?php endif; ?>"><?= $content['class_name']; ?></a>
                         <?php endif; ?>
@@ -251,7 +251,7 @@ use common\services\GlobalUrlService;
                 <dt></dt>
                 <dd>
                     <?php foreach ($category_select['child'] as $_key => $content): ?>
-                        <?php if ($_key > 5 && $_key <= 10): ?>
+                        <?php if ($_key > 5 && $_key < 10): ?>
                             <a href="<?= "/category/{$content['classid']}" ?>"
                                class="<?php if ($content['classid'] == $id): ?>active<?php endif; ?>"><?= $content['class_name']; ?></a>
                         <?php endif; ?>
@@ -264,14 +264,14 @@ use common\services\GlobalUrlService;
                     </i>热门商机
                 </dt>
                 <dd>
-                    <a href="<?= "/category/{$id}/dsort/最热" ?>"
-                       class="<?php if ($desort == "最热"): ?>active<? endif; ?>">最热</a>
-                    <a href="<?= "/category/{$id}/dsort/人气" ?>"
-                       class="<?php if ($desort == "人气"): ?>active<? endif; ?>">人气</a>
-                    <a href="<?= "/category/{$id}/dsort/最新" ?>"
-                       class="<?php if ($desort == "最新"): ?>active<? endif; ?>">最新</a>
-                    <a href="<?= "/category/{$id}/dsort/推荐" ?>"
-                       class="<?php if ($desort == "推荐"): ?>active<? endif; ?>">推荐</a>
+                    <a href="<?= "/category/{$id}/sort/最热" ?>"
+                       class="<?php if ($sort == "最热"): ?>active<? endif; ?>">最热</a>
+                    <a href="<?= "/category/{$id}/sort/人气" ?>"
+                       class="<?php if ($sort == "人气"): ?>active<? endif; ?>">人气</a>
+                    <a href="<?= "/category/{$id}/sort/最新" ?>"
+                       class="<?php if ($sort == "最新"): ?>active<? endif; ?>">最新</a>
+                    <a href="<?= "/category/{$id}/sort/推荐" ?>"
+                       class="<?php if ($sort == "推荐"): ?>active<? endif; ?>">推荐</a>
                 </dd>
             </dl>
         </div>
@@ -280,9 +280,12 @@ use common\services\GlobalUrlService;
                 <?php if ($_k < 4): ?>
                     <dl>
                         <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank">
-                            <dt><img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>" trueimg="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>" alt=""/>
+                            <dt>
+                                <img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
+                                     trueimg="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
+                                     alt=""/>
                             </dt>
-                            <dd><?= $project['projname']?></dd>
+                            <dd><?= $project['projname'] ?></dd>
                         </a>
                     </dl>
                 <?php endif; ?>
@@ -304,36 +307,36 @@ use common\services\GlobalUrlService;
         <div class="mainBox">
             <ul>
                 <?php foreach ($project_list as $_k => $project): ?>
-                <?php if ($_k <= 30): ?>
-                    <li>
-                        <div class="light"></div>
-                        <div class="l_Img"><a
-                                    href=<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?> target="_blank"><img
-                                        src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_416_215.jpg") ?>"
-                                        trueimg='<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_416_215.jpg") ?>'
-                                        alt="<?= $project['projname'] ?>"/></a></div>
-                        <div class="l_txt">
-                            <h3>
-                                <a href="<?= GlobalUrlService::buildWWWUrl("/code/" . $project['code']) ?> "><?= $project['projname'] ?></a>
-                            </h3>
-                            <p><?= $project['projname'] ?></p>
-                        </div>
-                        <div class="l_info">
-                            <dl>
-                                <dd>关注：<span>★★★★</span></dd>
-                                <dd>积分：<span><?= rand(6000, 10000) ?></span></dd>
-                                <dd>行业：<span><?= $project['class_name'] ?></span></dd>
-                                <dd><span><?= $project['city']; ?></span></dd>
-                            </dl>
-                        </div>
-                        <div class="l_btn">
-                            <a href="<?= "/code/{$project['code']}" ?>" target="_blank">查看详情</a>
-                            <a href="<?= "https://tb.53kf.com/code/client/{$project['id']}/{$project['kf_id']}" ?>"
-                               target="_blank" class="active">立即咨询</a>
-                            <div class="clearfix"></div>
-                        </div>
-                    </li>
-                    <?php endif;?>
+                    <?php if ($_k <= 30): ?>
+                        <li>
+                            <div class="light"></div>
+                            <div class="l_Img"><a
+                                        href=<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?> target="_blank"><img
+                                            src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_416_215.jpg") ?>"
+                                            trueimg='<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_416_215.jpg") ?>'
+                                            alt="<?= $project['projname'] ?>"/></a></div>
+                            <div class="l_txt">
+                                <h3>
+                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/" . $project['code']) ?> "><?= $project['projname'] ?></a>
+                                </h3>
+                                <p><?= $project['projname'] ?></p>
+                            </div>
+                            <div class="l_info">
+                                <dl>
+                                    <dd>关注：<span>★★★★</span></dd>
+                                    <dd>积分：<span><?= rand(6000, 10000) ?></span></dd>
+                                    <dd>行业：<span><?= $project['class_name'] ?></span></dd>
+                                    <dd><span><?= $project['city']; ?></span></dd>
+                                </dl>
+                            </div>
+                            <div class="l_btn">
+                                <a href="<?= "/code/{$project['code']}" ?>" target="_blank">查看详情</a>
+                                <a href="<?= "https://tb.53kf.com/code/client/{$project['id']}/{$project['kf_id']}" ?>"
+                                   target="_blank" class="active">立即咨询</a>
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+                    <?php endif; ?>
                 <?php endforeach; ?>
                 <div class="clearfix"></div>
             </ul>
@@ -353,14 +356,20 @@ use common\services\GlobalUrlService;
         <div class="mainBox">
             <div class="first" style="display:block;">
                 <?php foreach ($project_r as $_k => $project): ?>
-                <?php if ($_k >= 4 && $_k < 40): ?>
-                <dl>
-                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank"></a>
-                        <dt><a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank"></a>
-                            <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank">
-                                <img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>" trueimg="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>" alt="" style="display: block"/></a></dt>
-                        <dd><a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank"><?= $project['projname']?></a></dd>
-                </dl>
+                    <?php if ($_k >= 4 && $_k < 40): ?>
+                        <dl>
+                            <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
+                               target="_blank"></a>
+                            <dt><a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
+                                   target="_blank"></a>
+                                <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
+                                   target="_blank">
+                                    <img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
+                                         trueimg="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
+                                         alt="" style="display: block"/></a></dt>
+                            <dd><a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
+                                   target="_blank"><?= $project['projname'] ?></a></dd>
+                        </dl>
                     <?php endif; ?>
                 <?php endforeach; ?>
                 <div class="clearfix"></div>
@@ -369,98 +378,122 @@ use common\services\GlobalUrlService;
                 <div class="secondCom">
                     <ul>
                         <?php foreach ($project_r as $_k => $project): ?>
-                        <?php if ($_k < 12): ?>
-                        <li class="active">
-                            <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank">
-                                <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" alt="" style="display: block; height: 0px;"/>
-                                <span><?= $project['projname']?></span>
-                            </a>
-                        </li>
-                        <?php endif;?>
+                            <?php if ($_k < 12): ?>
+                                <li class="<?php if ($_k == 0): ?>active<?php endif; ?>">
+                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
+                                       target="_blank">
+                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             alt="" style="display: block; height: <?php if ($_k == 0): ?>90px<?php endif; ?>;"/>
+                                        <span><?= $project['projname'] ?></span>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </ul>
                     <ul>
                         <?php foreach ($project_r as $_k => $project): ?>
                             <?php if ($_k >= 12 && $_k < 24): ?>
-                                <li class="active">
-                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank">
-                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" alt="" style="display: block; height: 0px;"/>
-                                        <span><?= $project['projname']?></span>
+                                <li class="<?php if ($_k == 14): ?>active<?php endif; ?>">
+                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
+                                       target="_blank">
+                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             alt="" style="display: block; height: <?php if ($_k == 14): ?>90px<?php endif; ?>;"/>
+                                        <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
-                            <?php endif;?>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </ul>
                     <ul>
                         <?php foreach ($project_r as $_k => $project): ?>
                             <?php if ($_k >= 24 && $_k < 36): ?>
-                                <li class="active">
-                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank">
-                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" alt="" style="display: block; height: 0px;"/>
-                                        <span><?= $project['projname']?></span>
+                                <li class="<?php if ($_k == 28): ?>active<?php endif; ?>">
+                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
+                                       target="_blank">
+                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             alt="" style="display: block; height: <?php if ($_k == 28): ?>90px<?php endif; ?>;"/>
+                                        <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
-                            <?php endif;?>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </ul>
                     <ul>
                         <?php foreach ($project_r as $_k => $project): ?>
                             <?php if ($_k >= 36 && $_k < 48): ?>
-                                <li class="active">
-                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank">
-                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" alt="" style="display: block; height: 0px;"/>
-                                        <span><?= $project['projname']?></span>
+                                <li class="<?php if ($_k == 42): ?>active<?php endif; ?>">
+                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
+                                       target="_blank">
+                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             alt="" style="display: block; height: <?php if ($_k == 42): ?>90px<?php endif; ?>;"/>
+                                        <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
-                            <?php endif;?>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </ul>
                     <ul>
                         <?php foreach ($project_r as $_k => $project): ?>
                             <?php if ($_k >= 48 && $_k < 60): ?>
-                                <li class="active">
-                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank">
-                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" alt="" style="display: block; height: 0px;"/>
-                                        <span><?= $project['projname']?></span>
+                                <li class="<?php if ($_k == 56): ?>active<?php endif; ?>">
+                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
+                                       target="_blank">
+                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             alt="" style="display: block; height: <?php if ($_k == 56): ?>90px<?php endif; ?>;"/>
+                                        <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
-                            <?php endif;?>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </ul>
                     <ul>
                         <?php foreach ($project_r as $_k => $project): ?>
                             <?php if ($_k >= 60 && $_k < 72): ?>
-                                <li class="active">
-                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank">
-                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" alt="" style="display: block; height: 0px;"/>
-                                        <span><?= $project['projname']?></span>
+                                <li class="<?php if ($_k == 70): ?>active<?php endif; ?>">
+                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
+                                       target="_blank">
+                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             alt="" style="display: block; height: <?php if ($_k == 70): ?>px<?php endif; ?>;"/>
+                                        <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
-                            <?php endif;?>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </ul>
                     <ul>
                         <?php foreach ($project_r as $_k => $project): ?>
                             <?php if ($_k >= 72 && $_k < 84): ?>
-                                <li class="active">
-                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank">
-                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" alt="" style="display: block; height: 0px;"/>
-                                        <span><?= $project['projname']?></span>
+                                <li class="<?php if ($_k == 83): ?>active<?php endif; ?>">
+                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
+                                       target="_blank">
+                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             alt="" style="display: block; height: <?php if ($_k == 83): ?>90px<?php endif; ?>;"/>
+                                        <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
-                            <?php endif;?>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </ul>
                     <ul>
                         <?php foreach ($project_r as $_k => $project): ?>
                             <?php if ($_k >= 84 && $_k < 96): ?>
-                                <li class="active">
-                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank">
-                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg")?>" alt="" style="display: block; height: 0px;"/>
-                                        <span><?= $project['projname']?></span>
+                                <li class="<?php if ($_k == 84): ?>active<?php endif; ?>">
+                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
+                                       target="_blank">
+                                        <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
+                                             alt="" style="display: block; height: <?php if ($_k == 84): ?>90px<?php endif; ?>;"/>
+                                        <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
-                            <?php endif;?>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -472,86 +505,21 @@ use common\services\GlobalUrlService;
 <div id="recom" class="bottom">
     <div class="main">
         <div class="recomBox">
-            <dl>
-                <dt><a href="/show/xiaomojia" target="_blank"><img src=""
-                                                                   trueimg="http://cdn.hsh568.cn/zsbccimg/189352/189352_140_90.jpg"
-                                                                   alt=""/></a></dt>
-                <dd>
-                    <a href="/show/xiaomojia" target="_blank">小茉家亲子餐厅</a>
-                    <span>11198人关注</span>
-                    <a href="/show/xiaomojia" target="_blank" class="zixun">咨询</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt><a href="/show/aidier" target="_blank"><img src=""
-                                                                trueimg="http://cdn.hsh568.cn/zsbccimg/190308/190308_140_90.jpg"
-                                                                alt=""/></a></dt>
-                <dd>
-                    <a href="/show/aidier" target="_blank">艾蒂儿网络科技</a>
-                    <span>14865人关注</span>
-                    <a href="/show/aidier" target="_blank" class="zixun">咨询</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt><a href="/show/huochetoufqj" target="_blank"><img src=""
-                                                                      trueimg="http://cdn.hsh568.cn/zsbccimg/189870/189870_140_90.jpg"
-                                                                      alt=""/></a></dt>
-                <dd>
-                    <a href="/show/huochetoufqj" target="_blank">火车头全自动粉墙喷涂机</a>
-                    <span>13137人关注</span>
-                    <a href="/show/huochetoufqj" target="_blank" class="zixun">咨询</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt><a href="/show/hongli" target="_blank"><img src=""
-                                                                trueimg="http://cdn.hsh568.cn/zsbccimg/190497/190497_140_90.jpg"
-                                                                alt=""/></a></dt>
-                <dd>
-                    <a href="/show/hongli" target="_blank">宏励粉墙机</a>
-                    <span>10284人关注</span>
-                    <a href="/show/hongli" target="_blank" class="zixun">咨询</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt><a href="/show/lianshangbanshao" target="_blank"><img src=""
-                                                                          trueimg="http://cdn.hsh568.cn/zsbccimg/189632/189632_140_90.jpg"
-                                                                          alt=""/></a></dt>
-                <dd>
-                    <a href="/show/lianshangbanshao" target="_blank">恋上板烧 小本好营生</a>
-                    <span>16917人关注</span>
-                    <a href="/show/lianshangbanshao" target="_blank" class="zixun">咨询</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt><a href="/show/eco" target="_blank"><img src=""
-                                                             trueimg="http://cdn.hsh568.cn/zsbccimg/189285/189285_140_90.jpg"
-                                                             alt=""/></a></dt>
-                <dd>
-                    <a href="/show/eco" target="_blank">食尚轻食简餐店</a>
-                    <span>17154人关注</span>
-                    <a href="/show/eco" target="_blank" class="zixun">咨询</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt><a href="/show/suancaiyu" target="_blank"><img src=""
-                                                                   trueimg="http://cdn.hsh568.cn/zsbccimg/189670/189670_140_90.jpg"
-                                                                   alt=""/></a></dt>
-                <dd>
-                    <a href="/show/suancaiyu" target="_blank">酸菜鱼 食客疯抢</a>
-                    <span>10183人关注</span>
-                    <a href="/show/suancaiyu" target="_blank" class="zixun">咨询</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt><a href="/show/jiebaishi" target="_blank"><img src=""
-                                                                   trueimg="http://cdn.hsh568.cn/zsbccimg/189032/189032_140_90.jpg"
-                                                                   alt=""/></a></dt>
-                <dd>
-                    <a href="/show/jiebaishi" target="_blank">家电清洗 轻松经营</a>
-                    <span>11680人关注</span>
-                    <a href="/show/jiebaishi" target="_blank" class="zixun">咨询</a>
-                </dd>
-            </dl>
+            <?php foreach ($project_end as $item): ?>
+                <dl>
+                    <dt><a href="<?= GlobalUrlService::buildWWWUrl("/code/{$item['code']}") ?>" target="_blank"><img
+                                    src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
+                                    trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
+                                    alt=""/></a></dt>
+                    <dd>
+                        <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$item['code']}") ?>"
+                           target="_blank"><?= $item['projname'] ?></a>
+                        <span><?= rand(6000, 15000) ?>人关注</span>
+                        <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$item['code']}") ?>" target="_blank"
+                           class="zixun">咨询</a>
+                    </dd>
+                </dl>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>
