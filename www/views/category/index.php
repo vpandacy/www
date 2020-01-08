@@ -81,22 +81,7 @@ use common\services\GlobalUrlService;
                 </dd>
             </dl>
         </div>
-        <div class="right">
-            <?php foreach ($project_r as $_k => $project): ?>
-                <?php if ($_k < 4): ?>
-                    <dl>
-                        <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>" target="_blank">
-                            <dt>
-                                <img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
-                                     trueimg="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_140_90.jpg") ?>"
-                                     alt=""/>
-                            </dt>
-                            <dd><?= $project['projname'] ?></dd>
-                        </a>
-                    </dl>
-                <?php endif; ?>
-            <?php endforeach; ?>
-        </div>
+  
         <div class="clearfix"></div>
     </div>
 </div>
