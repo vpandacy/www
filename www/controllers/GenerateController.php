@@ -7,9 +7,7 @@
  */
 namespace www\controllers;
 use common\components\BaseWebController;
-use common\components\HttpClient;
 use www\services\ConstantService;
-use \common\services\GlobalUrlService;
 use www\services\ApiRequestService;
 
 class GenerateController extends BaseWebController{
@@ -21,16 +19,15 @@ class GenerateController extends BaseWebController{
         }
         $cookies = "switch_version=dev_20191113001_page_manager;";
         ApiRequestService::setCookies($cookies);
+        $content = ApiRequestService::sendPostRequest('/lianzhan/result/index',['type'=>ConstantService::WEBPAGE_EHEME,'p_id'=>$id]);
+        $data = json_decode($content['data'],true);
 
-        $generate_url = \Yii::$app->params['Generate']['url'];
-        $data = json_decode($content = ApiRequestService::sendPostRequest($generate_url.'result/index',['type'=>ConstantService::WEBPAGE_EHEME,'p_id'=>$id]),true);
-        
 
-        if($data['code'] != 200 || !$data['data']){
+        if($content['code'] != 200 || !$data){
             exit;
         }
         $info = [];
-        foreach($data['data'] as $k=>$v){
+        foreach($data as $k=>$v){
             $info[$v['position']][] = $v;
         }
 
@@ -60,13 +57,13 @@ class GenerateController extends BaseWebController{
         }
         $cookies = "switch_version=dev_20191113001_page_manager;";
         ApiRequestService::setCookies($cookies);
-        $generate_url = \Yii::$app->params['Generate']['url'];
-        $data = json_decode($content = ApiRequestService::sendPostRequest($generate_url.'result/index',['type'=>ConstantService::WEBPAGE_HEAD,'p_id'=>$id]),true);
-        if($data['code'] != 200 || !$data['data']){
+        $content = ApiRequestService::sendPostRequest('/lianzhan/result/index',['type'=>ConstantService::WEBPAGE_HEAD,'p_id'=>$id]);
+        $data = json_decode($content['data'],true);
+        if($content['code'] != 200 || !$data){
             exit;
         }
         $info = [];
-        foreach($data['data'] as $k=>$v){
+        foreach($data as $k=>$v){
             $info[$v['position']][] = $v;
         }
 

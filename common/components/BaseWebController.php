@@ -4,7 +4,7 @@ namespace common\components;
 use Yii;
 use yii\web\Controller;
 use yii\web\Response;
-use common\components\HttpClient;
+use www\services\ApiRequestService;
 class BaseWebController extends Controller
 
 {
@@ -110,9 +110,10 @@ class BaseWebController extends Controller
             $generate_url = \Yii::$app->params['Generate']['url'];
             $cookies = "switch_version=dev_20191113001_page_manager;";
             HttpClient::setCookie($cookies);
-            $data = json_decode($content = HttpClient::post($generate_url.'result/web',['web_url'=>$_SERVER['SERVER_NAME']]),true);
-            if($data['data']){
-                $this->website_info = $data['data'];
+            $content = ApiRequestService::sendPostRequest('/lianzhan/result/web',['web_url'=>$_SERVER['SERVER_NAME']]);
+            $data = json_decode($content['data'],true);
+            if($data){
+                $this->website_info = $data;
             }
         }
     }

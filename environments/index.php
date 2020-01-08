@@ -44,8 +44,8 @@ return [
             'www/config/main-local.php',
         ],
     ],
-    'Production' => [
-        'path' => 'prod',
+    'Test' => [
+        'path' => 'test',
         'setWritable' => [
             'www/runtime',
             'www/web/assets',
