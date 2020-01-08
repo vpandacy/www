@@ -74,7 +74,7 @@
                 <p>公司地址：<?=$project_info['com_addr'];?></p>
                 <p>关注度：8012↑</p>
                 <p></p>
-                <p>免费热线：<strong>4008221108</strong></p>
+                <p>免费热线：<strong><?=$project_info['ser_400'];?></strong></p>
                 <em></em><!--[勿删]-->
             </div>
 

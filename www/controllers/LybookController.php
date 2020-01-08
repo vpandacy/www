@@ -18,7 +18,7 @@ class LybookController extends BaseWebController
     {
         $this->layout = false;
 
-        $code = $this->get('code');
+        $code = $this->get('code','');
 
         $info = ApiRequestService::sendPostRequest('/lianzhan/lybook/index',[
             "code" => $code
