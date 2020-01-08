@@ -210,7 +210,7 @@ class GlobalUrlService
     public static function buildCdnUrl($uri, $params = [])
     {
         $path   = Url::toRoute(array_merge([$uri], $params));
-        $domain = \Yii::$app->params['domains']['cdn']['domain'];
+        $domain = \Yii::$app->params['domains']['cdn_hsh']['domain'];
         if (UtilHelper::is_SSL()) {
             $domain = str_replace("http://", "https://", $domain);
         }
