@@ -107,7 +107,6 @@ class BaseWebController extends Controller
     public function init()
     {
         if(empty($this->website_info)){
-            $generate_url = \Yii::$app->params['Generate']['url'];
             $cookies = "switch_version=dev_20191113001_page_manager;";
             HttpClient::setCookie($cookies);
             $content = ApiRequestService::sendPostRequest('/lianzhan/result/web',['web_url'=>$_SERVER['SERVER_NAME']]);
