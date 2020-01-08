@@ -47,51 +47,51 @@ use \common\services\GlobalUrlService;
                     <div class="typeBox">
                         <dl>
                             <dt><i></i>快餐加盟</dt>
-                            <dd><a href="http://www.hsh.cn/l51/97" target="_blank">西式快餐</a><a href="http://www.hsh.cn/l51/90" target="_blank">熟食加盟</a><a href="http://www.hsh.cn/l51/40" target="_blank">中式快餐</a><a href="http://www.hsh.cn/l51/39" target="_blank">韩式快餐</a></dd>
+                            <dd><a href="http://www.page.test.hsh568.cn/category/31" target="_blank">西式快餐</a><a href="http://www.page.test.hsh568.cn/category/33" target="_blank">火锅加盟</a><a href="http://www.page.test.hsh568.cn/category/30" target="_blank">中式快餐</a><a href="http://www.page.test.hsh568.cn/category/37" target="_blank">餐厅加盟</a></dd>
                         </dl>
                         <dl>
                             <dt><i></i>休闲食品</dt>
-                            <dd><a href="http://www.hsh.cn/l51/96" target="_blank">比萨加盟</a><a href="http://www.hsh.cn/l51/91" target="_blank">甜冰淇淋</a><a href="http://www.hsh.cn/l51/93" target="_blank">甜品加盟</a><a href="http://www.hsh.cn/l51/136" target="_blank">麻辣烫</a></dd>
+                            <dd><a href="http://www.page.test.hsh568.cn/category/29" target="_blank">粉面加盟</a><a href="http://www.page.test.hsh568.cn/category/26" target="_blank">甜冰淇淋</a><a href="http://www.page.test.hsh568.cn/category/32" target="_blank">甜品加盟</a><a href="http://www.page.test.hsh568.cn/category/34" target="_blank">麻辣烫</a></dd>
                         </dl>
                         <dl>
                             <dt><i></i>特色餐饮</dt>
-                            <dd><a href="http://www.hsh.cn/l51/98" target="_blank">五谷磨坊</a><a href="http://www.hsh.cn/l51/42" target="_blank">烤鸡烤鸭</a><a href="http://www.hsh.cn/l51/41" target="_blank">特色烧烤</a><a href="http://www.hsh.cn/l51/13" target="_blank">特色小吃</a></dd>
+                            <dd><a href="http://www.page.test.hsh568.cn/category/29" target="_blank">五谷磨坊</a><a href="http://www.page.test.hsh568.cn/category/36" target="_blank">烤鸡烤鸭</a><a href="http://www.page.test.hsh568.cn/category/32" target="_blank">特色烧烤</a><a href="http://www.page.test.hsh568.cn/category/28" target="_blank">特色小吃</a></dd>
                         </dl>
                         <dl>
                             <dt><i></i>酒水加盟</dt>
-                            <dd><a href="http://www.hsh.cn/l51/95" target="_blank">红酒加盟</a><a href="http://www.hsh.cn/l51/94" target="_blank">白酒加盟</a><a href="http://www.hsh.cn/l51/92" target="_blank">奶茶加盟</a><a href="http://www.hsh.cn/l51/37" target="_blank">饮料加盟</a></dd>
+                            <dd><a href="http://www.page.test.hsh568.cn/category/35" target="_blank">酒水加盟</a><a href="#" target="_blank">白酒加盟</a><a href="http://www.page.test.hsh568.cn/category/27" target="_blank">奶茶加盟</a><a href="#" target="_blank">饮料加盟</a></dd>
                         </dl>
                         <dl>
                             <dt><i></i>饰品礼品</dt>
-                            <dd><a href="http://www.hsh.cn/l51/48" target="_blank">节日礼品</a><a href="http://www.hsh.cn/l51/46" target="_blank">工艺礼品</a><a href="http://www.hsh.cn/l51/45" target="_blank">女生饰品</a><a href="http://www.hsh.cn/l51/84" target="_blank">银饰品</a></dd>
+                            <dd><a href="#" target="_blank">节日礼品</a><a href="#" target="_blank">工艺礼品</a><a href="#" target="_blank">女生饰品</a><a href="#" target="_blank">银饰品</a></dd>
                         </dl>
                         <dl>
                             <dt><i></i>服装加盟</dt>
-                            <dd><a href="http://www.hsh.cn/l51/51" target="_blank">女装加盟</a><a href="http://www.hsh.cn/l51/50" target="_blank">男装加盟</a><a href="http://www.hsh.cn/l51/11" target="_blank">童装加盟</a><a href="http://www.hsh.cn/l51/53" target="_blank">内衣加盟</a></dd>
+                            <dd><a href="http://www.page.test.hsh568.cn/category/40" target="_blank">女装加盟</a><a href="http://www.page.test.hsh568.cn/category/41" target="_blank">男装加盟</a><a href="http://www.page.test.hsh568.cn/category/42" target="_blank">童装加盟</a><a href="http://www.page.test.hsh568.cn/category/43" target="_blank">内衣加盟</a></dd>
                         </dl>
                         <dl>
                             <dt><i></i>建材加盟</dt>
-                            <dd><a href="http://www.hsh.cn/l51/66" target="_blank">家居日用</a><a href="http://www.hsh.cn/l51/61" target="_blank">灯具灯饰</a><a href="http://www.hsh.cn/l51/65" target="_blank">液体壁纸</a><a href="http://www.hsh.cn/l51/59" target="_blank">装饰装修</a></dd>
+                            <dd><a href="http://www.page.test.hsh568.cn/category/2" target="_blank">家居日用</a><a href="http://www.page.test.hsh568.cn/category/20" target="_blank">灯具灯饰</a><a href="http://www.page.test.hsh568.cn/category/16" target="_blank">液体壁纸</a><a href="http://www.page.test.hsh568.cn/category/19" target="_blank">装饰装修</a></dd>
                         </dl>
                         <dl>
                             <dt><i></i>环保机械</dt>
-                            <dd><a href="http://www.hsh.cn/l51/100" target="_blank">食品机械</a><a href="http://www.hsh.cn/l51/14" target="_blank">环保材料</a><a href="http://www.hsh.cn/l51/15" target="_blank">节能设备</a><a href="http://www.hsh.cn/l51/99" target="_blank">榨油机</a></dd>
+                            <dd><a href="http://www.page.test.hsh568.cn/category/77" target="_blank">酿酒机械</a><a href="http://www.page.test.hsh568.cn/category/75" target="_blank">塑料颗粒机</a><a href="http://www.page.test.hsh568.cn/category/47" target="_blank">制砂机</a><a href="http://www.page.test.hsh568.cn/category/76" target="_blank">袜子机</a></dd>
                         </dl>
                         <dl>
                             <dt><i></i>教育加盟</dt>
-                            <dd><a href="http://www.hsh.cn/l51/25" target="_blank">教育培训</a><a href="http://www.hsh.cn/l51/22" target="_blank">幼儿教育</a><a href="http://www.hsh.cn/l51/23" target="_blank">益智玩具</a><a href="http://www.hsh.cn/l51/81" target="_blank">儿童乐园</a></dd>
+                            <dd><a href="http://www.page.test.hsh568.cn/category/53" target="_blank">教育培训</a><a href="http://www.page.test.hsh568.cn/category/69" target="_blank">亲子馆</a><a href="http://www.page.test.hsh568.cn/category/66" target="_blank">益智玩具</a><a href="http://www.page.test.hsh568.cn/category/64" target="_blank">儿童乐园</a></dd>
                         </dl>
                         <dl>
                             <dt><i></i>保健加盟</dt>
-                            <dd><a href="http://www.hsh.cn/l51/32" target="_blank">成人保健</a><a href="http://www.hsh.cn/l51/34" target="_blank">视力保健</a><a href="http://www.hsh.cn/l51/30" target="_blank">保健仪器</a><a href="http://www.hsh.cn/l51/29" target="_blank">保健用品</a></dd>
+                            <dd><a href="http://www.page.test.hsh568.cn/category/50" target="_blank">成人保健</a><a href="http://www.page.test.hsh568.cn/category/47" target="_blank">视力保健</a><a href="http://www.page.test.hsh568.cn/category/46" target="_blank">养生馆</a><a href="http://www.page.test.hsh568.cn/category/70" target="_blank">母婴用品</a></dd>
                         </dl>
                         <dl>
                             <dt><i></i>美容美体</dt>
-                            <dd><a href="http://www.hsh.cn/l51/79" target="_blank">产后修复</a><a href="http://www.hsh.cn/l51/31" target="_blank">瘦身减肥</a><a href="http://www.hsh.cn/l51/26" target="_blank">美容美甲</a><a href="http://www.hsh.cn/l51/27" target="_blank">化妆品</a></dd>
+                            <dd><a href="http://www.page.test.hsh568.cn/category/18" target="_blank">美缝剂</a><a href="#" target="_blank">瘦身减肥</a><a href="http://www.page.test.hsh568.cn/category/49" target="_blank">美容美甲</a><a href="http://www.page.test.hsh568.cn/category/48" target="_blank">化妆品</a></dd>
                         </dl>
                         <dl>
                             <dt><i></i>农村致富</dt>
-                            <dd><a href="http://www.hsh.cn/l51/71" target="_blank">农村种植</a><a href="http://www.hsh.cn/l51/69" target="_blank">虫草种植</a><a href="http://www.hsh.cn/l51/77" target="_blank">布艺加工</a><a href="http://www.hsh.cn/l51/62" target="_blank">蝎子养殖</a></dd>
+                            <dd><a href="http://www.page.test.hsh568.cn/category/52" target="_blank">农村种植</a><a href="http://www.page.test.hsh568.cn/category/51" target="_blank">农村养殖</a><a href="http://www.page.test.hsh568.cn/category/71" target="_blank">APP代理</a><a href="http://www.page.test.hsh568.cn/category/42" target="_blank">POS机</a></dd>
                         </dl>
                     </div>
                 </div>
