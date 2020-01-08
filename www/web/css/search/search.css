@@ -1,0 +1,131 @@
+﻿@charset "utf-8";
+
+#type { width: 100%; }
+#type .main { width: 1200px; margin: 0 auto; padding-top: 8px; }
+#type .main .left { width: 684px; float: left; background: #fff; }
+#type .main .left dl { height: 22px; line-height: 22px; width: 660px; padding: 8px 12px; border-top: 1px solid #f2f2f2; }
+#type .main .left dl:first-child { border-top: none; }
+#type .main .left dl dt { height: 22px; line-height: 22px; width: 105px; border-right: 1px solid #e5e5e5; float: left; font-size: 13px; font-weight: bold; color: #5dc2d0; text-indent: 40px; position: relative; }
+#type .main .left dl dt i { display: block; width: 22px; height: 22px; position: absolute; left: 8px; top: 0; background: #f00; }
+#type .main .left dl:nth-of-type(1) dt i { background: url(/images/company/p_type.png) no-repeat 0 0; }
+#type .main .left dl:nth-of-type(2) dt i { background: url(/images/company/p_type.png) no-repeat 0 -22px; }
+#type .main .left dl:nth-of-type(3) dt i { background: url(/images/company/p_type.png) no-repeat 0 -44px; }
+#type .main .left dl dd { height: 22px; line-height: 22px; float: left; }
+#type .main .left dl dd a { margin: 0 12px; color: #707070; }
+#type .main .left dl dd a:nth-of-type(1) {display: inline-block; width: 46px; height: 22px; background: #4bb5c3; text-align: center; color: #fff; margin: 0 0 0 18px;}
+#type .main .left dl dd a:hover { color: #4bb5c3; text-decoration: underline; }
+#type .main .left dl:nth-of-type(1) dd a:nth-of-type(1) { margin: 0 8px 0 18px; }
+#type .main .left dl dd a:nth-of-type(1):hover{color: #fff; text-decoration: none;}
+
+#type .main .right { width: 514px; float: left; background: #fff; margin-left: 2px; overflow: hidden; }
+#type .main .right dl { width: 120px; float: left; margin: 8px 0 8px 7px; transition: 0.3s; }
+#type .main .right dl dt { width: 120px; height: 77px;}
+#type .main .right dl dt img { display: block; width: 120px; height: 77px; }
+#type .main .right dl dd { width: 100%; height: 23px; line-height: 25px; text-align: center; color: #707070; }
+#type .main .right dl:hover {  box-shadow: 0 0 5px #4bb5c3; }
+#type .main .right dl:hover dd {color: #4bb5c3;}
+
+#searchList { width: 100%; }
+#searchList .searchListmain { width: 1200px; margin: 0 auto; border-top: 1px solid #00b6f2; }
+#searchList .searchListmain .listTop { width: 100%; height: 50px; line-height: 50px; background: #fff; border-bottom: 1px solid #eee; }
+#searchList .searchListmain .listTop p { font-size: 15px; color: #707070; text-indent: 20px; position: relative; }
+#searchList .searchListmain .listTop p i { display: block; width: 4px; height: 20px; background: #00b6f2; position: absolute; left: 4px; top: 50%; margin-top: -10px; }
+#searchList .searchListmain .listTop p a { font-size: 15px; margin: 0 0 0 4px; color: #707070; }
+#searchList .searchListmain .listTop p a:hover { color: #00b6f2; text-decoration: underline; }
+#searchList .searchListmain .listTop p em { font-style: normal;}
+
+#searchList .searchListmain .listMain { width: 100%; }
+#searchList .searchListmain .listMain .listMainLeft { width: 943px; min-height: 100px; background: #fff; float: left; border-right: 1px solid #eee; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox { width: 903px; margin: 0 20px;  }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li { width: 100%; border-bottom: 1px dotted #ddd; margin: 10px 0; padding: 20px 0; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent { width: 100%; overflow: hidden; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentImg { width: 216px; height: 112px;background:url(/images/company/loading_blank.png) no-repeat center center; float: left; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentImg img { width:216px;  }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox { width: 672px; float: left; margin-left: 15px; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox h2 { width: 100%; margin-bottom: 5px; position: relative; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox h2 a { font-size: 16px; color: #444; font-family: "\5FAE\8F6F\96C5\9ED1"; font-weight: normal; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox h2 a:hover { color: #00b6f2; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox h2 span { position: absolute; right: 0; color: #00b6f2; font-weight: normal; display: inline-block; width: 200px; text-align: center; font-size: 14px; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox h2 span em { font-style: normal; font-weight: normal; color: #FFC200; font-family: "tahoma","Arial Narrow",HELVETICA; font-size: 18px; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox .listContentBoxInfo { height: 25px; line-height: 25px; width: 100%; border-bottom: 1px dotted #eaeaea; color: #707070; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox .listContentBoxInfo span { margin: 0 16px 0 0; color: #00b6f2; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox .listContentBoxMain { position: relative; height: 56px; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox .listContentBoxMain p { color: #707070; font-size: 12px; width: 425px; margin-top: 5px; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox .listContentBoxMain .listContentBoxMainBtn { position: absolute; bottom: 0px; right: 0; width: 200px; height: 56px; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox .listContentBoxMain .listContentBoxMainBtn span { display: block; width: 100%; margin: 0 auto; text-align: center; font-size: 16px; color: #00b6f2; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox .listContentBoxMain .listContentBoxMainBtn .listContentBoxMainBtnA { width: 160px; height: 25px; margin: 0 auto; border: 1px solid #00b6f2; margin-top: 8px; border-radius: 2px; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox .listContentBoxMain .listContentBoxMainBtn .listContentBoxMainBtnA a { display: inline-block; width: 80px; height: 25px; float: left; line-height: 25px; text-align: center; font-size: 12px; color: #707070; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li .listContent .listContentBox .listContentBoxMain .listContentBoxMainBtn .listContentBoxMainBtnA a.active { background: #00b6f2; color: #fff; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftBox li:hover { background: #f9f9f9; border-bottom: 1px solid #00b6f2; }
+
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftPage { width: 100%; height: 95px; line-height: 95px; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftPage p { text-align: center; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftPage p a { padding: 2px 8px; cursor: pointer; border: 1px solid #ddd; margin: 0 4px; color: #707070; border-radius: 2px; font-size: 12px; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftPage p a:hover { background: #27C6FA; color: #fff; border-color: #27C6FA; }
+#searchList .searchListmain .listMain .listMainLeft .listMainLeftPage p a.active_a { border-color: #00b6f2; background: #00b6f2; color: #fff; }
+
+#searchList .searchListmain .listMain .listMainRight { width: 256px; background: #fff; float: right; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMian { width: 100%; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne, #searchList .searchListmain .listMain .listMainRight .listMainRightMianTwo, #searchList .searchListmain .listMain .listMainRight .listMainRightMianThree, #searchList .searchListmain .listMain .listMainRight .listMainRightMianFour { width: 226px; margin: 0 15px; border-bottom: 1px solid #ddd; }
+#searchList .searchListmain .listMain .listMainRight h3 { width: 100%; height: 35px; line-height: 35px; border-bottom: 1px dotted #eee; text-indent: 15px; position: relative; font-size: 16px; font-family: "\5FAE\8F6F\96C5\9ED1"; color: #666; font-weight: normal; }
+#searchList .searchListmain .listMain .listMainRight h3 a { float: right; margin-right: 2px; font-size: 13px; color: #707070; display: inline;  }
+#searchList .searchListmain .listMain .listMainRight h3 a:hover { color: #00b6f2; text-decoration: underline; }
+#searchList .searchListmain .listMain .listMainRight h3 i { width: 4px; height: 16px; display: block; background: #00b6f2; position: absolute; left: 2px; top: 50%; margin-top: -6px; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne ul { margin: 6px 0; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li { height: 28px; line-height: 28px; width: 100%; overflow: hidden; text-indent: 26px; position: relative; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li a { color: #707070; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li a:hover { color: #00b6f2; text-decoration: underline; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li:nth-of-type(1) { background: url(/images/company/l_dd1.png) no-repeat left center; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li:nth-of-type(2) { background: url(/images/company/l_dd2.png) no-repeat left center; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li:nth-of-type(3) { background: url(/images/company/l_dd3.png) no-repeat left center; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li:nth-of-type(4) { background: url(/images/company/l_dd4.png) no-repeat left center; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li:nth-of-type(5) { background: url(/images/company/l_dd5.png) no-repeat left center; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li:nth-of-type(6) { background: url(/images/company/l_dd6.png) no-repeat left center; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li:nth-of-type(7) { background: url(/images/company/l_dd7.png) no-repeat left center; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li:nth-of-type(8) { background: url(/images/company/l_dd8.png) no-repeat left center; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li:nth-of-type(9) { background: url(/images/company/l_dd9.png) no-repeat left center; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianOne li:nth-of-type(10) { background: url(/images/company/l_dd10.png) no-repeat left center; }
+
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianTwo ul {margin: 6px 0; border-top: 1px dashed #eee; border-right: 1px dashed #eee; width: 225px; overflow: hidden;}
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianTwo li { width: 110px; height: 58px; background: url(/images/company/loading_blank.png) no-repeat center center; float: left; border-left: 1px dashed #eee; border-bottom: 1px dashed #eee; padding: 2px 0;  }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianTwo li img { width: 96px; height: 58px; margin: 0 auto; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianTwo li:hover { border-bottom: 1px solid #00b6f2; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianTwo li:hover img { opacity: 0.8; }
+
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianThree ul { margin: 6px 0; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianThree ul li { height: 28px; line-height: 28px; width: 100%; overflow: hidden; text-indent: 20px; position: relative; background: url(/images/company/li_bg.png) no-repeat left center; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianThree ul li a { color: #707070; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianThree ul li a:hover { color: #00b6f2; text-decoration: underline; }
+
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianFour { border-bottom: none; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianFour ul { margin: 6px 0; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianFour ul li { height: 28px; line-height: 28px; width: 100%; overflow: hidden; text-indent: 26px; position: relative; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianFour ul li:nth-of-type(1){ background: url(/images/company/rightfour1.png) no-repeat left center; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianFour ul li:nth-of-type(2){ background: url(/images/company/rightfour2.png) no-repeat left center; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianFour ul li a { color: #707070; }
+#searchList .searchListmain .listMain .listMainRight .listMainRightMianFour ul li a:hover { color: #00b6f2; text-decoration: underline; }
+
+/*投资推荐*/
+#recom { width: 100%; }
+#recom .main { width: 1200px; margin: 0 auto; background: #fff url(/images/company/recom_bg.png) no-repeat left top; height: 135px; }
+#recom .main .recomBox { width: 1162px; height: 125px;  margin-left: 27px; padding: 5px 6px; }
+#recom .main .recomBox dl { width: 140px; height: 125px; float: left; margin-left: 6px; cursor: pointer; transition: all 0.5s ease; position: relative; }
+#recom .main .recomBox dl:first-child { margin-left: 0px; }
+#recom .main .recomBox dl dt { width: 140px; height: 80px;background: url(/images/company/loading_blank.png) no-repeat center center; }
+#recom .main .recomBox dl dt img { width: 140px; height: 80px;}
+#recom .main .recomBox dl dd { width: 140px; height: 45px; }
+#recom .main .recomBox dl dd a { display: block; height: 25px; line-height: 25px; color: #000; text-indent:0px; transition: all 0.5s ease; }
+#recom .main .recomBox dl dd a:first-child { overflow: hidden; }
+#recom .main .recomBox dl dd span { display: block; height: 20px; line-height: 20px; color: #a9a9a9; text-indent: 0px; transition: all 0.5s ease; }
+#recom .main .recomBox dl dd a.zixun { display: block; width: 30px; height: 18px; line-height: 18px; border-radius: 2px; text-align: center; background: #5dc2d0; color: #fff; position: absolute;bottom: 2px; right: 0px; }
+#recom .main .recomBox dl:hover { box-shadow: 0 0 10px #999;  }
+#recom .main .recomBox dl:hover dd a { color: #e00712; text-indent: 10px; }
+#recom .main .recomBox dl:hover dd a.zixun {color: #fff; text-indent: 0px; right: 5px; box-shadow: 0 0 2px #999;}
+#recom .main .recomBox dl:hover dd span { color: #444; text-indent: 5px; }
+
+
+#btnImg { width: 100%; }
+#btnImg .main { width: 1200px; margin: 0 auto; background: #fff; overflow: hidden; }
+#btnImg .main li { width: 96px; height: 58px; float: left; padding: 4px 2px; background: url(/images/company/loading_blank.png) no-repeat center center; }
+#btnImg .main li img { width: 96px; height: 58px;  -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; -ms-transition: 0.2s; transition: 0.2s; }
+#btnImg .main li:hover img { opacity: 0.8; border: 1px solid #5dc2d0;  }
