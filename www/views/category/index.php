@@ -532,15 +532,7 @@ use common\services\GlobalUrlService;
     </div>
 </div>
 <!-- [底部图片96*58] -->
-<div id="btnImg" class="bottom">
-    <div class="main">
-        <ul>
-            <ul>
-            </ul>
-            <div class="clearfix"></div>
-        </ul>
-    </div>
-</div>
+
 <!--页脚-->
 <div id="footer">
     <div class="top">

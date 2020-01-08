@@ -55,7 +55,7 @@ class CategoryController extends BaseController
             break;
         }
 
-        return $this->render('search', [
+        return $this->render('index', [
             'project_list' => $project_list,
             'category_list' => $category_list,
             'category_select' => $category_select,
