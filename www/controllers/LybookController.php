@@ -19,9 +19,9 @@ class LybookController extends BaseWebController
     {
         $this->layout = false;
 
-
         $code = $this->get('code');
-
+        $cookies = "switch_version=dev_20200108_new_page_manager;";
+        HttpClient::setCookie($cookies);
         $info = ApiRequestService::sendPostRequest('/lianzhan/lybook/index',[
             "code" => $code
         ]);
