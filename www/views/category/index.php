@@ -36,9 +36,54 @@ use common\services\GlobalUrlService;
 <!-- [分类] -->
 
 <!-- [内页主题-] -->
-
+<div id="title" class="bottom">
+    <div class="main">
+        <h2><i></i>特色餐饮</h2>
+        <p>全国餐饮美食连锁加盟,百种餐饮连锁品牌,汇聚百种独门赚钱好项目,百年技艺,免费培训,独特餐饮美食,样样赚钱.</p>
+    </div>
+</div>
 <!-- 内页项目列表 -->
-
+<div id="content" class="bottom">
+    <div class="main">
+        <div class="mainBox">
+            <ul>
+                <?php foreach ($project_list as $_k => $project): ?>
+                    <?php if ($_k <= 30): ?>
+                        <li>
+                            <div class="light"></div>
+                            <div class="l_Img"><a
+                                        href=<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?> target="_blank"><img
+                                            src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_416_215.jpg") ?>"
+                                            trueimg='<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_416_215.jpg") ?>'
+                                            alt="<?= $project['projname'] ?>"/></a></div>
+                            <div class="l_txt">
+                                <h3>
+                                    <a href="<?= GlobalUrlService::buildWWWUrl("/code/" . $project['code']) ?> "><?= $project['projname'] ?></a>
+                                </h3>
+                                <p><?= $project['projname'] ?></p>
+                            </div>
+                            <div class="l_info">
+                                <dl>
+                                    <dd>关注：<span>★★★★</span></dd>
+                                    <dd>积分：<span><?= rand(6000, 10000) ?></span></dd>
+                                    <dd>行业：<span><?= $project['class_name'] ?></span></dd>
+                                    <dd><span><?= $project['city']; ?></span></dd>
+                                </dl>
+                            </div>
+                            <div class="l_btn">
+                                <a href="<?= "/code/{$project['code']}" ?>" target="_blank">查看详情</a>
+                                <a href="<?= "https://tb.53kf.com/code/client/{$project['id']}/{$project['kf_id']}" ?>"
+                                   target="_blank" class="active">立即咨询</a>
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+    </div>
+</div>
 <!-- 感兴趣的项目-受欢迎的项目 -->
 <div id="list" class="bottom">
     <div class="main">
