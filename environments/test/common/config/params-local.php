@@ -32,6 +32,6 @@ return [
             "name" => "hsh_api",
             "domain" => ".dev.hsh568.cn"
         ],
-        "test"=>'switch_version=dev_20191210_web_template;',
+        "test"=>'switch_version= dev_20200108_new_page_manager;',
     ],
 ];
