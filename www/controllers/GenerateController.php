@@ -9,6 +9,8 @@ namespace www\controllers;
 use common\components\BaseWebController;
 use www\services\ConstantService;
 use www\services\ApiRequestService;
+use Yii;
+
 
 class GenerateController extends BaseWebController{
 
@@ -17,7 +19,7 @@ class GenerateController extends BaseWebController{
         if(empty($id)){
             exit;
         }
-        $cookies = "switch_version=dev_20191113001_page_manager;";
+        $cookies = Yii::$app->params['cookie']['test'];
         ApiRequestService::setCookies($cookies);
         $content = ApiRequestService::sendPostRequest('/lianzhan/result/index',['type'=>ConstantService::WEBPAGE_EHEME,'p_id'=>$id]);
         $data = json_decode($content['data'],true);
@@ -55,7 +57,7 @@ class GenerateController extends BaseWebController{
         if(empty($id)){
             exit;
         }
-        $cookies = "switch_version=dev_20191113001_page_manager;";
+        $cookies = Yii::$app->params['cookie']['test'];
         ApiRequestService::setCookies($cookies);
         $content = ApiRequestService::sendPostRequest('/lianzhan/result/index',['type'=>ConstantService::WEBPAGE_HEAD,'p_id'=>$id]);
         $data = json_decode($content['data'],true);

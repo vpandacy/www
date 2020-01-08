@@ -108,7 +108,7 @@ class BaseWebController extends Controller
     {
         if(empty($this->website_info)){
             $cookies = Yii::$app->params['cookie']['test'];
-            HttpClient::setCookie($cookies);
+            ApiRequestService::setCookies($cookies);
             $content = ApiRequestService::sendPostRequest('/lianzhan/result/web',['web_url'=>$_SERVER['SERVER_NAME']]);
             $data = json_decode($content['data'],true);
             if($data){
