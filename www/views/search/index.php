@@ -275,7 +275,7 @@ use common\services\GlobalUrlService;
                                             <p>项目简介：<?= $project['proj_adv'] ?></p>
 
                                             <div class="listContentBoxMainBtn">
-                                                <span><?= $project['abbr'] ?></span>
+                                                <span><?= $project['projname'] ?></span>
                                                 <div class="listContentBoxMainBtnA">
                                                     <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
                                                        target="_blank" class="active">查看详情</a>
