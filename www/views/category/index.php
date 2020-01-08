@@ -579,7 +579,7 @@ use common\services\GlobalUrlService;
 <script src="/js/company/utils.js"></script>
 <script src="/js/company/pro.js"></script>
 <script src="/js/company/mouseover.js"></script>
-<script src="/js/company/href.js"></script>
+<script src="/js/company/href.js"></script> 
 </body>
 
 </html>
