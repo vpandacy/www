@@ -49,7 +49,7 @@ class LybookController extends BaseWebController
 
         $head_id = $page['head_id'] ?? 0;
         $nav_path = \Yii::$app->params['Generate']['path'];
-        $header = @file_get_contents($nav_path."head{$head_id}.html");
+        $header = @file_get_contents($nav_path."/head{$head_id}.html");
 
         return $this->render('index', [
             'title' => $title,

@@ -47,7 +47,7 @@ class CodeController extends BaseWebController
 
         $nav_id = $page['head_id'] ?? 0;
         $nav_path = \Yii::$app->params['Generate']['path'];
-        $nav = @file_get_contents($nav_path."head{$nav_id}.html");
+        $nav = @file_get_contents($nav_path."/head{$nav_id}.html");
 
         return $this->render('index', [
             'title' => $title,
