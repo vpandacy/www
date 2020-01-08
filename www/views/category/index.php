@@ -43,11 +43,11 @@ use common\services\GlobalUrlService;
                 </dt>
                 <dd>
 
-                    <a href="<?= "/category/{$category_select['classid']}" ?>"
+                    <a href="<?= GlobalUrlService::buildWWWUrl("/category/{$category_select['classid']}"); ?>"
                        class="<?php if ($category_select['classid'] == $id): ?>active<?php endif; ?>"><?= $category_select['class_name']; ?></a>
                     <?php foreach ($category_select['child'] as $_key => $content): ?>
                         <?php if ($_key < 5): ?>
-                            <a href="<?= "/category/{$content['classid']}" ?>"
+                            <a href="<?= GlobalUrlService::buildWWWUrl("/category/{$content['classid']}") ?>"
                                class="<?php if ($content['classid'] == $id): ?>active<?php endif; ?>"><?= $content['class_name']; ?></a>
                         <?php endif; ?>
                     <?php endforeach; ?>
@@ -58,7 +58,7 @@ use common\services\GlobalUrlService;
                 <dd>
                     <?php foreach ($category_select['child'] as $_key => $content): ?>
                         <?php if ($_key > 5 && $_key < 10): ?>
-                            <a href="<?= "/category/{$content['classid']}" ?>"
+                            <a href="<?= GlobalUrlService::buildWWWUrl("/category/{$content['classid']}") ?>"
                                class="<?php if ($content['classid'] == $id): ?>active<?php endif; ?>"><?= $content['class_name']; ?></a>
                         <?php endif; ?>
                     <?php endforeach; ?>
@@ -70,13 +70,13 @@ use common\services\GlobalUrlService;
                     </i>热门商机
                 </dt>
                 <dd>
-                    <a href="<?= "/category/{$id}/sort/最热" ?>"
+                    <a href="<?= GlobalUrlService::buildWWWUrl("/category/{$id}/sort/最热") ?>"
                        class="<?php if ($sort == "最热"): ?>active<? endif; ?>">最热</a>
-                    <a href="<?= "/category/{$id}/sort/人气" ?>"
+                    <a href="<?= GlobalUrlService::buildWWWUrl("/category/{$id}/sort/人气") ?>"
                        class="<?php if ($sort == "人气"): ?>active<? endif; ?>">人气</a>
-                    <a href="<?= "/category/{$id}/sort/最新" ?>"
+                    <a href="<?= GlobalUrlService::buildWWWUrl("/category/{$id}/sort/最新") ?>"
                        class="<?php if ($sort == "最新"): ?>active<? endif; ?>">最新</a>
-                    <a href="<?= "/category/{$id}/sort/推荐" ?>"
+                    <a href="<?= GlobalUrlService::buildWWWUrl("/category/{$id}/sort/推荐") ?>"
                        class="<?php if ($sort == "推荐"): ?>active<? endif; ?>">推荐</a>
                 </dd>
             </dl>
