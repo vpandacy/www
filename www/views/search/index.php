@@ -79,8 +79,8 @@ use common\services\GlobalUrlService;
             </div>
             <!-- <p class="hots"><a href="/Public/zsbcc06/info1.html" target="_blank">中国互联网协会会员</a>，<a href="http://www.zsb.cc/Public/zsbcc06/info2.html" target="_blank">广东省连锁经营协会</a>会员！</p> -->
             <div class="search">
-                <form action="/search" method="get" target="_blank">
-                    <input type="text" class="text" name="keyword" value="集成墙" placeholder="您想找的项目"/>
+                <form action="" method="get" target="_blank">
+                    <input type="text" class="text" name="keyword" style="width: 210px" value="<?php if ($keyword):?><?= $keyword?><?php else: ?>集成墙<?php endif;?>" placeholder="您想找的项目"/>
                     <input type="submit" class="sub" value="" onclick="if($('.text').val()=='')return false;"/>
                 </form>
                 <div class="clearfix"></div>
@@ -246,7 +246,7 @@ use common\services\GlobalUrlService;
 <div id="searchList" class="bottom">
     <div class="searchListmain">
         <div class="listTop">
-            <p><i></i>你现在所在的位置：<a href="/" target="_blank">首页</a> &gt; <em><?= $sc ?></em></p>
+            <p><i></i>你现在所在的位置：<a href="/" target="_blank">首页</a> &gt; <em><?= $keyword ?></em></p>
         </div>
         <div class="listMain">
             <div class="listMainLeft">
@@ -292,8 +292,8 @@ use common\services\GlobalUrlService;
                 <div class="listMainLeftPage">
                     <?= \Yii::$app->view->renderFile("@www/views/common/pagination.php", [
                         'pages' => isset($pages) ? $pages : null,
-                        'url' => '/search',
-                        'search_conditions' => [],
+                        'url' => '/search/index',
+                        'search_conditions' => $search_conditions,
                     ]); ?>
                 </div>
             </div>
@@ -313,7 +313,7 @@ use common\services\GlobalUrlService;
                     <div class="listMainRightMianTwo">
                         <h3><i></i>热门商机<a href="" target="_blank">更多</a></h3>
                         <ul>
-                            <?php foreach ($project_r as $project): ?>
+                            <?php foreach ($project_r as $_k =>$project): ?>
                                 <?php if ($_k >= 10 && $_k < 24): ?>
                                     <li><a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"><img
                                                     src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
@@ -326,7 +326,7 @@ use common\services\GlobalUrlService;
                     <div class="listMainRightMianThree">
                         <h3><i></i>热门推荐<a href="" target="_blank">更多</a></h3>
                         <ul>
-                            <?php foreach ($project_r as $project): ?>
+                            <?php foreach ($project_r as $_k =>$project): ?>
                                 <?php if ($_k >= 24 && $_k < 33): ?>
                                     <li><a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
                                            target="_blank"><?= $project['projname'] ?></a></li>
