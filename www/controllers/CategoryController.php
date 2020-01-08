@@ -17,10 +17,9 @@ class CategoryController extends BaseController
 {
     public function actionIndex()
     {
-
         $id = $this->get('id', 0);
         $sort = $this->get('sort', '最热');
-        
+
         $info = ApiRequestService::sendPostRequest('/lianzhan/type/index', [
             "id" => $id,
             'sort' => $sort
