@@ -69,19 +69,10 @@ use common\services\GlobalUrlService;
                     <i>
                     </i>热门商机
                 </dt>
-                <dd>
-                    <a href="<?= GlobalUrlService::buildWWWUrl("/category/{$id}/sort/最热") ?>"
-                       class="<?php if ($sort == "最热"): ?>active<? endif; ?>">最热</a>
-                    <a href="<?= GlobalUrlService::buildWWWUrl("/category/{$id}/sort/人气") ?>"
-                       class="<?php if ($sort == "人气"): ?>active<? endif; ?>">人气</a>
-                    <a href="<?= GlobalUrlService::buildWWWUrl("/category/{$id}/sort/最新") ?>"
-                       class="<?php if ($sort == "最新"): ?>active<? endif; ?>">最新</a>
-                    <a href="<?= GlobalUrlService::buildWWWUrl("/category/{$id}/sort/推荐") ?>"
-                       class="<?php if ($sort == "推荐"): ?>active<? endif; ?>">推荐</a>
-                </dd>
+               
             </dl>
         </div>
-  
+
         <div class="clearfix"></div>
     </div>
 </div>
