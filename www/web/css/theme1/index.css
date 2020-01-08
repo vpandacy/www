@@ -158,6 +158,7 @@ html , body {
 #hsh_iframe .recommend dl dd {
     width: 218px;
     height: 52px;
+    overflow: hidden;
     /*float: left;*/
 }
 #hsh_iframe .recommend dl dd a {
