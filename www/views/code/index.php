@@ -122,7 +122,11 @@
             </ul>
         </div>
 
-
+    </div>
+</div>
+<?php endif;?>
+<div id="zsbNav">
+    <div class="zsbmain">
         <div class="thisBtn">
             <a href="##" target="_blank" class="active">品牌简介</a>
             <a href="##" target="_blank">立即留言</a>
@@ -130,7 +134,6 @@
         </div>
     </div>
 </div>
-<?php endif;?>
 <!-- 头部结束 -->
 <?= $content; ?>
 <!-- 留言板开始 -->

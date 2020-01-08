@@ -76,7 +76,31 @@ a { font-size: 12px; text-decoration: none; color: #444; }
 #zsbTxt .zsbmain .thisBtn a { width: 230px; height: 38px; margin: 4px 0 0 4px; display: inline-block; text-align: center; line-height: 38px; color: #fff; font-size: 13px; }
 #zsbTxt .zsbmain .thisBtn a.active { background: #fff; color: #5dc2d0; font-weight: bold; }
 
+#zsbNav .zsbmain .zsbInfo { width: 100%; background: #fff; overflow: hidden; margin-top: 8px; border-top: 1px solid #5dc2d0;}
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom { width: 72%; height: 97px; background: #fff; float: left;}
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH { width: 320px; float: left; height: 97px; background: #fff; }
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH dl { width: 95%; margin: 0 auto; height: 58px; padding: 20px 0 0 0; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH dl dt { width: 96px; height: 58px; float: left; padding: 0 5% 0 0; border-right: 1px solid #e2e2e2; }
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH dl dd { margin: 0 0 0 8%; float: left; }
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH dl dd strong { font-size: 20px; font-weight: normal; color: #010101; line-height: 35px; }
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH dl dd p { line-height: 23px; font-size: 12px; color: #aaa; }
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComH dl dd p span { color: #ffc200; font-size: 18px; vertical-align: top; font-family: "宋体"; }
 
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL { width: 52%; float: left; height: 97px; background: #fff; }
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL li { width: 15%; float: left; height: 42px; padding: 0px 12px; margin: 28px 0 0 10px; border-left: 1px dashed #e5e5e5; color: #aaa; line-height: 21px; }
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL li.gzd span { color: #fa691a; }
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL li.zxs span { color: #00b6f2; }
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL li.zsqy span { color: #707070; }
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL li.jmdl span { color: #707070; }
+#zsbNav .zsbmain .zsbInfo .zsbInfoCom .zsbInfoComL li.jmms span { color: #707070; }
+
+#zsbNav .zsbmain .zsbInfo .zsbBtn { width: 28%; height: 97px; background: #fff; float: left; box-sizing: border-box; text-align: center; padding: 28px 0 0 0; }
+#zsbNav .zsbmain .zsbInfo .zsbBtn a { width: 38%; height: 36px; font-weight: bold; background: url(../images/showa.png) repeat-x 0 0; display: inline-block; margin: 0 4px; line-height: 36px; border-radius: 2px; color: #707070; }
+#zsbNav .zsbmain .zsbInfo .zsbBtn a.active { background: url(../images/showa.png) repeat-x 0 -36px; color: #fff; }
+
+#zsbNav .zsbmain .thisBtn { width: 100%; height: 42px; background: #5dc2d0; }
+#zsbNav .zsbmain .thisBtn a { width: 230px; height: 38px; margin: 4px 0 0 4px; display: inline-block; text-align: center; line-height: 38px; color: #fff; font-size: 13px; }
+#zsbNav .zsbmain .thisBtn a.active { background: #fff; color: #5dc2d0; font-weight: bold; }
 /*#lyb { width: 100%; }
 #lyb .lybmain {}
 #lyb h3 {width: 100%; height: 72px; line-height: 72px; text-align: center; text-indent: -9999px; font-size: 12px; background: url(../images/lybhtop.png) no-repeat center; }
