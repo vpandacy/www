@@ -9,7 +9,6 @@
 namespace www\controllers;
 
 use common\components\BaseWebController;
-use common\components\HttpClient;
 use www\services\ApiRequestService;
 
 class LybookController extends BaseWebController
@@ -20,8 +19,7 @@ class LybookController extends BaseWebController
         $this->layout = false;
 
         $code = $this->get('code');
-        $cookies = "switch_version=dev_20200108_new_page_manager;";
-        HttpClient::setCookie($cookies);
+
         $info = ApiRequestService::sendPostRequest('/lianzhan/lybook/index',[
             "code" => $code
         ]);
@@ -50,8 +48,8 @@ class LybookController extends BaseWebController
         $keywords = $data['keywords'] ?? '';
 
         $head_id = $page['head_id'] ?? 0;
-        $nav_path = \Yii::$app->params['navigation'];
-        $header = @file_get_contents($nav_path."nav_{$head_id}.php");
+        $nav_path = \Yii::$app->params['Generate']['path'];
+        $header = @file_get_contents($nav_path."head{$head_id}.html");
 
         return $this->render('index', [
             'title' => $title,

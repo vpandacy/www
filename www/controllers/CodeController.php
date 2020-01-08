@@ -14,8 +14,7 @@ class CodeController extends BaseWebController
 
 
         $this->layout = false;
-        $cookies = "switch_version=dev_20200108_new_page_manager;";
-        ApiRequestService::setCookies($cookies);
+
         $code = $this->get('code');
 
         $info = ApiRequestService::sendPostRequest('/lianzhan/code/index',[
@@ -47,8 +46,8 @@ class CodeController extends BaseWebController
         $description = $data['proj_adv'] ?? '';
 
         $nav_id = $page['head_id'] ?? 0;
-        $nav_path = \Yii::$app->params['navigation'];
-        $nav = @file_get_contents($nav_path."nav_$nav_id.php");
+        $nav_path = \Yii::$app->params['Generate']['path'];
+        $nav = @file_get_contents($nav_path."head{$nav_id}.html");
 
         return $this->render('index', [
             'title' => $title,
