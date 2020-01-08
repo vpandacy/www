@@ -33,16 +33,13 @@ use \common\services\GlobalUrlService;
             <div  class="top-tabs">
             <img class="hsh_logo" src="<?=GlobalUrlService::buildWWWUrl('/images/theme1/logo-hsh-563x108.png');?>">
             <ul id="nav">
-                <li class="editad"><a>首页</a></li>
-                <li class="editad"><a>特色餐饮</a></li>
-                <li class="editad"><a>环保机械</a></li>
-                <li class="editad"><a>家居建材</a></li>
-                <li class="editad"><a>服装鞋帽</a></li>
-                <li class="editad"><a>集成墙</a></li>
-                <li class="editad"><a>生活服务</a></li>
-                <li class="editad"><a>母婴教育</a></li>
-                <li class="editad"><a>休闲食品</a></li>
-                <li class="editad"><a>农村致富</a></li>
+                <li><a href="/">首页</a></li>
+                <?php if ($head):?>
+                <?php foreach ($head as $key =>$_item):?>
+                        <li><a href="/category/<?=$key?>"><?=$_item?></a></li>
+                <?php endforeach;?>
+                <?php endif;?>
+
                 <li class="last"><a><img class="img-list-li" src="<?=GlobalUrlService::buildWWWUrl('/images/theme1/nav_2.png');?>"></a></li>
             </ul>
             <img class="tabs-ul" src="<?=GlobalUrlService::buildWWWUrl('/images/theme1/nav.jpg');?>">

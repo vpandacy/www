@@ -33,7 +33,7 @@ class GenerateController extends BaseWebController{
             $info[$v['position']][] = $v;
         }
 
-        $head = \Yii::$app->params['HeadNavigation']['theme'.$id];
+        $head = \Yii::$app->params['HeadNavigation']['theme'];
         $this->layout = true;
 
         $value = $this->render('theme'.$id.'/index',['data'=>$info,'head'=>$head]);
@@ -69,7 +69,7 @@ class GenerateController extends BaseWebController{
             $info[$v['position']][] = $v;
         }
 
-        $head = \Yii::$app->params['HeadNavigation']['head'.$id];
+        $head = \Yii::$app->params['HeadNavigation']['head'];
         $this->layout = true;
         $value =  $this->render('head'.$id,['data'=>$info,'head'=>$head]);
 
