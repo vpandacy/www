@@ -39,6 +39,7 @@ class CodeController extends BaseWebController
         }
         $page_script = $data['page_script'];
         $page = $data['page'];
+        $media_kf = $data['media_kf'];
 
         $cdn = $host . "/shophtml/" . $data['project_pinyin'] . "/item.html";
         $content = HttpClient::get($cdn);
@@ -53,6 +54,8 @@ class CodeController extends BaseWebController
             'title' => $title,
             'description' => $description,
             'nav' => $nav,
+            'kf_id' => $media_kf['kf_id'],
+            'kf_style' => $media_kf['kf_style'],
             'khid' => $page['project_id'],
             'content' => $content,
             'page_script' => $page_script,

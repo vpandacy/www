@@ -166,7 +166,7 @@
 <!-- 底部固定跳转留言板开始 -->
 <div>
     <script type="text/javascript">
-        var zxUrl = "https://tb.53kf.com/code/client/10170954/9";
+        var zxUrl = "https://tb.53kf.com/code/client/<?=$kf_id?>/<?=$kf_style?>";
         var lyUrl = "#lyb";
     </script>
     <?= $page_script?>
