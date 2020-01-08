@@ -4,7 +4,7 @@ use common\services\GlobalUrlService;
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="">
 
 <head>
     <meta charset="UTF-8"/>
@@ -384,7 +384,8 @@ use common\services\GlobalUrlService;
                                        target="_blank">
                                         <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
                                              trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
-                                             alt="" style="display: block; height: <?php if ($_k == 0): ?>90px<?php endif; ?>;"/>
+                                             alt=""
+                                             style="display: block; height: <?php if ($_k == 0): ?>90px<?php endif; ?>;"/>
                                         <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
@@ -399,7 +400,8 @@ use common\services\GlobalUrlService;
                                        target="_blank">
                                         <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
                                              trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
-                                             alt="" style="display: block; height: <?php if ($_k == 14): ?>90px<?php endif; ?>;"/>
+                                             alt=""
+                                             style="display: block; height: <?php if ($_k == 14): ?>90px<?php endif; ?>;"/>
                                         <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
@@ -414,7 +416,8 @@ use common\services\GlobalUrlService;
                                        target="_blank">
                                         <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
                                              trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
-                                             alt="" style="display: block; height: <?php if ($_k == 28): ?>90px<?php endif; ?>;"/>
+                                             alt=""
+                                             style="display: block; height: <?php if ($_k == 28): ?>90px<?php endif; ?>;"/>
                                         <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
@@ -429,7 +432,8 @@ use common\services\GlobalUrlService;
                                        target="_blank">
                                         <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
                                              trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
-                                             alt="" style="display: block; height: <?php if ($_k == 42): ?>90px<?php endif; ?>;"/>
+                                             alt=""
+                                             style="display: block; height: <?php if ($_k == 42): ?>90px<?php endif; ?>;"/>
                                         <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
@@ -444,7 +448,8 @@ use common\services\GlobalUrlService;
                                        target="_blank">
                                         <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
                                              trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
-                                             alt="" style="display: block; height: <?php if ($_k == 56): ?>90px<?php endif; ?>;"/>
+                                             alt=""
+                                             style="display: block; height: <?php if ($_k == 56): ?>90px<?php endif; ?>;"/>
                                         <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
@@ -459,7 +464,8 @@ use common\services\GlobalUrlService;
                                        target="_blank">
                                         <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
                                              trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
-                                             alt="" style="display: block; height: <?php if ($_k == 70): ?>px<?php endif; ?>;"/>
+                                             alt=""
+                                             style="display: block; height: <?php if ($_k == 70): ?>px<?php endif; ?>;"/>
                                         <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
@@ -474,7 +480,8 @@ use common\services\GlobalUrlService;
                                        target="_blank">
                                         <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
                                              trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
-                                             alt="" style="display: block; height: <?php if ($_k == 83): ?>90px<?php endif; ?>;"/>
+                                             alt=""
+                                             style="display: block; height: <?php if ($_k == 83): ?>90px<?php endif; ?>;"/>
                                         <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
@@ -489,7 +496,8 @@ use common\services\GlobalUrlService;
                                        target="_blank">
                                         <img src="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
                                              trueimg="<?= GlobalUrlService::buildWWWUrl("/zsbccimg/{$project['projid']}/{$project['projid']}_logo.jpg") ?>"
-                                             alt="" style="display: block; height: <?php if ($_k == 84): ?>90px<?php endif; ?>;"/>
+                                             alt=""
+                                             style="display: block; height: <?php if ($_k == 84): ?>90px<?php endif; ?>;"/>
                                         <span><?= $project['projname'] ?></span>
                                     </a>
                                 </li>
@@ -579,7 +587,7 @@ use common\services\GlobalUrlService;
 <script src="/js/company/utils.js"></script>
 <script src="/js/company/pro.js"></script>
 <script src="/js/company/mouseover.js"></script>
-<script src="/js/company/href.js"></script> 
+<script src="/js/company/href.js"></script>
 </body>
 
 </html>
