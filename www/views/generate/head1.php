@@ -63,14 +63,7 @@
                         <?php endif;?>
                     <?php endforeach; ?>
                 <?php endif;?>
-
             </ul>
-        </div>
-
-        <div class="thisBtn">
-            <a  target="_blank" class="active">品牌简介</a>
-            <a  target="_blank">立即留言</a>
-            <a  target="_blank">项目资讯</a>
         </div>
     </div>
 </div>
