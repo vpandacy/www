@@ -13,8 +13,7 @@
     <script src="/js/show.js" type="text/javascript"></script>
 
     <link rel='canonical' href='http://hsh.cn' />
-    <script type="text/javascript" src="/static/head/1/js/uaredirect.js"></script>
-    <link rel="stylesheet" href="/static/head/1/css/style.css" />
+
     <style>
         .zsbmain{
             width:1200px;
@@ -166,6 +165,10 @@
 <!--页脚结束-->
 <!-- 底部固定跳转留言板开始 -->
 <div>
+    <script type="text/javascript">
+        var zxUrl = "https://tb.53kf.com/code/client/10170954/9";
+        var lyUrl = "#lyb";
+    </script>
     <?= $page_script?>
     <script src="/js/zsb_cc_fixed.js"></script>
 </div>

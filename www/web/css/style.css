@@ -1,18 +1,18 @@
 ﻿@charset "utf-8";
-/* 
+/*
  * Copyright(c) 2014, www.zsb.cc
  * @Creator:赖明明
  * @Created  Date:2014-12-09
  * @Last Edit Date:2014-12-09
  * ---------------------------------------------------------------------------------------------*/
- body,div,p,ul,li,dl,dt,dd,h1,h2,h3,form,input,textarea,select,table,tr,td{margin:0; padding:0;}
- body{ background:#fff; font-size:12px; font-family:"宋体",Arial,Verdana; }
- h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;}
- li{list-style-type:none;}
- a{text-decoration:none;}
- input{outline:none;}
- img{border:0; /*display:block;*/}
- .clear{clear:both;}
+body,div,p,ul,li,dl,dt,dd,h1,h2,h3,form,input,textarea,select,table,tr,td{margin:0; padding:0;}
+body{ background:#fff; font-size:12px; font-family:"宋体",Arial,Verdana; }
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;}
+li{list-style-type:none;}
+a{text-decoration:none;}
+input{outline:none;}
+img{border:0; /*display:block;*/}
+.clear{clear:both;}
 /* ---------------------------------------------------------------------------------------------*/
 /*说明：但凡css里的带有active的类都是当前需要显示，需js控制，勿删*/
 
@@ -133,7 +133,7 @@
 #message{ margin:30px auto;}/*百分比宽度写在html里了*/
 #message .left{width:25%; min-width:200px; float:left;}
 #message .left .leftBox{width:200px; }
-#message .left .leftBox h3{width:200px; height:37px;  background:url(../images/mianfei.jpg) 0 0 no-repeat; border-top-left-radius:5px; border-top-right-radius:5px;} 
+#message .left .leftBox h3{width:200px; height:37px;  background:url(../images/mianfei.jpg) 0 0 no-repeat; border-top-left-radius:5px; border-top-right-radius:5px;}
 #message .left .leftBox .leftB{width:198px; border:1px solid #ebebeb;  border-top:none; padding-top:15px;}
 #message .left .leftBox .leftB span{display:block; width:174px; height:45px; margin:0 auto; padding-bottom:15px; background:url(../images/text.jpg) no-repeat;}
 #message .left .leftBox .leftB p{width:174px; margin:0 auto; }

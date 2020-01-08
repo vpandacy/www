@@ -1,0 +1,156 @@
+﻿@charset "utf-8";
+/* 
+ * Copyright(c) 2016 , 
+ * @Web Design：LaiMingMing
+ * @Created Date：2016-00-00
+ * @Last Edit Date：2016-00-00
+ * ---------------------------------------------------------------------------------------------*/
+ body,div,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,textarea,select,table,tr,td,header,nav,section,article,footer{margin:0; padding:0;}
+ body{ background:#fff; font-size:12px; font-family:microsoft yahei,Verdana,Arial,"宋体"; }
+ h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;}
+ a{text-decoration:none;}
+ ul{list-style-type:none;}
+ input{outline:none;}
+ img{border:0; display:block;}
+ table{border-collapse:collapse;}
+ textarea{outline:none; resize:none; overflow:auto;}
+ .clear{clear:both;}
+/* ---------------------------------------------------------------------------------------------*/
+
+
+#hd666{width:100%; height:64px; margin:0 auto; background: url(/images/lybook/hdbg.jpg) repeat-x;}
+#hd666 .hdBox666{width:1000px; margin:0 auto; height:64px; background: url(/images/lybook/header_bg.jpg)  right top no-repeat; position:relative;}
+#hd666 .hdBox666 img{display:block; padding-top:10px; height:50px;}
+
+#hd666 .nav666{width: 790px; height:30px; line-height:30px; position: absolute; left:240px; top: 0; color: #fff; font-size: 12px; }
+#hd666 .nav666 a{color: #fff; margin:0 12px; font-size: 14px; text-decoration: none; }
+#hd666 .hot666{width: 790px; height:33px; line-height:33px; position: absolute; left:250px; top: 30px; color: #323; font-size: 12px; }
+#hd666 .hot666 a{color: #333; margin-right: 15px;text-decoration: none; }
+#hd666 .hot666 a:hover{color: #FE5E0A; }
+
+#hd666 .search666{width:170px; height:26px; position: absolute; right: 30px; bottom: 4px; background: red;}
+#hd666 .search666 .text666{width:130px; height:24px; text-indent:5px; border: 1px solid #999; position: absolute; left: 0; top: 0; background: #fff; }
+#hd666 .search666 .btn666{width: 40px; height: 26px; position: absolute; right: 0; top: 0; cursor: pointer;}
+
+
+
+
+
+
+
+#main{width: 1000px; margin: 0 auto; }
+#main .contont{width:100%; padding:0 0 10px 0;}
+
+#main .contont .left{width:300px; float:left; background:#f9f9f9;  position:relative;}
+#main .contont .left img{width:300px; height:300px;}
+
+#main .contont .left h3{ padding:10px 0 0 10px; font-size:24px; color:#D3182D; font-weight:bold;}
+
+#main .contont .left .soso{ background:#F5F5F5; padding:10px 10px 15px; font-family: "宋体";}
+
+#main .contont .left dl{width:380px; margin:20px auto 21px;}
+#main .contont .left dl a{color:#fff; font-size:14px; width:170px; text-align:center; }
+#main .contont .left dl dt{width:180px; height:36px; line-height:36px; background:#D3172D; float:left; margin-right:20px;}
+#main .contont .left dl dt:hover{background:#EC384B;}
+#main .contont .left dl dt a{display:block; background:url(/images/lybook/icon_btn.png) 30px 8px no-repeat; margin-left:15px;}
+
+#main .contont .left dl dd{width:180px; height:36px; line-height:36px; text-align:center; background:green; float:left; margin:0;}
+#main .contont .left dl dd:hover{background:#309006;}
+#main .contont .left dl dd a{display:block; background:url(/images/lybook/icon_btn.png) 30px -20px no-repeat; margin-left:15px;}
+
+
+
+#main .contont .left  .fei{width:100%;height:40px;background:#fe6263;margin-top:20px; position:absolute; left:0; bottom:-61px; display:none;}
+#main .contont .left  .fei .text{width:361px; height:34px; margin:3px 0 0 3px; background:#fff; border:none; padding:0 6px;}
+#main .contont .left  .fei .btn{width:118px; height:35px; background:url(/images/lybook/free.jpg) no-repeat; border:none;}
+
+
+
+
+#main .contont .right{width:688px; height:298px; float:right; background:#F9F9F9; border:1px solid #eee;}
+
+#main .contont .right .title{ background:#F9F9F9 url(/images/lybook/le.png) 10px center no-repeat; padding:10px 10px 20px 80px; position:relative; }
+#main .contont .right .title h1{height:42px; line-height:37px; font-size:24px; font-weight:bold;  font-family:microsoft yahei; color:#D3182D;}
+#main .contont .right .title ul{width:100%; }
+#main .contont .right .title ul li{float:left; margin-right:10px; font-family: "宋体";}
+#main .contont .right .title ul li span{color:#C94043;}
+#main .contont .right .title em{display:block; width:77px; height:77px; background:url(/images/lybook/icon_rt.png) no-repeat; position:absolute; right:-2px; top:-1px;}
+
+
+#main .contont .right .right_M{ }
+#main .contont .right .right_M ul{padding:10px 0; border-top: 1px dashed #ddd; border-bottom: 1px dashed #ddd;  margin:0 20px; font-family: "宋体";}
+#main .contont .right .right_M li{float:left; width:30%; float: left; height:22px; line-height:22px; overflow:hidden; color:#666; padding-left:16px; margin-top:5px;}
+#main .contont .right .right_M li span{color:#D3182D;}
+
+#main .contont .right .right_M li.li1{background:url(/images/lybook/icon_img.png) 0 4px no-repeat;}
+#main .contont .right .right_M li.li2{background:url(/images/lybook/icon_img.png) 0 -24px no-repeat;}
+#main .contont .right .right_M li.li3{background:url(/images/lybook/icon_img.png) 0 -52px no-repeat;}
+#main .contont .right .right_M li.li4{background:url(/images/lybook/icon_img.png) 0 -80px no-repeat;}
+#main .contont .right .right_M li.li5{background:url(/images/lybook/icon_img.png) 0 -110px no-repeat;}
+#main .contont .right .right_M li.li6{background:url(/images/lybook/icon_img.png) 0 -137px no-repeat;}
+
+#main .contont .right .rightBox{ padding:10px; position:relative; }
+#main .contont .right .rightBox p{width:100%; margin-bottom:5px; line-height:24px; font-size:14px; padding-left:10px;}
+#main .contont .right .rightBox em{display:block; width:210px; height:70px; position:absolute; right:30px; bottom:30px; background:url(/images/lybook/ioc.png) center no-repeat;}
+
+#main .contont .right .rightBox p strong{font-size: 24px; color:#D3182D; }
+#main .contont .right .rightBox p strong span{margin:0 10px; }
+
+
+
+
+
+
+
+/*联系我们*/
+#main .lxwm{width: 100%; margin-bottom: 10px; }
+#main .lxwm img{width: 100%; }
+
+
+/*猜你喜欢*/
+#main .hobby{width: 100%; margin-bottom: 10px;}
+#main .hobby h3{width: 100%; height:34px; border-bottom: 2px solid #D3182D; padding-bottom:10px; margin-bottom: 10px;}
+#main .hobby h3 span{display: inline-block;  width: 78px; height:32px; line-height:32px; text-align: center; border-radius: 3px; cursor: pointer; float: left; font-size: 14px; border: 1px solid #D3182D; color:#666;}
+#main .hobby h3 p{width: 900px;  height:34px; line-height:34px; color: #333; font-size: 16px; float: left; margin-left: 10px;}
+#main .hobby h3 p a{color: #999; float: right; font-family: "宋体"; font-size: 12px;}
+#main .hobby h3 p a:hover{ color: #D3182D; }
+
+#main .hobby .hobbyBox{width: 100%; }
+#main .hobby .hobbyBox ul{width: 110%;}
+#main .hobby .hobbyBox ul li{width: 170px; float: left; margin-right:12px; background: #f6f6f6; padding:10px; }
+#main .hobby .hobbyBox ul li a{display: block;}
+#main .hobby .hobbyBox ul li a img{width: 100%; height:110px;}
+#main .hobby .hobbyBox ul li a dl{padding-left:5px; padding-top: 10px; font-family: "宋体";}
+#main .hobby .hobbyBox ul li a dl dt{width: 100%; font-size: 16px; font-weight: bold; color: #333;  font-family:microsoft yahei; }
+#main .hobby .hobbyBox ul li a dl dd{width: 100%; line-height: 22px; color: #999; }
+#main .hobby .hobbyBox ul li a dl dd span{color: #f60; }
+#main .hobby .hobbyBox ul li a dl dd strong{color: #f00; font-size:20px; margin-right: 5px; font-family: Tahoma, Helvetica, Arial, "Microsoft YaHei", sans-serif;}
+#main .hobby .hobbyBox ul li:hover dl dt{color:#f00;}
+
+
+
+/*文字链*/
+#main .txt{ width:998px;  overflow:hidden; border:1px solid #eee; border-bottom: none; margin-bottom:10px; font-family: "宋体";}
+#main .txt ul{width: 105%;}
+#main .txt ul li{width: 142px; height:24px; line-height: 24px; overflow:hidden; text-align: center; float: left; border-bottom: 1px solid #eee; border-right: 1px solid #eee;}
+#main .txt ul li a{display: block; font-size: 12px; color: #333; }
+
+#main .txt ul li.red a{color:#D3182D;}
+#main .txt ul li:hover{background:#D3182D;}
+#main .txt ul li:hover a{color: #fff;}
+
+/*发现*/
+#main .xs{width: 100%; margin-bottom:20px;}
+#main .xs h3{width:100%; height:20px; background: url(/images/lybook/xs.jpg) no-repeat;}
+#main .xs .xsBox{width: 100%; padding: 10px 0;}
+#main .xs .xsBox a img{width: 96px; height:58px; display: inline-block; padding: 0px 2px;}
+
+
+/*版权*/
+#footer{width: 100%; height:50px; line-height: 50px; text-align: center;  -background:#f8f8f8;  -border-top:1px solid #eee; font-size: 14px; margin-bottom: 50px; }
+
+
+
+
+#fixed{width: 100%; height:50px; position: fixed; left: 0; bottom: 0; background:#220D90 url(/images/lybook/ladoyk-zydlna-g_1000_50.jpg) center no-repeat;}
+

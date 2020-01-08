@@ -4,11 +4,13 @@ namespace common\components;
 use Yii;
 use yii\web\Controller;
 use yii\web\Response;
-
+use www\services\ApiRequestService;
 class BaseWebController extends Controller
 
 {
     public $enableCsrfValidation = false;
+    public $website_info = [];
+
 
     public $page_size = 30;
 
@@ -100,5 +102,18 @@ class BaseWebController extends Controller
     protected function isGetMethod()
     {
         return Yii::$app->request->isGet;
+    }
+
+    public function init()
+    {
+        if(empty($this->website_info)){
+            $cookies = "switch_version=dev_20191113001_page_manager;";
+            HttpClient::setCookie($cookies);
+            $content = ApiRequestService::sendPostRequest('/lianzhan/result/web',['web_url'=>$_SERVER['SERVER_NAME']]);
+            $data = json_decode($content['data'],true);
+            if($data){
+                $this->website_info = $data;
+            }
+        }
     }
 }
