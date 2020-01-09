@@ -50,7 +50,7 @@ use \common\services\GlobalUrlService;
 <div id="main">
     <div class="contont">
         <div class="left">
-            <img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project_info['projid']}/{$project_info['projid']}_140_90.jpg") ?>" alt=""/>
+            <img src="<?=GlobalUrlService::buildWWWUrl('/picture/flldqg/195588_240_240.jpg')?>" alt=""/>
         </div>
         <div class="right">
             <div class="title">

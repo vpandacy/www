@@ -39,7 +39,7 @@ use \common\services\GlobalUrlService;
     <div class="zsbInfoCom">
         <div class="zsbInfoComH">
             <dl>
-                <dt><img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project_info['projid']}/{$project_info['projid']}_96_58.jpg") ?>" alt="" /></dt>
+                <dt><img src="/picture/flldqg/195588_logo.jpg" alt="" /></dt>
                 <dd>
                     <strong><?=$project_info['projname']?></strong>
                     <p>热度：<span>★★★★★</span></p>
