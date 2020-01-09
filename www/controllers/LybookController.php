@@ -23,7 +23,7 @@ class LybookController extends BaseWebController
         $info = ApiRequestService::sendPostRequest('/lianzhan/lybook/index',[
             "code" => $code
         ]);
-        var_dump($code);
+        var_dump($info);
         if (!$info) {
             return $this->render('/error/index', ['msg' => ApiRequestService::getLastErrorMsg()]);
         }
