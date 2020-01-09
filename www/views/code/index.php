@@ -1,3 +1,6 @@
+<?php
+use \common\services\GlobalUrlService;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +10,10 @@
     <meta name="description" content=<?= $description?> >
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="x-ua-compatible" content="ie=7" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/show.css" />
-    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
-    <script src="/js/show.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="<?=GlobalUrlService::buildWWWUrl('/css/style.css')?>" />
+    <link rel="stylesheet" href="<?=GlobalUrlService::buildWWWUrl('/css/show.css')?>" />
+    <script type="text/javascript" src="<?=GlobalUrlService::buildWWWUrl('/js/jquery-1.7.2.min.js')?>"></script>
+    <script src="<?=GlobalUrlService::buildWWWUrl('/js/show.js')?>" type="text/javascript"></script>
 
     <link rel='canonical' href='http://hsh.cn' />
 
@@ -138,7 +141,7 @@
 <?= $content; ?>
 <!-- 留言板开始 -->
 <div style="background:url(/images/lybbj.jpg) no-repeat center; width:1200px; height:550px; margin:0 auto;">
-    <script type="text/javascript" src="/js/fingerprint.js"></script>
+    <script type="text/javascript" src="<?=GlobalUrlService::buildWWWUrl('/js/fingerprint.js')?>"></script>
     <script type="text/javascript">
         var khid = <?=$khid;?>;
         var sjid = "91";
@@ -147,7 +150,7 @@
         var sid = "";
         var finger = new Fingerprint().get();
     </script>
-    <script src="/js/zsb_cc_lyb.js"></script>
+    <script src="<?=GlobalUrlService::buildWWWUrl('/js/zsb_cc_lyb.js')?>"></script>
 </div>
 <!-- 留言板结束 -->
  <!--页脚开始-->
@@ -173,7 +176,7 @@
         var lyUrl = "#lyb";
     </script>
     <?= $page_script?>
-    <script src="/js/zsb_cc_fixed.js"></script>
+    <script src="<?=GlobalUrlService::buildWWWUrl('/js/zsb_cc_fixed.js')?>"></script>
 </div>
 <!-- 底部固定跳转留言板结束 -->
 

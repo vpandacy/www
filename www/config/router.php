@@ -6,6 +6,7 @@ return [
     'rules' => [
         '<controller:(code)>/<code:[a-zA-Z0-9\-_]+>' => '<controller>/index',
         '<controller:(lybook)>/<code:[a-zA-Z0-9\-_]+>' => '<controller>/index',
+        '<controller:(brand)>/<code:[a-zA-Z0-9\-_]+>' => '<controller>/index',
         '<controller:(category)>/<id:\d+>' => '<controller>/index',
         '<controller:(category)>/<id:\d+>/sort/<sort:\w+>' => '<controller>/index',
         '<controller:(search)>' => '<controller>/index',

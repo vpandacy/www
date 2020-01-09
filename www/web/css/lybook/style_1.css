@@ -18,8 +18,8 @@
 /* ---------------------------------------------------------------------------------------------*/
 
 
-#hd666{width:100%; height:64px; margin:0 auto; background: url(/images/lybook/hdbg.jpg) repeat-x;}
-#hd666 .hdBox666{width:1000px; margin:0 auto; height:64px; background: url(/images/lybook/header_bg.jpg)  right top no-repeat; position:relative;}
+#hd666{width:100%; height:64px; margin:0 auto; background: url(/images/flldqg/hdbg.jpg) repeat-x;}
+#hd666 .hdBox666{width:1000px; margin:0 auto; height:64px; background: url(/images/flldqg/header_bg.jpg)  right top no-repeat; position:relative;}
 #hd666 .hdBox666 img{display:block; padding-top:10px; height:50px;}
 
 #hd666 .nav666{width: 790px; height:30px; line-height:30px; position: absolute; left:240px; top: 0; color: #fff; font-size: 12px; }
@@ -52,29 +52,29 @@
 #main .contont .left dl a{color:#fff; font-size:14px; width:170px; text-align:center; }
 #main .contont .left dl dt{width:180px; height:36px; line-height:36px; background:#D3172D; float:left; margin-right:20px;}
 #main .contont .left dl dt:hover{background:#EC384B;}
-#main .contont .left dl dt a{display:block; background:url(/images/lybook/icon_btn.png) 30px 8px no-repeat; margin-left:15px;}
+#main .contont .left dl dt a{display:block; background:url(/images/flldqg/icon_btn.png) 30px 8px no-repeat; margin-left:15px;}
 
 #main .contont .left dl dd{width:180px; height:36px; line-height:36px; text-align:center; background:green; float:left; margin:0;}
 #main .contont .left dl dd:hover{background:#309006;}
-#main .contont .left dl dd a{display:block; background:url(/images/lybook/icon_btn.png) 30px -20px no-repeat; margin-left:15px;}
+#main .contont .left dl dd a{display:block; background:url(/images/flldqg/icon_btn.png) 30px -20px no-repeat; margin-left:15px;}
 
 
 
 #main .contont .left  .fei{width:100%;height:40px;background:#fe6263;margin-top:20px; position:absolute; left:0; bottom:-61px; display:none;}
 #main .contont .left  .fei .text{width:361px; height:34px; margin:3px 0 0 3px; background:#fff; border:none; padding:0 6px;}
-#main .contont .left  .fei .btn{width:118px; height:35px; background:url(/images/lybook/free.jpg) no-repeat; border:none;}
+#main .contont .left  .fei .btn{width:118px; height:35px; background:url(/images/flldqg/free.jpg) no-repeat; border:none;}
 
 
 
 
 #main .contont .right{width:688px; height:298px; float:right; background:#F9F9F9; border:1px solid #eee;}
 
-#main .contont .right .title{ background:#F9F9F9 url(/images/lybook/le.png) 10px center no-repeat; padding:10px 10px 20px 80px; position:relative; }
+#main .contont .right .title{ background:#F9F9F9 url(/images/flldqg/le.png) 10px center no-repeat; padding:10px 10px 20px 80px; position:relative; }
 #main .contont .right .title h1{height:42px; line-height:37px; font-size:24px; font-weight:bold;  font-family:microsoft yahei; color:#D3182D;}
 #main .contont .right .title ul{width:100%; }
 #main .contont .right .title ul li{float:left; margin-right:10px; font-family: "宋体";}
 #main .contont .right .title ul li span{color:#C94043;}
-#main .contont .right .title em{display:block; width:77px; height:77px; background:url(/images/lybook/icon_rt.png) no-repeat; position:absolute; right:-2px; top:-1px;}
+#main .contont .right .title em{display:block; width:77px; height:77px; background:url(/images/flldqg/icon_rt.png) no-repeat; position:absolute; right:-2px; top:-1px;}
 
 
 #main .contont .right .right_M{ }
@@ -82,16 +82,16 @@
 #main .contont .right .right_M li{float:left; width:30%; float: left; height:22px; line-height:22px; overflow:hidden; color:#666; padding-left:16px; margin-top:5px;}
 #main .contont .right .right_M li span{color:#D3182D;}
 
-#main .contont .right .right_M li.li1{background:url(/images/lybook/icon_img.png) 0 4px no-repeat;}
-#main .contont .right .right_M li.li2{background:url(/images/lybook/icon_img.png) 0 -24px no-repeat;}
-#main .contont .right .right_M li.li3{background:url(/images/lybook/icon_img.png) 0 -52px no-repeat;}
-#main .contont .right .right_M li.li4{background:url(/images/lybook/icon_img.png) 0 -80px no-repeat;}
-#main .contont .right .right_M li.li5{background:url(/images/lybook/icon_img.png) 0 -110px no-repeat;}
-#main .contont .right .right_M li.li6{background:url(/images/lybook/icon_img.png) 0 -137px no-repeat;}
+#main .contont .right .right_M li.li1{background:url(/images/flldqg/icon_img.png) 0 4px no-repeat;}
+#main .contont .right .right_M li.li2{background:url(/images/flldqg/icon_img.png) 0 -24px no-repeat;}
+#main .contont .right .right_M li.li3{background:url(/images/flldqg/icon_img.png) 0 -52px no-repeat;}
+#main .contont .right .right_M li.li4{background:url(/images/flldqg/icon_img.png) 0 -80px no-repeat;}
+#main .contont .right .right_M li.li5{background:url(/images/flldqg/icon_img.png) 0 -110px no-repeat;}
+#main .contont .right .right_M li.li6{background:url(/images/flldqg/icon_img.png) 0 -137px no-repeat;}
 
 #main .contont .right .rightBox{ padding:10px; position:relative; }
 #main .contont .right .rightBox p{width:100%; margin-bottom:5px; line-height:24px; font-size:14px; padding-left:10px;}
-#main .contont .right .rightBox em{display:block; width:210px; height:70px; position:absolute; right:30px; bottom:30px; background:url(/images/lybook/ioc.png) center no-repeat;}
+#main .contont .right .rightBox em{display:block; width:210px; height:70px; position:absolute; right:30px; bottom:30px; background:url(/images/flldqg/ioc.png) center no-repeat;}
 
 #main .contont .right .rightBox p strong{font-size: 24px; color:#D3182D; }
 #main .contont .right .rightBox p strong span{margin:0 10px; }
@@ -141,7 +141,7 @@
 
 /*发现*/
 #main .xs{width: 100%; margin-bottom:20px;}
-#main .xs h3{width:100%; height:20px; background: url(/images/lybook/xs.jpg) no-repeat;}
+#main .xs h3{width:100%; height:20px; background: url(/images/flldqg/xs.jpg) no-repeat;}
 #main .xs .xsBox{width: 100%; padding: 10px 0;}
 #main .xs .xsBox a img{width: 96px; height:58px; display: inline-block; padding: 0px 2px;}
 
@@ -152,5 +152,5 @@
 
 
 
-#fixed{width: 100%; height:50px; position: fixed; left: 0; bottom: 0; background:#220D90 url(/images/lybook/ladoyk-zydlna-g_1000_50.jpg) center no-repeat;}
+#fixed{width: 100%; height:50px; position: fixed; left: 0; bottom: 0; background:#220D90 url(/images/flldqg/ladoyk-zydlna-g_1000_50.jpg) center no-repeat;}
 

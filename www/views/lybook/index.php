@@ -1,3 +1,6 @@
+<?php
+use \common\services\GlobalUrlService;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +8,11 @@
     <TITLE><?= $title?></TITLE>
     <meta name="keywords" content="<?= $keywords?>">
     <meta name="description" content="<?= $description?>">
-    <link rel="stylesheet" href="/css/lybook/style_1.css">
+    <link rel="stylesheet" href="<?=GlobalUrlService::buildWWWUrl('/css/lybook/style_1.css')?>">
     <link rel='canonical' href='http://hsh.cn'/>
 
 
-    <script type="text/javascript" src="/js/lybook/uaredirect.js"></script>
+    <script type="text/javascript" src="<?=GlobalUrlService::buildWWWUrl('/js/lybook/uaredirect.js')?>"></script>
     <script type="text/javascript">
         //		uaredirect.init("http://wap.hsh.cn/Wap2/advertInfo?advertId=11953");
     </script>
@@ -26,18 +29,20 @@
 </head>
 <body>
 <!--头部-->
-<link rel="stylesheet" href="/css/lybook/maozitou.css"/>
+
+<link rel="stylesheet" href="<?=GlobalUrlService::buildWWWUrl('/css/lybook/maozitou.css')?>"/>
 <script>
     var widthSize = "1000" + 'px';
     var url = '/l51/';
 </script>
 <!-- 头部模板 -->
-<link rel="stylesheet" href="/css/show.css"/>        <!-- 首页样式 -->
-<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+<link rel="stylesheet" href="<?=GlobalUrlService::buildWWWUrl('/css/show.css')?>"/>        <!-- 首页样式 -->
+<script type="text/javascript" src="<?=GlobalUrlService::buildWWWUrl('/js/jquery-1.7.2.min.js')?>"></script>
 <script>
 
 </script>
-<script src="/js/show.js" type="text/javascript"></script>
+
+<script src="<?=GlobalUrlService::buildWWWUrl('/js/show.js')?>" type="text/javascript"></script>
 
 
 <?=$header;?>
@@ -45,7 +50,7 @@
 <div id="main">
     <div class="contont">
         <div class="left">
-            <img src="/picture/lybook/195588_240_240.jpg" alt=""/>
+            <img src="<?=GlobalUrlService::buildWWWUrl('/picture/flldqg/195588_240_240.jpg')?>" alt=""/>
         </div>
         <div class="right">
             <div class="title">
@@ -92,12 +97,12 @@
         var _gname = "<?=$project_info['projname']?>";
     </script>
 
-    <script src="/js/zsb_cc_lyb.js"></script>
+    <script src="<?=GlobalUrlService::buildWWWUrl('/js/zsb_cc_lyb.js')?>"></script>
 
     <!-- 联系我们 -->
     <div class="lxwm" style="margin-top:10px;">
 
-        <img src="/picture/lybook/zb_lxwm1.jpg"></div>
+        <img src="<?=GlobalUrlService::buildWWWUrl('/picture/flldqg/zb_lxwm1.jpg')?>"></div>
 
 
     <div class="txt">
@@ -153,7 +158,7 @@
             <ul>
                 <li>
                     <a href="/show/tunaikeqiangyi">
-                        <img src="/picture/lybook/189786_140_90.jpg" alt="">
+                        <img src="/picture/flldqg/189786_140_90.jpg" alt="">
                         <dl>
                             <dt>涂奈克墙衣</dt>
                             <dd><p>涂奈克墙衣</p></dd>
@@ -164,7 +169,7 @@
                 </li>
                 <li>
                     <a href="/show/qvzzzh">
-                        <img src="/picture/lybook/999907_140_90.jpg" alt="">
+                        <img src="/picture/flldqg/999907_140_90.jpg" alt="">
                         <dl>
                             <dt>畅家全铝百度</dt>
                             <dd><p>畅家全铝家居</p></dd>
@@ -175,7 +180,7 @@
                 </li>
                 <li>
                     <a href="/show/lvshen">
-                        <img src="/picture/lybook/190326_140_90.jpg" alt="">
+                        <img src="/picture/flldqg/190326_140_90.jpg" alt="">
                         <dl>
                             <dt>绿申房屋</dt>
                             <dd><p></p></dd>
@@ -186,7 +191,7 @@
                 </li>
                 <li>
                     <a href="/show/dizhuan2">
-                        <img src="/picture/lybook/999908_140_90.jpg" alt="">
+                        <img src="/picture/flldqg/999908_140_90.jpg" alt="">
                         <dl>
                             <dt>综合地砖2</dt>
                             <dd><p>自有工厂生产、质优价廉，销售四季均旺销</p></dd>
@@ -197,7 +202,7 @@
                 </li>
                 <li>
                     <a href="/show/zuanshihua">
-                        <img src="/picture/lybook/189852_140_90.jpg" alt="">
+                        <img src="/picture/flldqg/189852_140_90.jpg" alt="">
                         <dl>
                             <dt>中国梦钻石画</dt>
                             <dd><p>中国梦钻石画</p></dd>
@@ -215,8 +220,8 @@
     <div class="xs">
         <h3></h3>
         <div class="xsBox">
-            <a href="/show/shangpingong"><img src="/picture/lybook/6027_logo.jpg" alt="尚品宫纸上烧烤"></a><a
-                    href="/show/zuonalinanzhuang"><img src="/picture/lybook/188053_logo.jpg" alt="佐纳利男装"></a>
+            <a href="/show/shangpingong"><img src="/picture/flldqg/6027_logo.jpg" alt="尚品宫纸上烧烤"></a><a
+                    href="/show/zuonalinanzhuang"><img src="/picture/flldqg/188053_logo.jpg" alt="佐纳利男装"></a>
         </div>
     </div>
 
@@ -250,10 +255,11 @@
 <script>
     $("#headlogo").attr('src', 'http://cdn.hsh568.cn/zsbcc/images/logo-hsh-563x108.png');
 </script>
-<script type="text/javascript" src="/js/lybook/a704e9f363534197be9d072042278512.js"></script>
-<script type="text/javascript" src="/js/lybook/addtoolbar.js"></script>
-<script type="text/javascript" src="/js/lybook/location.js"></script>
 
-<script type="text/javascript" src="/js/lybook/index.js"></script>
+<script type="text/javascript" src="<?=GlobalUrlService::buildWWWUrl('/js/lybook/a704e9f363534197be9d072042278512.js')?>"></script>
+<script type="text/javascript" src="<?=GlobalUrlService::buildWWWUrl('/js/lybook/addtoolbar.js')?>"></script>
+<script type="text/javascript" src="<?=GlobalUrlService::buildWWWUrl('/js/lybook/location.js')?>"></script>
+
+<script type="text/javascript" src="<?=GlobalUrlService::buildWWWUrl('/js/lybook/index.js')?>"></script>
 </body>
 </html>
