@@ -17,6 +17,11 @@ class DefaultController extends BaseWebController
         $web = $this->website_info;
         $theme = \Yii::$app->params['Generate']['path']."/theme".$web['theme_id'].".html";
         $value = file_get_contents($theme);
+
+        $value = str_replace("telephone_replace",$this->website_info['company_tel']??'',$value);
+        $value = str_replace("company_replace",$this->website_info['company_name']??'',$value);
+        $value = str_replace("record_number_replace",$this->website_info['icp']??'',$value);
+
         $this->layout = true;
         return $this->render('index', [
             'data' => $value,

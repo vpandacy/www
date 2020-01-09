@@ -35,4 +35,11 @@ return [
         ],
         "test"=>'switch_version=dev_20200108_new_page_manager;',
     ],
+    'redis' => [
+        'database' => 0,
+        'host'     => '47.112.117.135',
+        'port'     => 6379,
+        'prefix'   => 'CACHE_HSH_',
+        'setTimeout' => 86000
+    ]
 ];

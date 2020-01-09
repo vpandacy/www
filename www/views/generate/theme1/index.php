@@ -1225,9 +1225,9 @@ use \common\services\GlobalUrlService;
                                 <a href="http://www.hsh.cn/contactus">联系我们</a>|
                                 <a href="http://www.hsh.cn/tssc">投诉删除</a>
                             </p>
-                            <p>客服电话：400-822-1108
+                            <p>客服电话：telephone_replace
                                 创业有风险 投资需谨慎</p>
-                            <p>技术支持：广州诚志名远网络技术有限公司  ICP备案号：<a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备16048687号-4</a></p>
+                            <p>技术支持：company_replace  ICP备案号：<a href="http://www.beian.miit.gov.cn/" target="_blank">record_number_replace</a></p>
                         </div>
                     </div>
                 </div>
