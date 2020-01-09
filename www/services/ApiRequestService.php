@@ -57,6 +57,11 @@ class ApiRequestService extends BaseService
     {
         self::$headers = $header;
     }
+
+    public static function getCookies()
+    {
+        return self::$cookie;
+    }
     //设置cookie
     public static function setCookies( $cookie ){
         self::$cookie = $cookie;
