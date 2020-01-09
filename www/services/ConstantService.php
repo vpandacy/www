@@ -12,5 +12,5 @@ namespace www\services;
 class ConstantService
 {
     const WEBPAGE_HEAD = 2;
-    const WEBPAGE_ENEME = 1;
+    const WEBPAGE_EHEME = 1;
 }
