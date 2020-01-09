@@ -3,6 +3,7 @@
 namespace www\services;
 
 use common\components\HttpClient;
+use common\services\AuthSignService;
 use common\services\BaseService;
 
 class ApiRequestService extends BaseService
@@ -28,6 +29,7 @@ class ApiRequestService extends BaseService
         if( $method == "GET" ){
             $result = HttpClient::get( $url,$params );
         }else{
+            $params = AuthSignService::getSign($params);
             $result = HttpClient::post( $url,$params );
         }
         try{

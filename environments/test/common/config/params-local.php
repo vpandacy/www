@@ -41,5 +41,9 @@ return [
         'port'     => 6379,
         'prefix'   => 'CACHE_HSH_',
         'setTimeout' => 86000
-    ]
+    ],
+    'auth'=>[
+        'auth_app_id' => 'dfddsodb',
+        'auth_key' => 'KDkjkdsjkdkjjgkDK45dkbnzro',
+    ],
 ];
