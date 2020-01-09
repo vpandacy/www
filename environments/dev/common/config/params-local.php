@@ -35,6 +35,13 @@ return [
         'theme' => ['3'=>'特色餐饮','9'=>'环保机械','2'=>'家居建材','4'=>'服装鞋帽','10'=>'集成墙','6'=>'生活服务',
             '8'=>'母婴教育','5'=>'休闲食品','7'=>'农村致富']
     ],
+    'redis' => [
+        'database' => 0,
+        'host'     => '47.112.117.135',
+        'port'     => 6379,
+        'prefix'   => 'CACHE_HSH_',
+        'setTimeout' => 86000
+    ],
     'auth'=>[
         'auth_app_id' => 'dfddsodb',
         'auth_key' => 'KDkjkdsjkdkjjgkDK45dkbnzro',
