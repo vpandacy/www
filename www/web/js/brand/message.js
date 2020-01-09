@@ -119,7 +119,7 @@ document.writeln("			<p>此次通话您的电话处于接听状态,无需承担�
 document.writeln("		</div>");
 document.writeln("	</div>");
 document.writeln("	<div class=\"right\">");
-document.writeln("		<div class=\"text\"><img src=\"/static/book/images/liuyanban/e1.jpg\" alt=\"\" /></div>");
+document.writeln("		<div class=\"text\"><img src=\"/picture/flldqg/e1.jpg\" alt=\"\" /></div>");
 document.writeln("		<form action=\"http://hsh58.sbook.hsh568.cn?do=pc\" method=\"post\" name=\"theform2\" id=\"theform2\" target=\"_blank\" onsubmit=\"return check(this)\">");
 document.writeln('<input name="khid" type="hidden" value="'+khid+'">');
 document.writeln('<input name="sid" type="hidden" value="'+sid+'">');
