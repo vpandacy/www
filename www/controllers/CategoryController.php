@@ -58,6 +58,7 @@ class CategoryController extends BaseController
         return $this->render('index', [
             'project_list' => $project_list,
             'category_list' => $category_list,
+            'category_info' => $category_info_tmp,
             'category_select' => $category_select,
             'project_r' => $project_r,
             'project_end' => $project_end,

@@ -293,8 +293,8 @@ use common\services\GlobalUrlService;
 <!-- [内页主题-] -->
 <div id="title" class="bottom">
     <div class="main">
-        <h2><i></i>特色餐饮</h2>
-        <p>全国餐饮美食连锁加盟,百种餐饮连锁品牌,汇聚百种独门赚钱好项目,百年技艺,免费培训,独特餐饮美食,样样赚钱.</p>
+        <h2><i></i><?=$category_info['class_name']?></h2>
+        <p><?=$category_info['class_des']?></p>
     </div>
 </div>
 <!-- 内页项目列表 -->
