@@ -50,7 +50,7 @@ use \common\services\GlobalUrlService;
 <div id="main">
     <div class="contont">
         <div class="left">
-            <img src="<?=GlobalUrlService::buildWWWUrl('/picture/flldqg/195588_240_240.jpg')?>" alt=""/>
+            <img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project_info['projid']}/{$project_info['projid']}_140_90.jpg") ?>" alt=""/>
         </div>
         <div class="right">
             <div class="title">
@@ -156,61 +156,22 @@ use \common\services\GlobalUrlService;
         </h3>
         <div class="hobbyBox">
             <ul>
-                <li>
-                    <a href="/show/tunaikeqiangyi">
-                        <img src="/picture/flldqg/189786_140_90.jpg" alt="">
-                        <dl>
-                            <dt>涂奈克墙衣</dt>
-                            <dd><p>涂奈克墙衣</p></dd>
-                            <dd>投资热度：<span>14098↑</span></dd>
-                            <dd><strong>86%</strong>的人浏览过该项目</dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="/show/qvzzzh">
-                        <img src="/picture/flldqg/999907_140_90.jpg" alt="">
-                        <dl>
-                            <dt>畅家全铝百度</dt>
-                            <dd><p>畅家全铝家居</p></dd>
-                            <dd>投资热度：<span>14677↑</span></dd>
-                            <dd><strong>86%</strong>的人浏览过该项目</dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="/show/lvshen">
-                        <img src="/picture/flldqg/190326_140_90.jpg" alt="">
-                        <dl>
-                            <dt>绿申房屋</dt>
-                            <dd><p></p></dd>
-                            <dd>投资热度：<span>14105↑</span></dd>
-                            <dd><strong>74%</strong>的人浏览过该项目</dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="/show/dizhuan2">
-                        <img src="/picture/flldqg/999908_140_90.jpg" alt="">
-                        <dl>
-                            <dt>综合地砖2</dt>
-                            <dd><p>自有工厂生产、质优价廉，销售四季均旺销</p></dd>
-                            <dd>投资热度：<span>12983↑</span></dd>
-                            <dd><strong>78%</strong>的人浏览过该项目</dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="/show/zuanshihua">
-                        <img src="/picture/flldqg/189852_140_90.jpg" alt="">
-                        <dl>
-                            <dt>中国梦钻石画</dt>
-                            <dd><p>中国梦钻石画</p></dd>
-                            <dd>投资热度：<span>8582↑</span></dd>
-                            <dd><strong>71%</strong>的人浏览过该项目</dd>
-                        </dl>
-                    </a>
-                </li>
+                <?php if($project_like):?>
+                    <?php foreach ($project_like as $_item):?>
+                    <li>
+                        <a href="<?=GlobalUrlService::buildWWWUrl('/code/'.$_item['code'])?>">
+                            <img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$_item['projid']}/{$_item['projid']}_140_90.jpg") ?>" alt="">
+                            <dl>
+                                <dt><?=$_item['projname']?></dt>
+                                <dd><p><?=$_item['proj_abbr']?></p></dd>
+                                <dd>投资热度：<span>14098↑</span></dd>
+                                <dd><strong>86%</strong>的人浏览过该项目</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <?php endforeach;?>
+                <?php endif;?>
+
                 <div class="clear"></div>
             </ul>
         </div>
