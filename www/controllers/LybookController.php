@@ -40,7 +40,7 @@ class LybookController extends BaseWebController
         $page = $data['page'];
 
         $project_info = $data['project_info'];
-
+        $project_like = $data['project_r'];
 
         $title = $data['title'] ?? '';
         $description = $data['description'] ?? '';
@@ -49,7 +49,6 @@ class LybookController extends BaseWebController
         $head_id = $page['head_id'] ?? 0;
         $nav_path = \Yii::$app->params['Generate']['path'];
         $header = @file_get_contents($nav_path."/head{$head_id}.html");
-
         return $this->render('index', [
             'title' => $title,
             'description' => $description,
@@ -57,7 +56,18 @@ class LybookController extends BaseWebController
             'header' => $header,
             'khid' => $page['project_id'],
             'page_script' => $page_script,
-            'project_info' => $project_info
+            'project_info' => $project_info,
+            'project_like' => $this->randArr($project_like)
         ]);
     }
+
+    private function randArr($arr){
+        $keys=array_rand($arr,5);
+        $ret=array();
+        foreach($keys as $v){
+            $ret[$v]=$arr[$v];
+        }
+        return $ret;
+    }
+
 }
