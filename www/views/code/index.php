@@ -129,8 +129,8 @@
     <div class="zsbmain">
         <div class="thisBtn">
             <a href="##" target="_blank" class="active">品牌简介</a>
-            <a href="##" target="_blank">立即留言</a>
-            <a href="##" target="_blank">项目资讯</a>
+            <a href="/lybook/<?=$code?>" target="_blank">立即留言</a>
+<!--            <a href="##" target="_blank">项目资讯</a>-->
         </div>
     </div>
 </div>

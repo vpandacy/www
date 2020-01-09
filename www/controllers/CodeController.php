@@ -53,6 +53,7 @@ class CodeController extends BaseWebController
             'title' => $title,
             'description' => $description,
             'nav' => $nav,
+            'code' => $code,
             'kf_id' => $media_kf['kf_id'],
             'kf_style' => $media_kf['kf_style'],
             'khid' => $page['project_id'],
