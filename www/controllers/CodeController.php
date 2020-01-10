@@ -20,8 +20,7 @@ class CodeController extends BaseWebController
 
         $redis = RedisCacheService::getInstance();
         $data = $redis::getValue('code='.$code);
-
-
+        
         if(!$data)
         {
             $info = ApiRequestService::sendPostRequest('/lianzhan/code/index',[
@@ -64,12 +63,20 @@ class CodeController extends BaseWebController
                 'khid' => $page['project_id'],
                 'content' => $content,
                 'page_script' => $page_script,
+                'footer' => $this->website_info,
             ];
             $redis::setValue('code='.$code,$data);
         }
 
-        
+
         return $this->render('index', $data);
     }
 
+    //清除缓存
+    public function actionClean()
+    {
+        $code = $this->get('code');
+        $redis = RedisCacheService::getInstance();
+        $redis::setValue('code='.$code,null);
+    }
 }
