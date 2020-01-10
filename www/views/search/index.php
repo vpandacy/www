@@ -350,7 +350,7 @@ use common\services\GlobalUrlService;
                         <h3><i></i>最新专题<a href="" target="_blank">更多</a></h3>
                         <ul>
                             <?php foreach ($project_r as $project): ?>
-                                <?php if ($_k == 33 && $_k < 35): ?>
+                                <?php if ($_k == 15 && $_k < 17): ?>
                                     <li><a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
                                            target="_blank"><?= $project['projname'] ?></a></li>
                                     <li><a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
@@ -370,7 +370,7 @@ use common\services\GlobalUrlService;
     <div class="main">
         <div class="recomBox">
             <?php foreach ($project_r as $project): ?>
-                <?php if ($_k == 35 && $_k < 43): ?>
+                <?php if ($_k == 10 && $_k < 18): ?>
                     <dl>
                         <dt>
                             <a href="<?= GlobalUrlService::buildWWWUrl("/code/{$project['code']}") ?>"
