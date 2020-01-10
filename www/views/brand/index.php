@@ -99,7 +99,7 @@ use \common\services\GlobalUrlService;
                     <?php if($project_list):?>
                         <?php foreach ($project_list as $_key => $_item):?>
                     <li><em class="m1">9919</em>
-                        <a href="<?=GlobalUrlService::buildWWWUrl('/code/'.$_item['projid'])?>"><?=$_item['projname']?></a><span><?=$_key?></span>
+                        <a href="<?=GlobalUrlService::buildWWWUrl('/code/'.$_item['code'])?>"><?=$_item['projname']?></a><span><?=$_key?></span>
                     </li>
                             <?php endforeach;?>
                     <?php endif;?>
