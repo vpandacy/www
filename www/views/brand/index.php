@@ -56,7 +56,7 @@ use \common\services\GlobalUrlService;
         </div>
     </div>
     <div class="zsbBtn">
-        <a href="/jiamenglyb/flldqg/k/195588/s/161/kw/_" target="_blank">查看详情</a>
+        <a href="<?=GlobalUrlService::buildWWWUrl('/code/'.$code)?>_" target="_blank">查看详情</a>
         <a href="http://www10.53kf.com/webCompany.php?kf_sign=DEyNzMTU2MI2NjEwODkyNzIxNDQ4MDA3NzIxNDA4NjU=&arg=<?=$kf_id?>&style=<?=$kf_style?>&language=zh-cn" target="_blank" class="active">立即咨询</a>
     </div>
 </div>
