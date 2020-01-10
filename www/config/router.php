@@ -4,6 +4,7 @@ return [
     'showScriptName' => false,
     'enableStrictParsing' => false,
     'rules' => [
+        '<controller:(code)>/clean/<code:[a-zA-Z0-9\-_]+>' => '<controller>/clean',
         '<controller:(code)>/<code:[a-zA-Z0-9\-_]+>' => '<controller>/index',
         '<controller:(lybook)>/<code:[a-zA-Z0-9\-_]+>' => '<controller>/index',
         '<controller:(brand)>/<code:[a-zA-Z0-9\-_]+>' => '<controller>/index',
