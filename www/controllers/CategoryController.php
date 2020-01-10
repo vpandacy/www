@@ -24,7 +24,7 @@ class CategoryController extends BaseController
 
         $data = $redis::getValue('category='."{$id}-{$sort}");
 
-        
+
         if(!$data)
         {
             $info = ApiRequestService::sendPostRequest('/lianzhan/type/index', [
