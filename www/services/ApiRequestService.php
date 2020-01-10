@@ -30,7 +30,6 @@ class ApiRequestService extends BaseService
             $result = HttpClient::get( $url,$params );
         }else{
             $params = AuthSignService::getSign($params);
-            var_dump($params);die;
             $result = HttpClient::post( $url,$params );
         }
         try{
