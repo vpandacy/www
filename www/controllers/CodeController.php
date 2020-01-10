@@ -5,6 +5,7 @@ namespace www\controllers;
 
 use common\components\BaseWebController;
 use common\components\HttpClient;
+use common\services\GlobalUrlService;
 use common\services\RedisCacheService;
 use www\services\ApiRequestService;
 
@@ -20,7 +21,7 @@ class CodeController extends BaseWebController
 
         $redis = RedisCacheService::getInstance();
         $data = $redis::getValue('code='.$code);
-        
+
         if(!$data)
         {
             $info = ApiRequestService::sendPostRequest('/lianzhan/code/index',[
@@ -78,5 +79,6 @@ class CodeController extends BaseWebController
         $code = $this->get('code');
         $redis = RedisCacheService::getInstance();
         $redis::setValue('code='.$code,null);
+        return $this->redirect(GlobalUrlService::buildWWWUrl('/'));
     }
 }

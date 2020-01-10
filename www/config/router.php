@@ -6,8 +6,14 @@ return [
     'rules' => [
         '<controller:(code)>/clean/<code:[a-zA-Z0-9\-_]+>' => '<controller>/clean',
         '<controller:(code)>/<code:[a-zA-Z0-9\-_]+>' => '<controller>/index',
+
+        '<controller:(lybook)>/clean/<code:[a-zA-Z0-9\-_]+>' => '<controller>/clean',
         '<controller:(lybook)>/<code:[a-zA-Z0-9\-_]+>' => '<controller>/index',
+
+        '<controller:(brand)>/clean/<code:[a-zA-Z0-9\-_]+>' => '<controller>/clean',
         '<controller:(brand)>/<code:[a-zA-Z0-9\-_]+>' => '<controller>/index',
+
+        '<controller:(category)>/clean/<id:\d+>/sort/<sort:\w+>' => '<controller>/clean',
         '<controller:(category)>/<id:\d+>' => '<controller>/index',
         '<controller:(category)>/<id:\d+>/sort/<sort:\w+>' => '<controller>/index',
         '<controller:(search)>' => '<controller>/index',
