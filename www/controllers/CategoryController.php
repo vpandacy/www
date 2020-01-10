@@ -22,11 +22,10 @@ class CategoryController extends BaseController
         $sort = $this->get('sort', '最热');
         $redis = RedisCacheService::getInstance();
 
-        $data = $redis::getValue('category='."{$id}-{$sort}");
+        $data = $redis::getValue('category=' . "{$id}-{$sort}");
 
 
-        if(!$data)
-        {
+        if (!$data) {
             $info = ApiRequestService::sendPostRequest('/lianzhan/type/index', [
                 "id" => $id,
                 'sort' => $sort
@@ -69,11 +68,11 @@ class CategoryController extends BaseController
                 'project_r' => $project_r,
                 'project_end' => $project_end,
                 'id' => $class_id,
-                'sort' => $sort
+                'sort' => $sort,
+                'footer' => $this->website_info,
             ];
-            $redis::setValue('category='."{$id}-{$sort}",$data);
+            $redis::setValue('category=' . "{$id}-{$sort}", $data);
         }
-
 
         return $this->render('index', $data);
     }
