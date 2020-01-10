@@ -156,9 +156,9 @@ use \common\services\GlobalUrlService;
  <!--页脚开始-->
     <div id="footer" style="background-color:#FFF;margin:auto;width: 1200px;">
         <div style="text-align: center; line-height:23px; padding:10px 0; background:#fff;">
-            技术支持：好商汇传媒（广州）有限公司<br/>
-            公司地址：广州市白云区白云大道北337号B栋306<br/>
-            <a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备19013542号-22</a>
+            技术支持：<?=$footer['company_name']??'';?><br/>
+            公司地址：<?=$footer['company_address']??'';?><br/>
+            <a href="http://www.beian.miit.gov.cn/" target="_blank"><?=$footer['icp']??'';?></a>
             创业有风险 投资需谨慎
         </div>
         <div style="height:50px;"></div>

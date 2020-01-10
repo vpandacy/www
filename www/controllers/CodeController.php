@@ -59,6 +59,7 @@ class CodeController extends BaseWebController
             'khid' => $page['project_id'],
             'content' => $content,
             'page_script' => $page_script,
+            'footer' => $this->website_info,
         ]);
     }
 

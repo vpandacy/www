@@ -42,6 +42,7 @@ class PageController extends BaseWebController
         return $this->render('index', [
             'content' => $content,
             'page_script' => $page_script,
+            'footer' => $this->website_info,
         ]);
     }
 }

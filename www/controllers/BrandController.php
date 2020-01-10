@@ -61,7 +61,8 @@ class BrandController extends BaseController
             'page_script' => $page_script,
             'project_info' => $project_info,
             'code' => $code,
-            'project_list' => $project_list
+            'project_list' => $project_list,
+            'footer' => $this->website_info,
         ]);
     }
 }

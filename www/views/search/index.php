@@ -418,9 +418,9 @@ use common\services\GlobalUrlService;
                     <a href="<?= GlobalUrlService::buildWWWUrl("/legal") ?>">法律声明</a>|
                     <a href="<?= GlobalUrlService::buildWWWUrl("/contactus") ?>">联系我们</a>|
                     <a href="<?= GlobalUrlService::buildWWWUrl("/tssc") ?>">投诉删除</a></p>
-                <p>客服电话：400-822-1108 创业有风险 投资需谨慎</p>
-                <p>技术支持：好商汇传媒（广州）有限公司 ICP备案号：
-                    <a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备19013542号-22</a></p>
+                <p>客服电话：<?=$footer['company_tel']??'';?> 创业有风险 投资需谨慎</p>
+                <p>技术支持：<?=$footer['company_name']??'';?> ICP备案号：
+                    <a href="http://www.beian.miit.gov.cn/" target="_blank"><?=$footer['icp']??'';?></a></p>
             </div>
         </div>
     </div>

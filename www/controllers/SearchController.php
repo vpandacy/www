@@ -49,7 +49,8 @@ class SearchController extends BaseController
             'keyword'=>$keyword,
             'search_conditions' => [
                 'keyword'=>$keyword
-            ]
+            ],
+            'footer' => $this->website_info,
         ]);
     }
 }

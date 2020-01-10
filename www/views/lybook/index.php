@@ -196,20 +196,17 @@ use \common\services\GlobalUrlService;
     <p>
         <?=$page_script?>
     </p>
-    <p>
-        技术支持：好商汇传媒（广州）有限公司 创业有风险 投资需谨慎
-    </p>
-    <style type="text/css">
-        #footer p a {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-        }
+    <div style="text-align: center; line-height:23px; padding:10px 0; background:#fff;">
+        技术支持：<?=$footer['company_name']??'';?><br/>
+        公司地址：<?=$footer['company_address']??'';?><br/>
+        <a href="http://www.beian.miit.gov.cn/" target="_blank"><?=$footer['icp']??'';?></a>
+        创业有风险 投资需谨慎
+    </div>
+    <div style="height:50px;"></div>
 
-        #footer p a img {
-            width: 20px;
-            height: 20px;
-        }
+    <style type="text/css">
+        #footer p a{display:inline-block; width:20px; height:20px;}
+        #footer p a img{width:20px; height:20px;}
     </style>
 </div>
 

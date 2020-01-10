@@ -57,7 +57,8 @@ class LybookController extends BaseWebController
             'khid' => $page['project_id'],
             'page_script' => $page_script,
             'project_info' => $project_info,
-            'project_like' => $this->randArr($project_like)
+            'project_like' => $this->randArr($project_like),
+            'footer' => $this->website_info,
         ]);
     }
 
