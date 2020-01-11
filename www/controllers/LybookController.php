@@ -9,7 +9,6 @@
 namespace www\controllers;
 
 use common\components\BaseWebController;
-use common\services\GlobalUrlService;
 use www\services\ApiRequestService;
 use common\services\RedisCacheService;
 
@@ -91,7 +90,7 @@ class LybookController extends BaseWebController
         $code = $this->get('code');
         $redis = RedisCacheService::getInstance();
         $redis::setValue('lybook='.$code,null);
-        return $this->redirect(GlobalUrlService::buildWWWUrl('/'));
+        return $this->renderJSON();
     }
 
 }

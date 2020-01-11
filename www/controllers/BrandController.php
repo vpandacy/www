@@ -8,7 +8,6 @@
 
 namespace www\controllers;
 
-use common\services\GlobalUrlService;
 use www\controllers\common\BaseController;
 use www\services\ApiRequestService;
 use common\services\RedisCacheService;
@@ -85,6 +84,6 @@ class BrandController extends BaseController
         $code = $this->get('code');
         $redis = RedisCacheService::getInstance();
         $redis::setValue('brand='.$code,null);
-        return $this->redirect(GlobalUrlService::buildWWWUrl('/'));
+        return $this->renderJSON();
     }
 }

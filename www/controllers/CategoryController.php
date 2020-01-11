@@ -9,7 +9,6 @@
 namespace www\controllers;
 
 
-use common\components\HttpClient;
 use www\controllers\common\BaseController;
 use www\services\ApiRequestService;
 use common\services\RedisCacheService;
@@ -75,6 +74,16 @@ class CategoryController extends BaseController
         }
 
         return $this->render('index', $data);
+    }
+
+    //清除缓存
+    public function actionClean()
+    {
+        $id = $this->get('id', 0);
+        $sort = $this->get('sort', '最热');
+        $redis = RedisCacheService::getInstance();
+        $redis::setValue('category=' . "{$id}-{$sort}",null);
+        return $this->renderJSON();
     }
 
 }
