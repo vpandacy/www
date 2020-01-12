@@ -80,7 +80,7 @@ use \common\services\GlobalUrlService;
         <div class="info">
             <h3>企业信息</h3>
             <div class="infoBox">
-                <img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$_item['projid']}/{$_item['projid']}_416_215.jpg") ?>" alt="">
+                <img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$project_info['projid']}/{$project_info['projid']}_416_215.jpg") ?>" alt="">
                 <ul>
                     <li><h2><?=$project_info['company_name']?></h2></li>
                     <li><b>关注度：</b><span>21447</span></li>
