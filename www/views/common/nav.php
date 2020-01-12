@@ -4,7 +4,7 @@
             <li>
                 <a href="/">首页</a></li>
             <li>
-                <a href="/category/1">特色餐饮</a></li>
+                <a href="/category/3">特色餐饮</a></li>
             <li>
                 <a href="/category/7">环保机械</a></li>
             <li>
