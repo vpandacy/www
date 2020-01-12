@@ -20,13 +20,13 @@ class LybookController extends BaseWebController
         $this->layout = false;
 
         $code = $this->get('code','');
-        $redis = RedisCacheService::getInstance();
+        // $redis = RedisCacheService::getInstance();
 
 
-        $data = $redis::getValue('lybook='.$code);
-
-        if(!$data)
-        {
+        // $data = $redis::getValue('lybook='.$code);
+        //
+        // if(!$data)
+        // {
             $info = ApiRequestService::sendPostRequest('/lianzhan/lybook/index',[
                 "code" => $code
             ]);
@@ -69,9 +69,9 @@ class LybookController extends BaseWebController
                 'project_like' => $this->randArr($project_like),
                 'footer' => $this->website_info,
             ];
-            $redis::setValue('lybook='.$code,$data);
-
-        }
+        //     $redis::setValue('lybook='.$code,$data);
+        //
+        // }
 
         return $this->render('index', $data);
     }
