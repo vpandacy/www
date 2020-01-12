@@ -154,7 +154,7 @@ use \common\services\GlobalUrlService;
         <h3></h3>
         <div class="xsBox">
             <?php if($project_data):?>
-                <?php foreach ($project_like as $_item):?>
+                <?php foreach ($project_data as $_item):?>
                         <a href="<?=GlobalUrlService::buildWWWUrl('/code/'.$_item['code'])?>"><img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$_item['projid']}/{$_item['projid']}_logo.jpg") ?>" alt="<?=$_item['projname']?>"></a>
                 <?php endforeach;?>
             <?php endif;?>
