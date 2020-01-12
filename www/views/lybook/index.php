@@ -107,41 +107,13 @@ use \common\services\GlobalUrlService;
 
     <div class="txt">
         <ul>
-            <li><a href="/show/liangyisheng1" target="_blank">亮一生视力康复</a></li>
-            <li><a href="/show/zbnqgbs" target="_blank">尊百年智能轻钢别墅</a></li>
-            <li><a href="/show/oushangjia" target="_blank">更多应用 满足需求</a></li>
-            <li><a href="/show/jianmeijia" target="_blank">环保全屋整装</a></li>
-            <li><a href="/show/tiancheng" target="_blank">天诚全屋整装</a></li>
-            <li class="red"><a href="/show/ruomu" target="_blank">引领潮流 开创时代</a></li>
-            <li class="red"><a href="/show/jiajieshi" target="_blank">佳洁士垃圾处理器</a></li>
-            <li class="red"><a href="/show/wajiangqingwa" target="_blank">蛙匠青蛙养殖</a></li>
-            <li class="red"><a href="/show/mofashikb" target="_blank">魔法师烤吧</a></li>
-            <li class="red"><a href="/show/zcydzsj" target="_blank">中驰移动制砂机</a></li>
-            <li><a href="/show/oukate" target="_blank">环保健康，扣式整装</a></li>
-            <li><a href="/show/nanyang" target="_blank">南阳重工制砂机</a></li>
-            <li><a href="/show/yunixiangban" target="_blank">集美味营养、健康绿色</a></li>
-            <li><a href="/show/tangeche" target="_blank">1成首付弹个车</a></li>
-            <li><a href="/show/xiangnianjia" target="_blank">想念家的味道饺子</a></li>
-            <li class="red"><a href="/show/pujitai" target="_blank">普吉泰茶</a></li>
-            <li class="red"><a href="/show/zhongnongbahao" target="_blank">1</a></li>
-            <li class="red"><a href="/show/yaogunguozhi" target="_blank">摇滚果汁</a></li>
-            <li class="red"><a href="/show/yishikang" target="_blank">美好新视界 财富新商机</a></li>
-            <li class="red"><a href="/show/shishang" target="_blank">22时尚加盟</a></li>
-            <li><a href="/show/ailuoni" target="_blank">艾洛尼环保集成墙饰</a></li>
-            <li><a href="/show/haozhouquan" target="_blank">刚性需求，席卷市场</a></li>
-            <li><a href="/show/pengpengyu" target="_blank">批量出餐无需大厨</a></li>
-            <li><a href="/show/xiangwanli" target="_blank">香万利环保制香机</a></li>
-            <li><a href="/show/langshajichengqiang" target="_blank"> 你与事业 一“墙”之隔</a></li>
-            <li class="red"><a href="/show/tianyaojiuhao" target="_blank">天耀9号泥鳅加盟</a></li>
-            <li class="red"><a href="/show/daancha5" target="_blank">0</a></li>
-            <li class="red"><a href="/show/baijiazhoupu" target="_blank">知名品牌风靡中国</a></li>
-            <li class="red"><a href="/show/hjggzz" target="_blank">一站全屋 智能整装</a></li>
-            <li class="red"><a href="/show/nuolian" target="_blank">诺恋冰淇淋真美味！</a></li>
-            <li><a href="/show/shiermei" target="_blank">优质环保墙饰，免门店投资</a></li>
-            <li><a href="/show/baijintequ" target="_blank">白金特曲 直招代理</a></li>
-            <li><a href="/show/kabeinuo" target="_blank">卡贝诺加盟</a></li>
-            <li><a href="/show/zouxiujipai" target="_blank">走秀鸡排，可赢未来！</a></li>
-            <li><a href="/show/fafeiya" target="_blank">法菲亚全屋整装</a></li>
+
+            <?php if($project_list):?>
+                <?php foreach ($project_list as $key => $_item):?>
+                    <li><a href="<?=GlobalUrlService::buildWWWUrl('/code/'.$_item['code'])?>" target="_blank"><?=$_item['projname']?></a></li>
+                <?php endforeach;?>
+            <?php endif;?>
+
             <div class="clear"></div>
         </ul>
     </div>
@@ -181,8 +153,11 @@ use \common\services\GlobalUrlService;
     <div class="xs">
         <h3></h3>
         <div class="xsBox">
-            <a href="/show/shangpingong"><img src="/picture/flldqg/6027_logo.jpg" alt="尚品宫纸上烧烤"></a><a
-                    href="/show/zuonalinanzhuang"><img src="/picture/flldqg/188053_logo.jpg" alt="佐纳利男装"></a>
+            <?php if($project_data):?>
+                <?php foreach ($project_like as $_item):?>
+                        <a href="<?=GlobalUrlService::buildWWWUrl('/code/'.$_item['code'])?>"><img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$_item['projid']}/{$_item['projid']}_logo.jpg") ?>" alt="<?=$_item['projname']?>"></a>
+                <?php endforeach;?>
+            <?php endif;?>
         </div>
     </div>
 

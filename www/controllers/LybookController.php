@@ -47,7 +47,7 @@ class LybookController extends BaseWebController
             $page = $data['page'];
 
             $project_info = $data['project_info'];
-            $project_like = $data['project_r'];
+            $project_list = $data['project_r'];
 
             $title = $data['title'] ?? '';
             $description = $data['description'] ?? '';
@@ -66,7 +66,9 @@ class LybookController extends BaseWebController
                 'khid' => $page['project_id'],
                 'page_script' => $page_script,
                 'project_info' => $project_info,
-                'project_like' => $this->randArr($project_like),
+                'project_like' => $this->randArr($project_list),
+                'project_list' => $project_list,
+                'project_data' => $this->randArr($project_list,2),
                 'footer' => $this->website_info,
             ];
         //     $redis::setValue('lybook='.$code,$data);
@@ -76,8 +78,8 @@ class LybookController extends BaseWebController
         return $this->render('index', $data);
     }
 
-    private function randArr($arr){
-        $keys=array_rand($arr,5);
+    private function randArr($arr,$limit=5){
+        $keys=array_rand($arr,$limit);
         $ret=array();
         foreach($keys as $v){
             $ret[$v]=$arr[$v];
