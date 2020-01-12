@@ -50,7 +50,7 @@ use \common\services\GlobalUrlService;
 <div id="main">
     <div class="contont">
         <div class="left">
-            <img src="http://cdn.hsh568.cn/<?=$project_info['proj_pinyin']?>/<?=$project_info['projid'];?>/<?=$project_info['projid'];?>_240_240.jpg" alt=""/>
+            <img src="http://cdn.hsh568.cn/<?=$project_info['project_pinyin']?>/<?=$project_info['projid'];?>/<?=$project_info['projid'];?>_240_240.jpg" alt=""/>
         </div>
         <div class="right">
             <div class="title">
