@@ -590,7 +590,7 @@ use \common\services\GlobalUrlService;
                                 <?php if (isset($data[25]) ): ?>
                                     <?php foreach ($data[25] as $key=>$_item): ?>
                                         <?php if (($key >=0 && $key < 11)): ?>
-                                            <li>
+                                            <li <?php if (!(($key +1) %3)):?> class="li" <?php endif;?>>
                                                 <a target="_blank" href="/code/<?= $_item['project_code']; ?>">
                                                     <?= $_item['project_content']; ?>
                                                 </a>
@@ -604,7 +604,7 @@ use \common\services\GlobalUrlService;
                                 <?php if (isset($data[26]) ): ?>
                                     <?php foreach ($data[26] as $key=>$_item): ?>
                                         <?php if (($key >=0 && $key < 11)): ?>
-                                            <li>
+                                            <li <?php if (!(($key +1) %3)):?> class="li" <?php endif;?>>
                                                 <a target="_blank" href="/code/<?= $_item['project_code']; ?>">
                                                     <?= $_item['project_content']; ?>
                                                 </a>
@@ -617,7 +617,7 @@ use \common\services\GlobalUrlService;
                                 <?php if (isset($data[27]) ): ?>
                                     <?php foreach ($data[27] as $key=>$_item): ?>
                                         <?php if (($key >=0 && $key < 11)): ?>
-                                            <li>
+                                            <li <?php if (!(($key +1) %3)):?> class="li" <?php endif;?>>
                                                 <a target="_blank" href="/code/<?= $_item['project_code']; ?>">
                                                     <?= $_item['project_content']; ?>
                                                 </a>
@@ -629,7 +629,7 @@ use \common\services\GlobalUrlService;
                                 <?php if (isset($data[28]) ): ?>
                                     <?php foreach ($data[28] as $key=>$_item): ?>
                                         <?php if (($key >=0 && $key < 11)): ?>
-                                            <li>
+                                            <li <?php if (!(($key +1) %3)):?> class="li" <?php endif;?>>
                                                 <a target="_blank" href="/code/<?= $_item['project_code']; ?>">
                                                     <?= $_item['project_content']; ?>
                                                 </a>
@@ -641,7 +641,7 @@ use \common\services\GlobalUrlService;
                                 <?php if (isset($data[29]) ): ?>
                                     <?php foreach ($data[29] as $key=>$_item): ?>
                                         <?php if (($key >=0 && $key < 11)): ?>
-                                            <li>
+                                            <li <?php if (!(($key +1) %3)):?> class="li" <?php endif;?>>
                                                 <a target="_blank" href="/code/<?= $_item['project_code']; ?>">
                                                     <?= $_item['project_content']; ?>
                                                 </a>
@@ -653,7 +653,7 @@ use \common\services\GlobalUrlService;
                                 <?php if (isset($data[30]) ): ?>
                                     <?php foreach ($data[30] as $key=>$_item): ?>
                                         <?php if (($key >=0 && $key < 11)): ?>
-                                            <li>
+                                            <li <?php if (!(($key +1) %3)):?> class="li" <?php endif;?>>
                                                 <a target="_blank" href="/code/<?= $_item['project_code']; ?>">
                                                     <?= $_item['project_content']; ?>
                                                 </a>
@@ -717,7 +717,7 @@ use \common\services\GlobalUrlService;
                                 <?php if (isset($data[33]) ): ?>
                                     <?php foreach ($data[33] as $key=>$_item): ?>
                                         <?php if (($key >=0 && $key < 9)): ?>
-                                            <li>
+                                            <li <?php if (!(($key +1) %3)):?> class="li" <?php endif;?>>
                                                 <a target="_blank" href="/code/<?= $_item['project_code']; ?>"  ><?=$_item['project_content']?></a>
                                             </li>
                                         <?php endif;?>
@@ -727,7 +727,7 @@ use \common\services\GlobalUrlService;
                                 <?php if (isset($data[34]) ): ?>
                                     <?php foreach ($data[34] as $key=>$_item): ?>
                                         <?php if (($key >=0 && $key < 9)): ?>
-                                            <li>
+                                            <li <?php if (!(($key +1) %3)):?> class="li" <?php endif;?>>
                                                 <a target="_blank" href="/code/<?= $_item['project_code']; ?>"  ><?=$_item['project_content']?></a>
                                             </li>
                                         <?php endif;?>
@@ -738,7 +738,7 @@ use \common\services\GlobalUrlService;
                                 <?php if (isset($data[35]) ): ?>
                                     <?php foreach ($data[35] as $key=>$_item): ?>
                                         <?php if (($key >=0 && $key < 9)): ?>
-                                            <li>
+                                            <li <?php if (!(($key +1) %3)):?> class="li" <?php endif;?>>
                                                 <a target="_blank" href="/code/<?= $_item['project_code']; ?>"  ><?=$_item['project_content']?></a>
                                             </li>
                                         <?php endif;?>
@@ -749,7 +749,7 @@ use \common\services\GlobalUrlService;
                                 <?php if (isset($data[36]) ): ?>
                                     <?php foreach ($data[36] as $key=>$_item): ?>
                                         <?php if (($key >=0 && $key < 9)): ?>
-                                            <li>
+                                            <li <?php if (!(($key +1) %3)):?> class="li" <?php endif;?>>
                                                 <a target="_blank" href="/code/<?= $_item['project_code']; ?>"  ><?=$_item['project_content']?></a>
                                             </li>
                                         <?php endif;?>
@@ -760,7 +760,7 @@ use \common\services\GlobalUrlService;
                                 <?php if (isset($data[37]) ): ?>
                                     <?php foreach ($data[37] as $key=>$_item): ?>
                                         <?php if (($key >=0 && $key < 9)): ?>
-                                            <li>
+                                            <li <?php if (!(($key +1) %3)):?> class="li" <?php endif;?>>
                                                 <a target="_blank" href="/code/<?= $_item['project_code']; ?>"  ><?=$_item['project_content']?></a>
                                             </li>
                                         <?php endif;?>
@@ -771,7 +771,7 @@ use \common\services\GlobalUrlService;
                                 <?php if (isset($data[38]) ): ?>
                                     <?php foreach ($data[38] as $key=>$_item): ?>
                                         <?php if (($key >=0 && $key < 9)): ?>
-                                            <li>
+                                            <li <?php if (!(($key +1) %3)):?> class="li" <?php endif;?>>
                                                 <a target="_blank" href="/code/<?= $_item['project_code']; ?>"  ><?=$_item['project_content']?></a>
                                             </li>
                                         <?php endif;?>
