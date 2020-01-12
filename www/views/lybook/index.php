@@ -50,7 +50,7 @@ use \common\services\GlobalUrlService;
 <div id="main">
     <div class="contont">
         <div class="left">
-            <img src="http://cdn.hsh568.cn/<?=$project_info['project_pinyin']?>/<?=$project_info['projid'];?>/<?=$project_info['projid'];?>_240_240.jpg" alt=""/>
+            <img src="<?= GlobalUrlService::buildCdnUrl("{$project_info['project_pinyin']}/{$project_info['projid']}/{$project_info['projid']}_240_240.jpg");?>" alt=""/>
         </div>
         <div class="right">
             <div class="title">
@@ -160,7 +160,7 @@ use \common\services\GlobalUrlService;
                     <?php foreach ($project_like as $_item):?>
                     <li>
                         <a href="<?=GlobalUrlService::buildWWWUrl('/code/'.$_item['code'])?>">
-                            <img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$_item['projid']}/{$_item['projid']}_140_90.jpg") ?>" alt="">
+                            <img src="<?= GlobalUrlService::buildCdnUrl("/{$_item['proj_pinyin']}/{$_item['projid']}/{$_item['projid']}_140_90.jpg") ?>" alt="">
                             <dl>
                                 <dt><?=$_item['projname']?></dt>
                                 <dd><p><?=$_item['proj_abbr']?></p></dd>
