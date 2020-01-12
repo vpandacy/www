@@ -80,7 +80,7 @@ use \common\services\GlobalUrlService;
         <div class="info">
             <h3>企业信息</h3>
             <div class="infoBox">
-                <img src="/picture/flldqg/195588_416_215.jpg" alt="">
+                <img src="<?= GlobalUrlService::buildCdnUrl("/zsbccimg/{$_item['projid']}/{$_item['projid']}_416_215.jpg") ?>" alt="">
                 <ul>
                     <li><h2><?=$project_info['company_name']?></h2></li>
                     <li><b>关注度：</b><span>21447</span></li>
@@ -99,7 +99,7 @@ use \common\services\GlobalUrlService;
                     <?php if($project_list):?>
                         <?php foreach ($project_list as $_key => $_item):?>
                     <li><em class="m1">9919</em>
-                        <a href="<?=GlobalUrlService::buildWWWUrl('/code/'.$_item['code'])?>"><?=$_item['projname']?></a><span><?=$_key?></span>
+                        <a href="<?=GlobalUrlService::buildWWWUrl('/code/'.$_item['code'])?>"><?=$_item['projname']?></a><span><?=$_key+1?></span>
                     </li>
                             <?php endforeach;?>
                     <?php endif;?>
