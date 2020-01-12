@@ -18,11 +18,11 @@ class CodeController extends BaseWebController
 
         $code = $this->get('code');
 
-        $redis = RedisCacheService::getInstance();
-        $data = $redis::getValue('code='.$code);
-
-        if(!$data)
-        {
+        // $redis = RedisCacheService::getInstance();
+        // $data = $redis::getValue('code='.$code);
+        //
+        // if(!$data)
+        // {
             $info = ApiRequestService::sendPostRequest('/lianzhan/code/index',[
                 "code" => $code
             ]);
@@ -65,8 +65,8 @@ class CodeController extends BaseWebController
                 'page_script' => $page_script,
                 'footer' => $this->website_info,
             ];
-            $redis::setValue('code='.$code,$data);
-        }
+            // $redis::setValue('code='.$code,$data);
+        // }
 
 
         return $this->render('index', $data);
