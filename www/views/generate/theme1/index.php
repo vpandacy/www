@@ -25,6 +25,11 @@ use \common\services\GlobalUrlService;
     <script src="<?=GlobalUrlService::buildWWWUrl("/js/theme1/index.js");?>"></script>
     <script src="<?=GlobalUrlService::buildWWWUrl("/js/theme1/utils.js");?>"></script>
     <script src="<?=GlobalUrlService::buildWWWUrl("/js/theme1/pages.js");?>"></script>
+    <style>
+        h1,h2,h3,h4,h5,h6 {
+            font-weight: normal;
+        }
+    </style>
 </head>
     <body>
         <div id="hsh_iframe">
