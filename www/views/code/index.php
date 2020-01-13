@@ -23,7 +23,7 @@ use \common\services\GlobalUrlService;
             margin:0 auto;
         }
         .div_all {
-            width: 1200px;
+            width: 1200px !important;
         }
     </style>
 </head>
