@@ -472,9 +472,64 @@ use \common\services\GlobalUrlService;
                                      <?php endif;?>
                                  <?php endforeach; ?>
                              <?php endif;?>
-
-                             <div class="clear"></div>
                          </ul>
+
+                         <ul style="display:block;" onmouseenter="addcss(this,1);" >
+                             <?php if (isset($data[18]) ): ?>
+                                 <?php foreach ($data[18] as $key=>$_item): ?>
+                                     <?php if (($key >=24 && $key < 48)): ?>
+                                         <li >
+                                             <a target="_blank" href="/code/<?= $_item['project_code']; ?>" >
+                                                 <img src="<?=$_item['project_image'];?>">
+                                             </a>
+                                         </li>
+                                     <?php endif;?>
+                                 <?php endforeach; ?>
+                             <?php endif;?>
+                         </ul>
+
+                         <ul style="display:block;" onmouseenter="addcss(this,1);" >
+                             <?php if (isset($data[18]) ): ?>
+                                 <?php foreach ($data[18] as $key=>$_item): ?>
+                                     <?php if (($key >=48 && $key < 72)): ?>
+                                         <li >
+                                             <a target="_blank" href="/code/<?= $_item['project_code']; ?>" >
+                                                 <img src="<?=$_item['project_image'];?>">
+                                             </a>
+                                         </li>
+                                     <?php endif;?>
+                                 <?php endforeach; ?>
+                             <?php endif;?>
+                         </ul>
+
+                         <ul style="display:block;" onmouseenter="addcss(this,1);" >
+                             <?php if (isset($data[18]) ): ?>
+                                 <?php foreach ($data[18] as $key=>$_item): ?>
+                                     <?php if (($key >=72 && $key < 96)): ?>
+                                         <li >
+                                             <a target="_blank" href="/code/<?= $_item['project_code']; ?>" >
+                                                 <img src="<?=$_item['project_image'];?>">
+                                             </a>
+                                         </li>
+                                     <?php endif;?>
+                                 <?php endforeach; ?>
+                             <?php endif;?>
+                         </ul>
+
+                         <ul style="display:block;" onmouseenter="addcss(this,1);" >
+                             <?php if (isset($data[18]) ): ?>
+                                 <?php foreach ($data[18] as $key=>$_item): ?>
+                                     <?php if (($key >=96 && $key < 120)): ?>
+                                         <li >
+                                             <a target="_blank" href="/code/<?= $_item['project_code']; ?>" >
+                                                 <img src="<?=$_item['project_image'];?>">
+                                             </a>
+                                         </li>
+                                     <?php endif;?>
+                                 <?php endforeach; ?>
+                             <?php endif;?>
+                         </ul>
+                         <div class="clear"></div>
                      </div>
                  </div>
              </div>
