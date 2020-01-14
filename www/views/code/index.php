@@ -28,6 +28,9 @@ use \common\services\GlobalUrlService;
         .div_all div {
             height: 165.66px;
         }
+        .div_all div img {
+            height: 165.66px;
+        }
     </style>
 </head>
 
