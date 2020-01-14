@@ -25,6 +25,9 @@ use \common\services\GlobalUrlService;
         .div_all {
             width: 1200px !important;
         }
+        .div_all div {
+            width: 165.66px;
+        }
     </style>
 </head>
 
