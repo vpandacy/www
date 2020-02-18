@@ -43,7 +43,7 @@ return [
         'setTimeout' => 86000
     ],
     'auth'=>[
-        'auth_app_id' => 'dfddsodb',
+        'auth_app_id' => 'webpage',
         'auth_key' => 'KDkjkdsjkdkjjgkDK45dkbnzro',
     ],
 ];
