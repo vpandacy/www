@@ -10,7 +10,6 @@ namespace www\controllers;
 
 use common\components\BaseWebController;
 use www\services\ApiRequestService;
-use common\services\RedisCacheService;
 
 class LybookController extends BaseWebController
 {
@@ -20,13 +19,9 @@ class LybookController extends BaseWebController
         $this->layout = false;
 
         $code = $this->get('code','');
-        // $redis = RedisCacheService::getInstance();
 
 
-        // $data = $redis::getValue('lybook='.$code);
-        //
-        // if(!$data)
-        // {
+
             $info = ApiRequestService::sendPostRequest('/lianzhan/lybook/index',[
                 "code" => $code
             ]);
@@ -71,9 +66,7 @@ class LybookController extends BaseWebController
                 'project_data' => $this->randArr($project_list,2),
                 'footer' => $this->website_info,
             ];
-        //     $redis::setValue('lybook='.$code,$data);
-        //
-        // }
+
 
         return $this->render('index', $data);
     }
@@ -87,12 +80,6 @@ class LybookController extends BaseWebController
         return $ret;
     }
 
-    public function actionClean()
-    {
-        $code = $this->get('code');
-        $redis = RedisCacheService::getInstance();
-        $redis::setValue('lybook='.$code,null);
-        return $this->renderJSON();
-    }
+
 
 }

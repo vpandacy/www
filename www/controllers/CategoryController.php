@@ -11,7 +11,6 @@ namespace www\controllers;
 
 use www\controllers\common\BaseController;
 use www\services\ApiRequestService;
-use common\services\RedisCacheService;
 
 class CategoryController extends BaseController
 {
@@ -19,12 +18,7 @@ class CategoryController extends BaseController
     {
         $id = $this->get('id', 0);
         $sort = $this->get('sort', '最热');
-        // $redis = RedisCacheService::getInstance();
-        //
-        // $data = $redis::getValue('category=' . "{$id}-{$sort}");
-        //
-        //
-        // if (!$data) {
+
             $info = ApiRequestService::sendPostRequest('/lianzhan/type/index', [
                 "id" => $id,
                 'sort' => $sort
@@ -70,20 +64,11 @@ class CategoryController extends BaseController
                 'sort' => $sort,
                 'footer' => $this->website_info,
             ];
-        //     $redis::setValue('category=' . "{$id}-{$sort}", $data);
-        // }
+
 
         return $this->render('index', $data);
     }
 
-    //清除缓存
-    public function actionClean()
-    {
-        $id = $this->get('id', 0);
-        $sort = $this->get('sort', '最热');
-        $redis = RedisCacheService::getInstance();
-        $redis::setValue('category=' . "{$id}-{$sort}",null);
-        return $this->renderJSON();
-    }
+
 
 }

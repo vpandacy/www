@@ -5,7 +5,6 @@ namespace www\controllers;
 
 use common\components\BaseWebController;
 use common\components\HttpClient;
-use common\services\RedisCacheService;
 use www\services\ApiRequestService;
 
 class CodeController extends BaseWebController
@@ -18,11 +17,7 @@ class CodeController extends BaseWebController
 
         $code = $this->get('code');
 
-        // $redis = RedisCacheService::getInstance();
-        // $data = $redis::getValue('code='.$code);
-        //
-        // if(!$data)
-        // {
+
             $info = ApiRequestService::sendPostRequest('/lianzhan/code/index',[
                 "code" => $code
             ]);
@@ -65,19 +60,11 @@ class CodeController extends BaseWebController
                 'page_script' => $page_script,
                 'footer' => $this->website_info,
             ];
-            // $redis::setValue('code='.$code,$data);
-        // }
+
 
 
         return $this->render('index', $data);
     }
 
-    //清除缓存
-    public function actionClean()
-    {
-        $code = $this->get('code');
-        $redis = RedisCacheService::getInstance();
-        $redis::setValue('code='.$code,null);
-        return $this->renderJSON();
-    }
+
 }

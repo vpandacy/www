@@ -4,9 +4,7 @@ namespace www\controllers;
 
 
 use common\components\BaseWebController;
-use common\components\helper\DateHelper;
 use common\components\HttpClient;
-use common\services\GlobalUrlService;
 use www\services\ApiRequestService;
 
 class PageController extends BaseWebController
