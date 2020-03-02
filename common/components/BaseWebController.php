@@ -108,19 +108,9 @@ class BaseWebController extends Controller
     public function init()
     {
         if(empty($this->website_info)){
-            //$cookies = Yii::$app->params['cookie']['test'];
-            //ApiRequestService::setCookies($cookies);
-            $redis = new RedisService();
-            if($data = $redis->r_get($_SERVER['SERVER_NAME'])){
-                $this->website_info = $data;
-            }else{
                 $content = ApiRequestService::sendPostRequest('/lianzhan/result/web',['web_url'=>$_SERVER['SERVER_NAME']]);
                 $data = json_decode($content['data'],true);
-                if($data){
-                    $redis->r_set($_SERVER['SERVER_NAME'],$data);
-                    $this->website_info = $data;
-                }
-            }
+                $this->website_info = $data;
         }
     }
 }
