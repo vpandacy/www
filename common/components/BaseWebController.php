@@ -108,8 +108,8 @@ class BaseWebController extends Controller
     public function init()
     {
         if(empty($this->website_info)){
-            $cookies = Yii::$app->params['cookie']['test'];
-            ApiRequestService::setCookies($cookies);
+            //$cookies = Yii::$app->params['cookie']['test'];
+            //ApiRequestService::setCookies($cookies);
             $redis = new RedisService();
             if($data = $redis->r_get($_SERVER['SERVER_NAME'])){
                 $this->website_info = $data;

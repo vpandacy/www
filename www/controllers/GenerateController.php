@@ -19,8 +19,8 @@ class GenerateController extends BaseWebController{
         if(empty($id)){
             exit;
         }
-        $cookies = Yii::$app->params['cookie']['test'];
-        ApiRequestService::setCookies($cookies);
+        //$cookies = Yii::$app->params['cookie']['test'];
+        //ApiRequestService::setCookies($cookies);
         $content = ApiRequestService::sendPostRequest('/lianzhan/result/index',['type'=>ConstantService::WEBPAGE_EHEME,'p_id'=>$id]);
         $data = json_decode($content['data'],true);
 
@@ -57,8 +57,8 @@ class GenerateController extends BaseWebController{
         if(empty($id)){
             exit;
         }
-        $cookies = Yii::$app->params['cookie']['test'];
-        ApiRequestService::setCookies($cookies);
+        //$cookies = Yii::$app->params['cookie']['test'];
+        //ApiRequestService::setCookies($cookies);
         $content = ApiRequestService::sendPostRequest('/lianzhan/result/index',['type'=>ConstantService::WEBPAGE_HEAD,'p_id'=>$id]);
         $data = json_decode($content['data'],true);
         if($content['code'] != 200 || !$data){

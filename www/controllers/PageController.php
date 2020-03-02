@@ -18,7 +18,7 @@ class PageController extends BaseWebController
         $project_id = $this->get('project_id');
         $token = md5($project_id . $media_id);
 
-        ApiRequestService::setCookies($cookies);
+        //ApiRequestService::setCookies($cookies);
         $info = ApiRequestService::sendPostRequest('/lianzhan/page/index',[
             "media_id" => $media_id,
             "project_id" => $project_id,
