@@ -10,7 +10,7 @@ return [
             "domain" => "http://cdn1.static.corp.hsh568.cn"
         ],
         "www" => [
-            "domain" => "http://www.page.hsh568.cn"
+            "domain" => "http://www.page.corp.hsh568.cn"
         ],
         "api" => [
             "domain" => "http://api.corp.hsh568.cn"
@@ -21,7 +21,8 @@ return [
     ],
     'navigation' => '/data/www/private_page/navigation/',
     'Generate' => [
-        'path' => 'F:/PHPTutorial/generate',
+        'path' => '/data/www/private_page/generate',
+        'url' => 'http://api.corp.hsh568.cn/lianzhan/'
     ],
     'HeadNavigation' => [
         "head" => ['49' => '美容', '11' => '餐饮', '61' => '服务', '35' => '酒水', '9' => '环保', '1' => '建材'],
@@ -39,6 +40,6 @@ return [
     ],
     'auth' => [
         'auth_app_id' => 'webpage',
-        'auth_key' => 'KDkjkdsjkdkjjgkDK45dkbnzro',
+        'auth_key' => 'KDkjkdsjkdkjjgkDK45dkbnzro56',
     ],
 ];
