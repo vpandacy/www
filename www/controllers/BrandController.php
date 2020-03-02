@@ -10,7 +10,6 @@ namespace www\controllers;
 
 use www\controllers\common\BaseController;
 use www\services\ApiRequestService;
-use common\services\RedisCacheService;
 class BrandController extends BaseController
 {
     public function actionIndex()
@@ -19,12 +18,7 @@ class BrandController extends BaseController
         $this->layout = false;
 
         $code = $this->get('code');
-        // $redis = RedisCacheService::getInstance();
-        //
-        //
-        // $data = $redis::getValue('brand='.$code);
-        //
-        // if(!$data){
+
             $info = ApiRequestService::sendPostRequest('/lianzhan/brand/index',[
                 "code" => $code
             ]);
@@ -71,19 +65,10 @@ class BrandController extends BaseController
                 'footer' => $this->website_info,
             ];
 
-        //     $redis::setValue('brand='.$code,$data);
-        // }
 
         return $this->render('index', $data);
     }
 
 
-    //清除缓存
-    public function actionClean()
-    {
-        $code = $this->get('code');
-        $redis = RedisCacheService::getInstance();
-        $redis::setValue('brand='.$code,null);
-        return $this->renderJSON();
-    }
+
 }
