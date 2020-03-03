@@ -26,7 +26,7 @@ class GenerateController extends BaseWebController{
 
 
         if($content['code'] != 200 || !$data){
-            echo("请求接口出错");
+            echo("请求接口出错".$content);
             exit;
         }
         $info = [];
