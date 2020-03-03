@@ -26,7 +26,7 @@ class GenerateController extends BaseWebController{
 
 
         if($content['code'] != 200 || !$data){
-            echo("请求接口出错".$content);
+            var_dump("请求接口出错",$content);
             exit;
         }
         $info = [];
@@ -63,6 +63,7 @@ class GenerateController extends BaseWebController{
         $content = ApiRequestService::sendPostRequest('/lianzhan/result/index',['type'=>ConstantService::WEBPAGE_HEAD,'p_id'=>$id]);
         $data = json_decode($content['data'],true);
         if($content['code'] != 200 || !$data){
+            var_dump("请求接口出错",$content);
             exit;
         }
         $info = [];
