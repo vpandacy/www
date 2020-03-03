@@ -10,7 +10,7 @@ return [
             "domain" => "http://cdn1.static.corp.hsh568.cn"
         ],
         "www" => [
-            "domain" => "http://www.page.corp.hsh568.cn"
+            "domain" => "http://www.page.hsh568.cn"
         ],
         "api" => [
             "domain" => "http://api.corp.hsh568.cn"
