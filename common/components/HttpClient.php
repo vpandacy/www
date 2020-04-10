@@ -39,6 +39,7 @@ class HttpClient  extends  BaseService{
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($curl, CURLOPT_CERTINFO , true);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($curl, CURLOPT_ENCODING , 'gzip');
         if( YII_DEBUG ){
             //curl_setopt($curl, CURLOPT_VERBOSE, true);
         }

@@ -23,6 +23,7 @@ return [
     'Generate' => [
         'path' => '/data/www/private_page/generate',
     ],
+    'file_path'=>'/data/www/private_page/html/',
     'HeadNavigation' => [
         "head" => ['49'=>'美容','11'=>'餐饮','61'=>'服务','35'=>'酒水','9'=>'环保','1'=>'建材'],
         'theme' => ['3'=>'特色餐饮','9'=>'环保机械','2'=>'家居建材','4'=>'服装鞋帽','10'=>'集成墙','6'=>'生活服务',
@@ -37,7 +38,7 @@ return [
     ],
     'redis' => [
         'database' => 0,
-        'host'     => '47.112.117.135',
+        'host'     => '127.0.0.1',
         'port'     => 6379,
         'prefix'   => 'CACHE_HSH_',
         'setTimeout' => 86000

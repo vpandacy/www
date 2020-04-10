@@ -25,10 +25,15 @@ class GenerateController extends BaseWebController{
         $data = json_decode($content['data'],true);
 
 
-        if($content['code'] != 200 || !$data){
+        if($content['code'] != 200){
             var_dump("请求接口出错",$content);
             exit;
         }
+        if (!$data){
+            echo '没有数据';
+            exit;
+        }
+
         $info = [];
         foreach($data as $k=>$v){
             $info[$v['position']][] = $v;
@@ -62,10 +67,16 @@ class GenerateController extends BaseWebController{
         //ApiRequestService::setCookies($cookies);
         $content = ApiRequestService::sendPostRequest('/lianzhan/result/index',['type'=>ConstantService::WEBPAGE_HEAD,'p_id'=>$id]);
         $data = json_decode($content['data'],true);
-        if($content['code'] != 200 || !$data){
+        if($content['code'] != 200){
             var_dump("请求接口出错",$content);
             exit;
         }
+
+        if (!$data){
+            echo '没有数据';
+            exit;
+        }
+
         $info = [];
         foreach($data as $k=>$v){
             $info[$v['position']][] = $v;

@@ -1,0 +1,47 @@
+<!-- 留言板开始 -->
+<div style="background:url(/images/lybbj.jpg) no-repeat center; width:1200px; height:550px; margin:0 auto;">
+    <script type="text/javascript" src="@domain@/js/fingerprint.js"></script>
+    <script type="text/javascript">
+        var khid = "@khid@";
+        var sjid = "91";
+        var comid = "1001";
+        var kw = "_";
+        var sid = "";
+        var finger = new Fingerprint().get();
+    </script>
+    <script src="@domain@/js/zsb_cc_lyb.js"></script>
+</div>
+<!-- 留言板结束 -->
+<!--页脚开始-->
+<div id="footer" style="background-color:#FFF;margin:auto;width: 1200px;">
+    <div style="text-align: center; line-height:23px; padding:10px 0; background:#fff;">
+        技术支持：@company_name@<br/>
+        公司地址：@company_address@<br/>
+        <a href="http://www.beian.miit.gov.cn/" target="_blank">@icp@</a>
+        创业有风险 投资需谨慎
+    </div>
+    <div style="height:50px;"></div>
+
+    <style type="text/css">
+        #footer p a{display:inline-block; width:20px; height:20px;}
+        #footer p a img{width:20px; height:20px;}
+    </style>
+</div>
+<!--页脚结束-->
+<!-- 底部固定跳转留言板开始 -->
+<div>
+    <script type="text/javascript">
+        var zxUrl = "https://tb.53kf.com/code/client/@kf_id@/@kf_style@";
+        var lyUrl = "#lyb";
+    </script>
+    @page_script@
+    <script src="@domain@/js/zsb_cc_fixed.js"></script>
+</div>
+<!-- 底部固定跳转留言板结束 -->
+
+<script>
+    $("#headlogo").attr('src','http://cdn.hsh568.cn/zsbcc/images/logo-hsh-563x108.png');
+</script>
+
+</body>
+</html>

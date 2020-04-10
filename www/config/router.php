@@ -4,6 +4,9 @@ return [
     'showScriptName' => false,
     'enableStrictParsing' => false,
     'rules' => [
+        '<controller:(show)>/clean/<code:[a-zA-Z0-9\-_]+>' => '<controller>/clean',
+        '<controller:(show)>/<code:[a-zA-Z0-9\-_]+>' => '<controller>/index',
+
         '<controller:(code)>/clean/<code:[a-zA-Z0-9\-_]+>' => '<controller>/clean',
         '<controller:(code)>/<code:[a-zA-Z0-9\-_]+>' => '<controller>/index',
 
